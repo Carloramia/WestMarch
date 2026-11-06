@@ -1,0 +1,32 @@
+{
+  "repository": "https://github.com/Sagelt/Dungeon-World",
+  "commit": "e67bd51c09d24518a7f989149b76094fbcc7fecc",
+  "retrieved_date": "2026-10-19",
+  "scope": "selected reference texts, not full repository",
+  "verification": "All downloaded Git blobs verified against recorded commit tree",
+  "files": [
+    {
+      "bytes": 625,
+      "path": "LICENSE",
+      "git_blob_sha1": "4793f26d46e99386ce091b52b83f5c7dddb94ab6",
+      "source": "https://github.com/Sagelt/Dungeon-World/blob/e67bd51c09d24518a7f989149b76094fbcc7fecc/LICENSE",
+      "sha256": "A7EE56D4993A1B876A1BC3896D6B16DD8AC3CF4E00A857D5EEC7BA1E4E7D2E4E"
+    },
+    {
+      "bytes": 1230,
+      "path": "README.md",
+      "git_blob_sha1": "06df31d75d798c39c4ce729b7087bf6459b981da",
+      "source": "https://github.com/Sagelt/Dungeon-World/blob/e67bd51c09d24518a7f989149b76094fbcc7fecc/README.md",
+      "sha256": "10291C1255991AF0F01190FA9D240B490B66A8BEA1AEDFA8C850A9101E87CA44"
+    },
+    {
+      "bytes": 12315,
+      "path": "text/First_Session.xml",
+      "git_blob_sha1": "ab00746602fecf14e720e3da89a589e3e4cca9a0",
+      "source": "https://github.com/Sagelt/Dungeon-World/blob/e67bd51c09d24518a7f989149b76094fbcc7fecc/text/First_Session.xml",
+      "sha256": "CF946547A5F514C96D1E8DFE59ED7041C2B54944BCD83CC937D02A3109E662DA"
+    }
+  ],
+  "license_status": "See LICENSE; CC BY 3.0",
+  "remaining": "Fronts, GM, Introduction, Playing_the_Game, The_World not downloaded: GitHub API returned HTTP 403"
+}

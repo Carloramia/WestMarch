@@ -1,0 +1,816 @@
+{
+  "sha": "e67bd51c09d24518a7f989149b76094fbcc7fecc",
+  "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/trees/e67bd51c09d24518a7f989149b76094fbcc7fecc",
+  "tree": [
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4793f26d46e99386ce091b52b83f5c7dddb94ab6",
+      "size": 625,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/4793f26d46e99386ce091b52b83f5c7dddb94ab6"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "06df31d75d798c39c4ce729b7087bf6459b981da",
+      "size": 1230,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/06df31d75d798c39c4ce729b7087bf6459b981da"
+    },
+    {
+      "path": "character_sheets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "152e53d9cef0714879afcdc7c5080e58f0b32c12",
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/trees/152e53d9cef0714879afcdc7c5080e58f0b32c12"
+    },
+    {
+      "path": "character_sheets/Barbarian.indd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be0e74a4d3f793ae5a4f910121a61572683387d7",
+      "size": 1802240,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/be0e74a4d3f793ae5a4f910121a61572683387d7"
+    },
+    {
+      "path": "character_sheets/Bard.indd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d3c0ec8588516a2fc43a89fff0f3cb4890295eb5",
+      "size": 2551808,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/d3c0ec8588516a2fc43a89fff0f3cb4890295eb5"
+    },
+    {
+      "path": "character_sheets/Blank.indd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "61495533061931458b18941925285fbe9666bae1",
+      "size": 2580480,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/61495533061931458b18941925285fbe9666bae1"
+    },
+    {
+      "path": "character_sheets/Character Sheets.indb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eaf5d32bd3436d0631823dfc06100034f0850494",
+      "size": 69632,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/eaf5d32bd3436d0631823dfc06100034f0850494"
+    },
+    {
+      "path": "character_sheets/Cleric Spells.indd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fe582a87a060e41422f472821b931ec8e97d3437",
+      "size": 1900544,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/fe582a87a060e41422f472821b931ec8e97d3437"
+    },
+    {
+      "path": "character_sheets/Cleric.indd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aad1baff508957b878d30e8728857930debbb8f7",
+      "size": 2600960,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/aad1baff508957b878d30e8728857930debbb8f7"
+    },
+    {
+      "path": "character_sheets/Druid.indd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "396adcff6f6325f36d76c5634a8a53c0c26e6b90",
+      "size": 3223552,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/396adcff6f6325f36d76c5634a8a53c0c26e6b90"
+    },
+    {
+      "path": "character_sheets/Fighter.indd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0d1192c894fc1c8ce69a1ba687c521bc23da4d2f",
+      "size": 2805760,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/0d1192c894fc1c8ce69a1ba687c521bc23da4d2f"
+    },
+    {
+      "path": "character_sheets/GM.indd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a22a6594e87e4ea0fb36a0d50b0438f59c204a40",
+      "size": 2367488,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/a22a6594e87e4ea0fb36a0d50b0438f59c204a40"
+    },
+    {
+      "path": "character_sheets/Moves A.indd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1d71d9d6996dea47317dfbca8701e96803a6cc71",
+      "size": 2228224,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/1d71d9d6996dea47317dfbca8701e96803a6cc71"
+    },
+    {
+      "path": "character_sheets/Moves B.indd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a67fcaa8cacfedfcc5bb907d6dec6834a235558b",
+      "size": 2236416,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/a67fcaa8cacfedfcc5bb907d6dec6834a235558b"
+    },
+    {
+      "path": "character_sheets/Paladin.indd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d0290918bdd253815c931cc85d0ca37dbcec24fd",
+      "size": 2654208,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/d0290918bdd253815c931cc85d0ca37dbcec24fd"
+    },
+    {
+      "path": "character_sheets/Ranger.indd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "96ab6cd2a794db72a50becd9ced4f31963ee48a7",
+      "size": 2666496,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/96ab6cd2a794db72a50becd9ced4f31963ee48a7"
+    },
+    {
+      "path": "character_sheets/Thief.indd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f522f9b0bfb9fb42e32155bd2e00515c4e7fbdd0",
+      "size": 2641920,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/f522f9b0bfb9fb42e32155bd2e00515c4e7fbdd0"
+    },
+    {
+      "path": "character_sheets/Wizard Spells.indd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "43dc619f2b7a88b49fee83a2270361dc420371a8",
+      "size": 2637824,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/43dc619f2b7a88b49fee83a2270361dc420371a8"
+    },
+    {
+      "path": "character_sheets/Wizard.indd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f76036ac9fee35d519b03314b706d78cb7ef3de2",
+      "size": 2666496,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/f76036ac9fee35d519b03314b706d78cb7ef3de2"
+    },
+    {
+      "path": "layout",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "93cdb79dac73e859b04ddbb52b901ceec632fe1f",
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/trees/93cdb79dac73e859b04ddbb52b901ceec632fe1f"
+    },
+    {
+      "path": "layout/DungeonWorld.indb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f1fb4451cda793875ec2831df580429ba49826c7",
+      "size": 90112,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/f1fb4451cda793875ec2831df580429ba49826c7"
+    },
+    {
+      "path": "layout/chapters",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d1578fd13b8a704523905bdfc51f3f2524245de9",
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/trees/d1578fd13b8a704523905bdfc51f3f2524245de9"
+    },
+    {
+      "path": "layout/chapters/Advanced Delving.indd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "785e704016c053d00a9f8fccf85226b4e404223e",
+      "size": 2072576,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/785e704016c053d00a9f8fccf85226b4e404223e"
+    },
+    {
+      "path": "layout/chapters/Bard.indd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1cfe6ed8159583ce3add4f864a977433e1d2964d",
+      "size": 1658880,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/1cfe6ed8159583ce3add4f864a977433e1d2964d"
+    },
+    {
+      "path": "layout/chapters/Cavern Dwellers.indd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "33fba9f0d2978edab0e6bfd0673dff22b9ea1adc",
+      "size": 1925120,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/33fba9f0d2978edab0e6bfd0673dff22b9ea1adc"
+    },
+    {
+      "path": "layout/chapters/Character Creation.indd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a544ad4bec7ca57a6c69a424a43fdeec701155e9",
+      "size": 2326528,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/a544ad4bec7ca57a6c69a424a43fdeec701155e9"
+    },
+    {
+      "path": "layout/chapters/Class Moves Discussion.indd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3c2a691e1b9cfac7dc24536400c2dc7bb4dc0589",
+      "size": 1916928,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/3c2a691e1b9cfac7dc24536400c2dc7bb4dc0589"
+    },
+    {
+      "path": "layout/chapters/Cleric Spells.indd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a4b8bc256ccb61d921da04731911d2733596c860",
+      "size": 1867776,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/a4b8bc256ccb61d921da04731911d2733596c860"
+    },
+    {
+      "path": "layout/chapters/Cleric.indd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "691b5ce91f9b4cfc9b72fffda09bc220c046a3e0",
+      "size": 1675264,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/691b5ce91f9b4cfc9b72fffda09bc220c046a3e0"
+    },
+    {
+      "path": "layout/chapters/Conversion.indd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "feb323e77df64e46feeb7a50bee2c4877f9766e7",
+      "size": 1695744,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/feb323e77df64e46feeb7a50bee2c4877f9766e7"
+    },
+    {
+      "path": "layout/chapters/Depths.indd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0c693513376e0cc9e2a4d85d4ff6ac61f686bf77",
+      "size": 1839104,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/0c693513376e0cc9e2a4d85d4ff6ac61f686bf77"
+    },
+    {
+      "path": "layout/chapters/Druid.indd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5dd271b318f6cfa52450cc63d21f688a5dbf1e88",
+      "size": 1687552,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/5dd271b318f6cfa52450cc63d21f688a5dbf1e88"
+    },
+    {
+      "path": "layout/chapters/Equipment.indd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "70f423c66639afe1fe11507d5b05480f800d031a",
+      "size": 2269184,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/70f423c66639afe1fe11507d5b05480f800d031a"
+    },
+    {
+      "path": "layout/chapters/Example.indd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e460e7f5916d9ecac3cb7f4d8147ad744f359e79",
+      "size": 1646592,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/e460e7f5916d9ecac3cb7f4d8147ad744f359e79"
+    },
+    {
+      "path": "layout/chapters/Experiments.indd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "739d346ae09c0a55ff8ca87c12c725df361849fc",
+      "size": 1896448,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/739d346ae09c0a55ff8ca87c12c725df361849fc"
+    },
+    {
+      "path": "layout/chapters/Fighter.indd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc5f161fb97e3754abae72919a17c3761fe27bef",
+      "size": 1646592,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/fc5f161fb97e3754abae72919a17c3761fe27bef"
+    },
+    {
+      "path": "layout/chapters/First Session.indd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0616a37e76aa5a47ec6444c9b49d04843a74a3c1",
+      "size": 1806336,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/0616a37e76aa5a47ec6444c9b49d04843a74a3c1"
+    },
+    {
+      "path": "layout/chapters/Folk.indd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a74bc7de97906f851d2b5684d36b43a9c8c21bde",
+      "size": 1806336,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/a74bc7de97906f851d2b5684d36b43a9c8c21bde"
+    },
+    {
+      "path": "layout/chapters/Fronts.indd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e5c535659c06e218bea9f333377711d97c013efe",
+      "size": 2629632,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/e5c535659c06e218bea9f333377711d97c013efe"
+    },
+    {
+      "path": "layout/chapters/GM.indd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "560ca7bfe5825ac83a561e7b8a717f72aad0ed6b",
+      "size": 2043904,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/560ca7bfe5825ac83a561e7b8a717f72aad0ed6b"
+    },
+    {
+      "path": "layout/chapters/Hordes.indd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "42101ecc65b68cf0508e798265c0a990641a4960",
+      "size": 1921024,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/42101ecc65b68cf0508e798265c0a990641a4960"
+    },
+    {
+      "path": "layout/chapters/Introduction.indd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9c3f93afc228b444faabb2d9037bd08f1528b316",
+      "size": 2674688,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/9c3f93afc228b444faabb2d9037bd08f1528b316"
+    },
+    {
+      "path": "layout/chapters/Monsters.indd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0be7f64be74ac47c85538d9d276b190184e2d678",
+      "size": 2469888,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/0be7f64be74ac47c85538d9d276b190184e2d678"
+    },
+    {
+      "path": "layout/chapters/Moves Discussion.indd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fcd85669c825342fe0ebb520cf77e976e8387289",
+      "size": 2600960,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/fcd85669c825342fe0ebb520cf77e976e8387289"
+    },
+    {
+      "path": "layout/chapters/Moves.indd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d60e61cf7f2630e366cbc196b446b688fcbcda15",
+      "size": 1687552,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/d60e61cf7f2630e366cbc196b446b688fcbcda15"
+    },
+    {
+      "path": "layout/chapters/NPCs.indd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9fb26843f79ab18a06c165aae358c289459c5e84",
+      "size": 1908736,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/9fb26843f79ab18a06c165aae358c289459c5e84"
+    },
+    {
+      "path": "layout/chapters/Paladin.indd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6ad70fd4a765b57558228c2cb086e0ff8137f0cd",
+      "size": 1585152,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/6ad70fd4a765b57558228c2cb086e0ff8137f0cd"
+    },
+    {
+      "path": "layout/chapters/Planes.indd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "517ee2ff02fdc82ecb9ab2635143565a3a622542",
+      "size": 1830912,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/517ee2ff02fdc82ecb9ab2635143565a3a622542"
+    },
+    {
+      "path": "layout/chapters/Playing the Game.indd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "80c664f6ad139492eae642673d61db6c6eef7893",
+      "size": 2162688,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/80c664f6ad139492eae642673d61db6c6eef7893"
+    },
+    {
+      "path": "layout/chapters/Ranger.indd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a9cc50068c6a0b1f5cbda81cad9606c870c61701",
+      "size": 1597440,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/a9cc50068c6a0b1f5cbda81cad9606c870c61701"
+    },
+    {
+      "path": "layout/chapters/Swamps.indd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8e660a18fa02e133a0a50213064e79dfe2672317",
+      "size": 1835008,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/8e660a18fa02e133a0a50213064e79dfe2672317"
+    },
+    {
+      "path": "layout/chapters/Teaching.indd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "38e120367fc057177a7527c2fad7d0693a880de6",
+      "size": 1589248,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/38e120367fc057177a7527c2fad7d0693a880de6"
+    },
+    {
+      "path": "layout/chapters/Thanks.indd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5f55877ce1dd02eeadbe59561c0e9a20b774858f",
+      "size": 1601536,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/5f55877ce1dd02eeadbe59561c0e9a20b774858f"
+    },
+    {
+      "path": "layout/chapters/The World.indd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1100ce2f80a4df7b476e8931e0e1f33622bcccca",
+      "size": 2510848,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/1100ce2f80a4df7b476e8931e0e1f33622bcccca"
+    },
+    {
+      "path": "layout/chapters/Thief.indd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "de1dc43b4bb12cad8c41ad99eb5944a6b3f39947",
+      "size": 1626112,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/de1dc43b4bb12cad8c41ad99eb5944a6b3f39947"
+    },
+    {
+      "path": "layout/chapters/Title and Contents.indd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "73b08f7f33c6121e43dac18ebbcae9375b4a7099",
+      "size": 2375680,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/73b08f7f33c6121e43dac18ebbcae9375b4a7099"
+    },
+    {
+      "path": "layout/chapters/Undead.indd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6f506ada2ede1091ca59f3d88471d800d5d9f329",
+      "size": 1851392,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/6f506ada2ede1091ca59f3d88471d800d5d9f329"
+    },
+    {
+      "path": "layout/chapters/Wizard Spells.indd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af142f0606be2e460127efad3e0c6e458ce93e11",
+      "size": 1662976,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/af142f0606be2e460127efad3e0c6e458ce93e11"
+    },
+    {
+      "path": "layout/chapters/Wizard.indd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8e0d8c915596158d97c90caea7d5b3f29caf3ce1",
+      "size": 1679360,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/8e0d8c915596158d97c90caea7d5b3f29caf3ce1"
+    },
+    {
+      "path": "layout/chapters/Woods.indd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fdfbd37eb8ee45853f2730970881472c0ad7b88f",
+      "size": 1933312,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/fdfbd37eb8ee45853f2730970881472c0ad7b88f"
+    },
+    {
+      "path": "resources",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8e6bad2ded4e354ef0d2583100d2778d8c1bf25c",
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/trees/8e6bad2ded4e354ef0d2583100d2778d8c1bf25c"
+    },
+    {
+      "path": "resources/correctformatting.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "4b9e0d1fcf32f6dcc791e140bbd7be98de66ba04",
+      "size": 2091,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/4b9e0d1fcf32f6dcc791e140bbd7be98de66ba04"
+    },
+    {
+      "path": "text",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7b723336c4d6cd33481c66bf6043edd047f0c642",
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/trees/7b723336c4d6cd33481c66bf6043edd047f0c642"
+    },
+    {
+      "path": "text/Advanced_Delving.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b5a277188706ac8d42841615ce98f232a1e9a925",
+      "size": 33352,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/b5a277188706ac8d42841615ce98f232a1e9a925"
+    },
+    {
+      "path": "text/Bard.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2bd7f8b6d91c17fc6eee7050b6b1b825ce0c6787",
+      "size": 11349,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/2bd7f8b6d91c17fc6eee7050b6b1b825ce0c6787"
+    },
+    {
+      "path": "text/Character_Creation.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "784c0db08f12cc45af88131d5d0ef1be070411fb",
+      "size": 10856,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/784c0db08f12cc45af88131d5d0ef1be070411fb"
+    },
+    {
+      "path": "text/Class_Moves_Discussion.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c6a1359c4f6b635460c68cc0ac027c788a4f37a8",
+      "size": 7839,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/c6a1359c4f6b635460c68cc0ac027c788a4f37a8"
+    },
+    {
+      "path": "text/Cleric.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8c68837be5c56e807bda63c7a3a39364ffc03013",
+      "size": 12459,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/8c68837be5c56e807bda63c7a3a39364ffc03013"
+    },
+    {
+      "path": "text/Cleric_Spells.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b12f649f5ab0289a6292a3369a1999e48164040",
+      "size": 12194,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/2b12f649f5ab0289a6292a3369a1999e48164040"
+    },
+    {
+      "path": "text/Druid.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a09e9d5064d7b71e0d758ecf1afef45136b106bc",
+      "size": 13004,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/a09e9d5064d7b71e0d758ecf1afef45136b106bc"
+    },
+    {
+      "path": "text/Equipment.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "efce784ba9f6335bc276bdd29e0a1b8c0fe989e5",
+      "size": 39924,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/efce784ba9f6335bc276bdd29e0a1b8c0fe989e5"
+    },
+    {
+      "path": "text/Example.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6cb4cf905184ee44a8434b2de6bf7a0c4744d5ca",
+      "size": 8556,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/6cb4cf905184ee44a8434b2de6bf7a0c4744d5ca"
+    },
+    {
+      "path": "text/Fighter.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cbad4f0cd2d3cfbcc0706252571ef63d5f0a98ac",
+      "size": 11346,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/cbad4f0cd2d3cfbcc0706252571ef63d5f0a98ac"
+    },
+    {
+      "path": "text/First_Session.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ab00746602fecf14e720e3da89a589e3e4cca9a0",
+      "size": 12315,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/ab00746602fecf14e720e3da89a589e3e4cca9a0"
+    },
+    {
+      "path": "text/Fronts.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "def92f52a8daa9cc4f5a600b0fe3bf3c37f64c4d",
+      "size": 26815,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/def92f52a8daa9cc4f5a600b0fe3bf3c37f64c4d"
+    },
+    {
+      "path": "text/GM.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "956c6064811de684df681c40200cd9a2fffeff94",
+      "size": 30718,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/956c6064811de684df681c40200cd9a2fffeff94"
+    },
+    {
+      "path": "text/Introduction.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a63d852955b8303bdff8288b6d79ec66dc73f7b0",
+      "size": 13004,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/a63d852955b8303bdff8288b6d79ec66dc73f7b0"
+    },
+    {
+      "path": "text/Monsters.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a3a65344c23b6ef685b44a444f420fc88e78f50e",
+      "size": 22972,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/a3a65344c23b6ef685b44a444f420fc88e78f50e"
+    },
+    {
+      "path": "text/Moves.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2fc3e3312099e7caa6c7b9bc3259b85ec8350011",
+      "size": 11333,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/2fc3e3312099e7caa6c7b9bc3259b85ec8350011"
+    },
+    {
+      "path": "text/Moves_Discussion.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d307068e4bae79c3b0535d9bc774e42288872681",
+      "size": 44507,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/d307068e4bae79c3b0535d9bc774e42288872681"
+    },
+    {
+      "path": "text/Paladin.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "60079f346c4f12fb930051bbd24757eac06d1005",
+      "size": 10060,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/60079f346c4f12fb930051bbd24757eac06d1005"
+    },
+    {
+      "path": "text/Playing_the_Game.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "386012249a51f4934e6d62254249bbb1af8d47b5",
+      "size": 51254,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/386012249a51f4934e6d62254249bbb1af8d47b5"
+    },
+    {
+      "path": "text/Ranger.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0f9947109792a5589248721997c606181d11b2a1",
+      "size": 11216,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/0f9947109792a5589248721997c606181d11b2a1"
+    },
+    {
+      "path": "text/The_World.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2959d858c309b22e7ea80b3d6ef0c548279a123a",
+      "size": 26140,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/2959d858c309b22e7ea80b3d6ef0c548279a123a"
+    },
+    {
+      "path": "text/Thief.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6a150ed6aa30efca32858811f3493ece93516c3c",
+      "size": 10988,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/6a150ed6aa30efca32858811f3493ece93516c3c"
+    },
+    {
+      "path": "text/Wizard.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a63475517ff8b4ceb9c7c9d1c7fd0703e7b09d5a",
+      "size": 12054,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/a63475517ff8b4ceb9c7c9d1c7fd0703e7b09d5a"
+    },
+    {
+      "path": "text/Wizard_Spells.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3237b0f766c66496fa644928af45c3fd759b3cb2",
+      "size": 12850,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/3237b0f766c66496fa644928af45c3fd759b3cb2"
+    },
+    {
+      "path": "text/appendices",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "dd2a377db7813ec389f80c25f018bc923c8e623c",
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/trees/dd2a377db7813ec389f80c25f018bc923c8e623c"
+    },
+    {
+      "path": "text/appendices/Conversion.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "781ce11ba809329c671d44c814b7cd5b99089421",
+      "size": 14756,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/781ce11ba809329c671d44c814b7cd5b99089421"
+    },
+    {
+      "path": "text/appendices/NPCs.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cf434878a9740f9603fc73604f9f64ae58b54563",
+      "size": 12576,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/cf434878a9740f9603fc73604f9f64ae58b54563"
+    },
+    {
+      "path": "text/appendices/Teaching.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "33946ba0299ff889e969b36a1c0dc37aa245c0ff",
+      "size": 7486,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/33946ba0299ff889e969b36a1c0dc37aa245c0ff"
+    },
+    {
+      "path": "text/appendices/Thanks.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ed0f389182d748e7536d761a39b65e31c60d5790",
+      "size": 56881,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/ed0f389182d748e7536d761a39b65e31c60d5790"
+    },
+    {
+      "path": "text/monster_settings",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "96ae98b186ff1c212af7d0e50dc5ade40d9b8f7f",
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/trees/96ae98b186ff1c212af7d0e50dc5ade40d9b8f7f"
+    },
+    {
+      "path": "text/monster_settings/Caverns.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5827e1e19626179a8a174562f667173e4603e47f",
+      "size": 15930,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/5827e1e19626179a8a174562f667173e4603e47f"
+    },
+    {
+      "path": "text/monster_settings/Depths.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1480235311202c927ea3101715e5cad1ee5cf595",
+      "size": 13378,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/1480235311202c927ea3101715e5cad1ee5cf595"
+    },
+    {
+      "path": "text/monster_settings/Experiments.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "143f08c8b521cd785b75ba43581ec3aabafd93be",
+      "size": 14806,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/143f08c8b521cd785b75ba43581ec3aabafd93be"
+    },
+    {
+      "path": "text/monster_settings/Folk.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f73d8ea380f12b555749bdeac1b6d9316b85db79",
+      "size": 13766,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/f73d8ea380f12b555749bdeac1b6d9316b85db79"
+    },
+    {
+      "path": "text/monster_settings/Hordes.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9170ca365aca7ca7c670993056d542d0c876129c",
+      "size": 21137,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/9170ca365aca7ca7c670993056d542d0c876129c"
+    },
+    {
+      "path": "text/monster_settings/Planes.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4eb619651d8e2ceb04a850a981f53029b69f1f2a",
+      "size": 14148,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/4eb619651d8e2ceb04a850a981f53029b69f1f2a"
+    },
+    {
+      "path": "text/monster_settings/Swamp.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c2f60f9e93ee5a709f6efdc674b585a1cc801a9b",
+      "size": 19441,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/c2f60f9e93ee5a709f6efdc674b585a1cc801a9b"
+    },
+    {
+      "path": "text/monster_settings/Undead.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0e934b0a430609b39aed2af8183a3a803330ecdd",
+      "size": 18093,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/0e934b0a430609b39aed2af8183a3a803330ecdd"
+    },
+    {
+      "path": "text/monster_settings/Woods.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "98648e06c6728549bb85c98bce4251a4c959db7c",
+      "size": 19017,
+      "url": "https://api.github.com/repos/Sagelt/Dungeon-World/git/blobs/98648e06c6728549bb85c98bce4251a4c959db7c"
+    }
+  ],
+  "truncated": false
+}

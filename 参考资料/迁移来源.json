@@ -1,0 +1,648 @@
+{
+  "migration_date": "2026-11-06",
+  "formal_directory": "C:\\Users\\linbowen\\Documents\\GitHub\\WestMarch",
+  "sources": [
+    {
+      "source": "E:\\A\\个人\\外境\\外境\\外境.md",
+      "destination": "外境.md",
+      "source_sha256": "5ba95651f79a1ab25ce0ae5074b4d8903ea3ba15720807e82b8dcf2cd8a81757"
+    },
+    {
+      "source": "E:\\A\\个人\\外境\\外境\\世界与历史.md",
+      "destination": "世界与历史.md",
+      "source_sha256": "e3256f475c84baf81ae5288fe7ac1ff82681f1f4ddcc46f02d8e314275b8d129"
+    },
+    {
+      "source": "E:\\A\\个人\\外境\\外境\\角色与超凡体系.md",
+      "destination": "角色与超凡体系.md",
+      "source_sha256": "cdcc57970b6aa8bb8f49bb54827e853827fc2b3f7458a2d0e58080499281c41b"
+    },
+    {
+      "source": "E:\\A\\个人\\外境\\外境\\战斗规则与测试.md",
+      "destination": "战斗规则与测试.md",
+      "source_sha256": "e30fa35d5f6d1c67efdb0bc351c3caf531ee979417cdbcacc19895eeafb14d69"
+    },
+    {
+      "source": "E:\\A\\个人\\外境\\外境\\规则与待定事项.md",
+      "destination": "规则与待定事项.md",
+      "source_sha256": "a0ef2ca4f6442b65a86fe7d77b9714642951493212ccc9540b33c4762330cbc7"
+    },
+    {
+      "source": "E:\\A\\个人\\外境\\外境\\NPC与剧情.md",
+      "destination": "NPC与剧情.md",
+      "source_sha256": "87639b8227142267df304d093615eaa8cf7d52cf1d5565574b01b7627c27893a"
+    },
+    {
+      "source": "E:\\A\\个人\\外境\\外境\\材料实验.md",
+      "destination": "材料实验.md",
+      "source_sha256": "65046c6ec4d84d37b3ad88963ecda6c173538272a1f87e05d86d8ebca94d8f0b"
+    },
+    {
+      "source": "E:\\A\\个人\\外境\\外境\\外境_内容总览.canvas",
+      "destination": "外境_内容总览.canvas",
+      "source_sha256": "36a674a54fcdd99d0a3f2b7b6e5fc1b908cceb258ce3e6841018865adabe0bf4"
+    },
+    {
+      "source": "E:\\A\\个人\\外境\\外境\\材料实验.canvas",
+      "destination": "材料实验.canvas",
+      "source_sha256": "0d7273db7f3217a6f0e7115e96fb28897cb4c33c9fcb67d93ea89d6e997924af"
+    },
+    {
+      "source": "E:\\A\\个人\\外境\\外境\\石墨迁移资料\\NPC.md",
+      "destination": "石墨迁移资料/NPC.md",
+      "source_sha256": "4af4014a228326a194d8a819d12b38f09b6d53290b064812a1c9f0b8b4b94c96"
+    },
+    {
+      "source": "E:\\A\\个人\\外境\\外境\\石墨迁移资料\\准则.md",
+      "destination": "石墨迁移资料/准则.md",
+      "source_sha256": "b9993d4de1240ef006f28b7a8923137c04bffd122bcd28c2e125c034de7b3638"
+    },
+    {
+      "source": "E:\\A\\个人\\外境\\外境\\石墨迁移资料\\历史线.md",
+      "destination": "石墨迁移资料/历史线.md",
+      "source_sha256": "fa990c655bb8bba3e35442ba605e6f845039d7e0fa96f086f3a0ad6cd93a5262"
+    },
+    {
+      "source": "E:\\A\\个人\\外境\\外境\\石墨迁移资料\\参考.md",
+      "destination": "石墨迁移资料/参考.md",
+      "source_sha256": "706257d6f82ace7404658b286ae7fc6a69593a3501af19355861dbb6ccc5e9e5"
+    },
+    {
+      "source": "E:\\A\\个人\\外境\\外境\\石墨迁移资料\\外境-总企划书.md",
+      "destination": "石墨迁移资料/外境-总企划书.md",
+      "source_sha256": "a200dc60948b9eec7e8c52ad8428a08f72137df73e3976e1b16a6d02b8b863de"
+    },
+    {
+      "source": "E:\\A\\个人\\外境\\外境\\石墨迁移资料\\大纲.md",
+      "destination": "石墨迁移资料/大纲.md",
+      "source_sha256": "844a1a29d6409a1b7d53c5430dedbedec1f3dd674e865ae46d5486c874dd0274"
+    },
+    {
+      "source": "E:\\A\\个人\\外境\\外境\\石墨迁移资料\\种族.md",
+      "destination": "石墨迁移资料/种族.md",
+      "source_sha256": "17e2faadeb4093169a409d0dc38d726c55bc5ce7d7474bd94cd461fd895bed99"
+    },
+    {
+      "source": "E:\\A\\个人\\外境\\外境\\石墨迁移资料\\设定.md",
+      "destination": "石墨迁移资料/设定.md",
+      "source_sha256": "36d0c576c0f0d1909e7581c139ee61dcba02c62de75a0b0679cccd44f0f43613"
+    },
+    {
+      "source": "E:\\A\\个人\\外境\\外境\\论文集\\149996361.pdf",
+      "destination": "论文集/149996361.pdf",
+      "source_sha256": "15cd0bcf83a850d57f30ad2df5d8ed860231908ee892553f13687afbb5323d0c"
+    },
+    {
+      "source": "E:\\A\\个人\\外境\\外境\\论文集\\fulltext.pdf",
+      "destination": "论文集/fulltext.pdf",
+      "source_sha256": "a9c97b0b275bbe12bc3457a7aff4f4522267d73152daf27e23969ff6dee8dad9"
+    },
+    {
+      "source": "E:\\A\\个人\\外境\\外境\\论文集\\ingold2007.pdf",
+      "destination": "论文集/ingold2007.pdf",
+      "source_sha256": "fa56d4486e19c4b752db7ad9757f02fdde724e97abe046c7346e5037d6bf6870"
+    },
+    {
+      "source": "C:\\Users\\linbowen\\Documents\\ChatGPT\\外境\\参考资料\\Daggerheart-SRD-2.0.pdf",
+      "destination": "参考资料/Daggerheart-SRD-2.0.pdf",
+      "source_sha256": "55d8b92b7e58aa1da99a4a59aa77352483ef4fbda71baddb9af9bfc1f333bd2a"
+    },
+    {
+      "source": "C:\\Users\\linbowen\\Documents\\ChatGPT\\外境\\参考资料\\Daggerheart-SRD-2.0.source.json",
+      "destination": "参考资料/Daggerheart-SRD-2.0.source.json",
+      "source_sha256": "a3f150d4a4743723cd39e9f98dad4bc78c29a9ba2b29393295defdbf1553385c"
+    },
+    {
+      "source": "C:\\Users\\linbowen\\Documents\\ChatGPT\\外境\\参考资料\\Dungeon-World.source.json",
+      "destination": "参考资料/Dungeon-World.source.json",
+      "source_sha256": "f25a5fd4a90e15bf72bfbf74721d7d958f573cfd1b8496df9d6cee5f00c1bbfb"
+    },
+    {
+      "source": "C:\\Users\\linbowen\\Documents\\ChatGPT\\外境\\参考资料\\Dungeon-World.tree.json",
+      "destination": "参考资料/Dungeon-World.tree.json",
+      "source_sha256": "b3d5e23da707ad8a2ba0975a460fdc32f6f32b7b9255f720e309e52499888943"
+    },
+    {
+      "source": "C:\\Users\\linbowen\\Documents\\ChatGPT\\外境\\参考资料\\Worldbuilding-System.source.json",
+      "destination": "参考资料/Worldbuilding-System.source.json",
+      "source_sha256": "04bd2ca9301c5ceb746dcf97d762c484e7cd81109f410f80f2a35bcc4e559291"
+    },
+    {
+      "source": "C:\\Users\\linbowen\\Documents\\ChatGPT\\外境\\参考资料\\Worldbuilding-System.tree.json",
+      "destination": "参考资料/Worldbuilding-System.tree.json",
+      "source_sha256": "0a2ced01f63cf1da38b239e66098f18658b832d96064601d6d0335766a54ea05"
+    },
+    {
+      "source": "C:\\Users\\linbowen\\Documents\\ChatGPT\\外境\\参考资料\\索引.md",
+      "destination": "参考资料/索引.md",
+      "source_sha256": "a47c015307a7566da34c91663205b98bbc44033bc9a2a76c26981ddd57c956ef"
+    },
+    {
+      "source": "C:\\Users\\linbowen\\Documents\\ChatGPT\\外境\\参考资料\\Dungeon-World\\LICENSE",
+      "destination": "参考资料/Dungeon-World/LICENSE",
+      "source_sha256": "a7ee56d4993a1b876a1bc3896d6b16dd8ac3cf4e00a857d5eec7ba1e4e7d2e4e"
+    },
+    {
+      "source": "C:\\Users\\linbowen\\Documents\\ChatGPT\\外境\\参考资料\\Dungeon-World\\README.md",
+      "destination": "参考资料/Dungeon-World/README.md",
+      "source_sha256": "10291c1255991af0f01190fa9d240b490b66a8bea1aedfa8c850a9101e87ca44"
+    },
+    {
+      "source": "C:\\Users\\linbowen\\Documents\\ChatGPT\\外境\\参考资料\\Worldbuilding-System\\README.md",
+      "destination": "参考资料/Worldbuilding-System/README.md",
+      "source_sha256": "31591cb0e7ce4cad7e39cf8bc07a4d822bda9d82f462fdcc52377ac7f48d95c1"
+    },
+    {
+      "source": "C:\\Users\\linbowen\\Documents\\ChatGPT\\外境\\参考资料\\Dungeon-World\\text\\First_Session.xml",
+      "destination": "参考资料/Dungeon-World/text/First_Session.xml",
+      "source_sha256": "cf946547a5f514c96d1e8dfe59ed7041c2b54944bcd83cc937d02a3109e662da"
+    },
+    {
+      "source": "C:\\Users\\linbowen\\Documents\\ChatGPT\\外境\\参考资料\\Worldbuilding-System\\Templates\\Concepts\\Deity.md",
+      "destination": "参考资料/Worldbuilding-System/Templates/Concepts/Deity.md",
+      "source_sha256": "f18b1a89921f750df1b4242373c20b8065811d295502c75dd0ca3ee2df3640ab"
+    },
+    {
+      "source": "C:\\Users\\linbowen\\Documents\\ChatGPT\\外境\\参考资料\\Worldbuilding-System\\Templates\\Concepts\\Magic System.md",
+      "destination": "参考资料/Worldbuilding-System/Templates/Concepts/Magic System.md",
+      "source_sha256": "86626951638dfdda5992e3704fb6a63fe20e60e1ed84861610cac66a8f493871"
+    },
+    {
+      "source": "C:\\Users\\linbowen\\Documents\\ChatGPT\\外境\\参考资料\\Worldbuilding-System\\Templates\\Concepts\\Pantheon.md",
+      "destination": "参考资料/Worldbuilding-System/Templates/Concepts/Pantheon.md",
+      "source_sha256": "8ef962bfa7b9ebd57b6d28cd614ab303c84a217b66529fe8ba0d6a76305d362d"
+    },
+    {
+      "source": "C:\\Users\\linbowen\\Documents\\ChatGPT\\外境\\参考资料\\Worldbuilding-System\\Templates\\Concepts\\Plane of Existence.md",
+      "destination": "参考资料/Worldbuilding-System/Templates/Concepts/Plane of Existence.md",
+      "source_sha256": "679f3279126d66ebca5f09db79e24f8dcec78175c2700e4df19ec25118f1ab39"
+    },
+    {
+      "source": "C:\\Users\\linbowen\\Documents\\ChatGPT\\外境\\参考资料\\Worldbuilding-System\\Templates\\Concepts\\Prophecy.md",
+      "destination": "参考资料/Worldbuilding-System/Templates/Concepts/Prophecy.md",
+      "source_sha256": "cdd65559523a44ed23d7ff9590346aa8cb188b964054f1a7d95c9dbcd4a9dbce"
+    },
+    {
+      "source": "C:\\Users\\linbowen\\Documents\\ChatGPT\\外境\\参考资料\\Worldbuilding-System\\Templates\\Concepts\\Religion.md",
+      "destination": "参考资料/Worldbuilding-System/Templates/Concepts/Religion.md",
+      "source_sha256": "3f01b3ba0ebe759823e2c8875aba5148dbafbe755c6b968a8c8ee1287d241fee"
+    },
+    {
+      "source": "C:\\Users\\linbowen\\Documents\\ChatGPT\\外境\\参考资料\\Worldbuilding-System\\Templates\\Reference\\Connection Matrix.md",
+      "destination": "参考资料/Worldbuilding-System/Templates/Reference/Connection Matrix.md",
+      "source_sha256": "76ce5c81b929f49c9c8590ce2bdd2f56a142e1d84c833cfb17837625d33c7edf"
+    },
+    {
+      "source": "C:\\Users\\linbowen\\Documents\\ChatGPT\\外境\\瞬发兵偶测试\\1-完整记录.txt",
+      "destination": "测试资料/瞬发兵偶测试/1-完整记录.txt",
+      "source_sha256": "748416832f2d6ab800e2f9e440f73249cf266c18a018d4d69364be12b4480888"
+    },
+    {
+      "source": "C:\\Users\\linbowen\\Documents\\ChatGPT\\外境\\瞬发兵偶测试\\2-完整记录.txt",
+      "destination": "测试资料/瞬发兵偶测试/2-完整记录.txt",
+      "source_sha256": "160d76e85f6cf2e60b817105d9fbbe7685e140c79d442bc498445356b381adea"
+    },
+    {
+      "source": "C:\\Users\\linbowen\\Documents\\ChatGPT\\外境\\瞬发兵偶测试\\200场汇总.json",
+      "destination": "测试资料/瞬发兵偶测试/200场汇总.json",
+      "source_sha256": "a1d4131cad7f0e11cebd832a47a8528772c1ba63a2d205cc08be21f8e1e7f85f"
+    },
+    {
+      "source": "C:\\Users\\linbowen\\Documents\\ChatGPT\\外境\\瞬发兵偶测试\\3-完整记录.txt",
+      "destination": "测试资料/瞬发兵偶测试/3-完整记录.txt",
+      "source_sha256": "48b256074914a2f64520267df5aa4e3d0c1a7b085f32da1c6793b769d63ea171"
+    },
+    {
+      "source": "C:\\Users\\linbowen\\Documents\\ChatGPT\\外境\\瞬发兵偶测试\\4-完整记录.txt",
+      "destination": "测试资料/瞬发兵偶测试/4-完整记录.txt",
+      "source_sha256": "13ebe5017ce88f99ac8d7d9d47bb871e6086155f5ff8ec7333da5d44e975fd41"
+    },
+    {
+      "source": "C:\\Users\\linbowen\\Documents\\ChatGPT\\外境\\瞬发兵偶测试\\5-完整记录.txt",
+      "destination": "测试资料/瞬发兵偶测试/5-完整记录.txt",
+      "source_sha256": "01d47aa3c5ad2bfb2954348d40ca9e848baa14f09d09ac748b19793feab2ee7b"
+    },
+    {
+      "source": "C:\\Users\\linbowen\\Documents\\ChatGPT\\外境\\七阶持续火环测试.py",
+      "destination": "测试资料/模型/七阶持续火环测试.py",
+      "source_sha256": "9a4e881ae7107c5fe7a64f65bf23a507ae3618c3698e15a965e019104e2d6c9c"
+    },
+    {
+      "source": "C:\\Users\\linbowen\\Documents\\ChatGPT\\外境\\七阶火环测试.py",
+      "destination": "测试资料/模型/七阶火环测试.py",
+      "source_sha256": "9d1785dd0594c076aac8a71b99b5a3162f77f40a4ecbf0e990010819dce9e6f1"
+    },
+    {
+      "source": "C:\\Users\\linbowen\\Documents\\ChatGPT\\外境\\七阶燃烧压制测试.py",
+      "destination": "测试资料/模型/七阶燃烧压制测试.py",
+      "source_sha256": "e4fd42f3aa96913a9163293cffbabd810613ce7deb45cbb888b3b51acb931c9c"
+    },
+    {
+      "source": "C:\\Users\\linbowen\\Documents\\ChatGPT\\外境\\二维公国兵测试.py",
+      "destination": "测试资料/模型/二维公国兵测试.py",
+      "source_sha256": "71731aade76945842face9ffb57e254a862d07cecf97aa04f3f7dd3ca6166800"
+    },
+    {
+      "source": "C:\\Users\\linbowen\\Documents\\ChatGPT\\外境\\二维火幕减伤测试.py",
+      "destination": "测试资料/模型/二维火幕减伤测试.py",
+      "source_sha256": "3c2463fb0d171d2546e66cffb74b463bcdb0f5fe7f16f3c5ac177240b734ac42"
+    },
+    {
+      "source": "C:\\Users\\linbowen\\Documents\\ChatGPT\\外境\\二维火球冲刺测试.py",
+      "destination": "测试资料/模型/二维火球冲刺测试.py",
+      "source_sha256": "f7155ffe9f74fbc3a23ae47b87fa7da9ffd144187d05022ff8ec2a2f94b8a6f0"
+    },
+    {
+      "source": "C:\\Users\\linbowen\\Documents\\ChatGPT\\外境\\大匠加护临时测试.py",
+      "destination": "测试资料/模型/大匠加护临时测试.py",
+      "source_sha256": "5c00a570d004f59738f606192e66ea3f75f4df84ec8ded6ade089637206529bd"
+    },
+    {
+      "source": "C:\\Users\\linbowen\\Documents\\ChatGPT\\外境\\战斗临时测试.py",
+      "destination": "测试资料/模型/战斗临时测试.py",
+      "source_sha256": "f3ec350b95d4cda75f4b90f9803faeea5822fee5f9026f3260ab003033290642"
+    },
+    {
+      "source": "C:\\Users\\linbowen\\Documents\\ChatGPT\\外境\\战术对照临时测试.py",
+      "destination": "测试资料/模型/战术对照临时测试.py",
+      "source_sha256": "9d5ae9987e17d9e4b30f98e521c9d1ed1b3ab306d4ddb955cb0483a191fa4ffa"
+    },
+    {
+      "source": "C:\\Users\\linbowen\\Documents\\ChatGPT\\外境\\火兵偶修正测试.py",
+      "destination": "测试资料/模型/火兵偶修正测试.py",
+      "source_sha256": "ca47d172a28f697ba1c2f12a6247a5563e7866473d120b8da7c3e95a4123d5e2"
+    },
+    {
+      "source": "C:\\Users\\linbowen\\Documents\\ChatGPT\\外境\\火兵偶测试.py",
+      "destination": "测试资料/模型/火兵偶测试.py",
+      "source_sha256": "fc0657eb5ad99ca37e6ab62ef14090941102d824c7bf417f8a0d777080b1f254"
+    },
+    {
+      "source": "C:\\Users\\linbowen\\Documents\\ChatGPT\\外境\\火拳加一临时测试.py",
+      "destination": "测试资料/模型/火拳加一临时测试.py",
+      "source_sha256": "67cbd728cc7dcc2dd49dbe77f37dd7e9c9103a794e5055c0ad1a58401bd1e4a2"
+    },
+    {
+      "source": "C:\\Users\\linbowen\\Documents\\ChatGPT\\外境\\瞬发兵偶测试.py",
+      "destination": "测试资料/模型/瞬发兵偶测试.py",
+      "source_sha256": "cd882b60a75a20d248020149d0a932364fadaa431a4366f562c45a79ec93f795"
+    },
+    {
+      "source": "C:\\Users\\linbowen\\Documents\\ChatGPT\\外境\\红骑士临时测试.py",
+      "destination": "测试资料/模型/红骑士临时测试.py",
+      "source_sha256": "dcb49e5f40feeaeb6f6933c0237c111cb32cb04bf92680e3a5838ab0418a96e4"
+    },
+    {
+      "source": "C:\\Users\\linbowen\\Documents\\ChatGPT\\外境\\红骑士全攻击加一临时测试.py",
+      "destination": "测试资料/模型/红骑士全攻击加一临时测试.py",
+      "source_sha256": "153e716cbc0212a129a1e473a241d93ae7103c2b4649ff515d17baa539912f8c"
+    },
+    {
+      "source": "E:\\A\\个人\\外境\\外境\\地区设置.md",
+      "destination": "石墨迁移资料/地区设置_迁移原稿.md",
+      "source_sha256": "d435c69e8ce4ebdb563c400c9abfe5295b5b6024f6e61f8708490664dcdc4977"
+    },
+    {
+      "source": "E:\\A\\个人\\外境\\外境\\未亡地.md",
+      "destination": "石墨迁移资料/未亡地_迁移前整理稿.md",
+      "source_sha256": "e325d8f0e6bc5002d9c849730260a1ba30528164f7b5f0003412bc1dfb41ed35"
+    },
+    {
+      "source": "E:\\A\\个人\\外境\\外境\\地区设置.docx",
+      "destination": "石墨迁移资料/地区设置_原始附件.docx",
+      "source_sha256": "c7e1dec9b0caed76a0258bac9d3bc573013426ead623ec8b523321da114b8936"
+    },
+    {
+      "source": "C:\\Users\\linbowen\\Downloads\\README.md",
+      "destination": "README.md",
+      "source_sha256": "e1c6baba440857b883c1eeaa04307d4c4a05292286cd839ad54d6d8f7900931c"
+    }
+  ],
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "4712037069b9d0a04b068a261812b367e3ecf2dd6a266895de8c14c400eb915c",
+      "bytes": 2082
+    },
+    {
+      "path": "NPC与剧情.md",
+      "sha256": "e63c8558bce1c800db5d4347e5dd5e24e0b2e0d36d3a681d3221f46a3b855303",
+      "bytes": 6153
+    },
+    {
+      "path": "README.md",
+      "sha256": "65815e7d7e288ccb99c0e6a6abe4b2a9149d2d255815cf273a6ebe724a63fb46",
+      "bytes": 8610
+    },
+    {
+      "path": "世界与历史.md",
+      "sha256": "34096d8203b225e6f4ebf07841f6e53de285b4c31f64aba0137718f0c2934066",
+      "bytes": 13713
+    },
+    {
+      "path": "外境.md",
+      "sha256": "541fa33bf6fc1d9ce936b6964125ea968bd451acc26b850b0178ff5f9a5da0f5",
+      "bytes": 10974
+    },
+    {
+      "path": "外境_内容总览.canvas",
+      "sha256": "36a674a54fcdd99d0a3f2b7b6e5fc1b908cceb258ce3e6841018865adabe0bf4",
+      "bytes": 2340
+    },
+    {
+      "path": "战斗规则与测试.md",
+      "sha256": "87c4b26b6a36fb73494e4612a4d263151496b824664365ca5fee0f8b5d7f33cc",
+      "bytes": 20305
+    },
+    {
+      "path": "未亡地.md",
+      "sha256": "7ba050a9ff65b54fcdb1e4c160b42c84df42da5655c6ca077ec83538014981e1",
+      "bytes": 9819
+    },
+    {
+      "path": "材料实验.canvas",
+      "sha256": "0d7273db7f3217a6f0e7115e96fb28897cb4c33c9fcb67d93ea89d6e997924af",
+      "bytes": 23286
+    },
+    {
+      "path": "材料实验.md",
+      "sha256": "65046c6ec4d84d37b3ad88963ecda6c173538272a1f87e05d86d8ebca94d8f0b",
+      "bytes": 41670
+    },
+    {
+      "path": "规则与待定事项.md",
+      "sha256": "3c3729fe7ca77a58782c1e399dd44ac8e230294a30abf8c1156408535ba1be08",
+      "bytes": 10317
+    },
+    {
+      "path": "角色与超凡体系.md",
+      "sha256": "cdcc57970b6aa8bb8f49bb54827e853827fc2b3f7458a2d0e58080499281c41b",
+      "bytes": 40212
+    },
+    {
+      "path": "参考资料/Daggerheart-SRD-2.0.pdf",
+      "sha256": "55d8b92b7e58aa1da99a4a59aa77352483ef4fbda71baddb9af9bfc1f333bd2a",
+      "bytes": 2448525
+    },
+    {
+      "path": "参考资料/Daggerheart-SRD-2.0.source.json",
+      "sha256": "a3f150d4a4743723cd39e9f98dad4bc78c29a9ba2b29393295defdbf1553385c",
+      "bytes": 328
+    },
+    {
+      "path": "参考资料/Dungeon-World.source.json",
+      "sha256": "f25a5fd4a90e15bf72bfbf74721d7d958f573cfd1b8496df9d6cee5f00c1bbfb",
+      "bytes": 1508
+    },
+    {
+      "path": "参考资料/Dungeon-World.tree.json",
+      "sha256": "b3d5e23da707ad8a2ba0975a460fdc32f6f32b7b9255f720e309e52499888943",
+      "bytes": 30412
+    },
+    {
+      "path": "参考资料/Worldbuilding-System.source.json",
+      "sha256": "04bd2ca9301c5ceb746dcf97d762c484e7cd81109f410f80f2a35bcc4e559291",
+      "bytes": 3568
+    },
+    {
+      "path": "参考资料/Worldbuilding-System.tree.json",
+      "sha256": "0a2ced01f63cf1da38b239e66098f18658b832d96064601d6d0335766a54ea05",
+      "bytes": 158368
+    },
+    {
+      "path": "参考资料/索引.md",
+      "sha256": "9be3ba073d7ae07bd4e988a012464a8525c713507c3eeb76f50ad96467a6813c",
+      "bytes": 6807
+    },
+    {
+      "path": "石墨迁移资料/NPC.md",
+      "sha256": "4af4014a228326a194d8a819d12b38f09b6d53290b064812a1c9f0b8b4b94c96",
+      "bytes": 24519
+    },
+    {
+      "path": "石墨迁移资料/准则.md",
+      "sha256": "b9993d4de1240ef006f28b7a8923137c04bffd122bcd28c2e125c034de7b3638",
+      "bytes": 119118
+    },
+    {
+      "path": "石墨迁移资料/历史线.md",
+      "sha256": "fa990c655bb8bba3e35442ba605e6f845039d7e0fa96f086f3a0ad6cd93a5262",
+      "bytes": 5162
+    },
+    {
+      "path": "石墨迁移资料/参考.md",
+      "sha256": "706257d6f82ace7404658b286ae7fc6a69593a3501af19355861dbb6ccc5e9e5",
+      "bytes": 6880
+    },
+    {
+      "path": "石墨迁移资料/地区设置_原始附件.docx",
+      "sha256": "c7e1dec9b0caed76a0258bac9d3bc573013426ead623ec8b523321da114b8936",
+      "bytes": 9844
+    },
+    {
+      "path": "石墨迁移资料/地区设置_迁移原稿.md",
+      "sha256": "d435c69e8ce4ebdb563c400c9abfe5295b5b6024f6e61f8708490664dcdc4977",
+      "bytes": 7670
+    },
+    {
+      "path": "石墨迁移资料/外境-总企划书.md",
+      "sha256": "a200dc60948b9eec7e8c52ad8428a08f72137df73e3976e1b16a6d02b8b863de",
+      "bytes": 6998
+    },
+    {
+      "path": "石墨迁移资料/大纲.md",
+      "sha256": "844a1a29d6409a1b7d53c5430dedbedec1f3dd674e865ae46d5486c874dd0274",
+      "bytes": 3695
+    },
+    {
+      "path": "石墨迁移资料/未亡地_迁移前整理稿.md",
+      "sha256": "e325d8f0e6bc5002d9c849730260a1ba30528164f7b5f0003412bc1dfb41ed35",
+      "bytes": 5391
+    },
+    {
+      "path": "石墨迁移资料/种族.md",
+      "sha256": "17e2faadeb4093169a409d0dc38d726c55bc5ce7d7474bd94cd461fd895bed99",
+      "bytes": 627657
+    },
+    {
+      "path": "石墨迁移资料/设定.md",
+      "sha256": "36d0c576c0f0d1909e7581c139ee61dcba02c62de75a0b0679cccd44f0f43613",
+      "bytes": 13802
+    },
+    {
+      "path": "论文集/149996361.pdf",
+      "sha256": "15cd0bcf83a850d57f30ad2df5d8ed860231908ee892553f13687afbb5323d0c",
+      "bytes": 5205549
+    },
+    {
+      "path": "论文集/fulltext.pdf",
+      "sha256": "a9c97b0b275bbe12bc3457a7aff4f4522267d73152daf27e23969ff6dee8dad9",
+      "bytes": 52115
+    },
+    {
+      "path": "论文集/ingold2007.pdf",
+      "sha256": "fa56d4486e19c4b752db7ad9757f02fdde724e97abe046c7346e5037d6bf6870",
+      "bytes": 401830
+    },
+    {
+      "path": "参考资料/Dungeon-World/LICENSE",
+      "sha256": "a7ee56d4993a1b876a1bc3896d6b16dd8ac3cf4e00a857d5eec7ba1e4e7d2e4e",
+      "bytes": 625
+    },
+    {
+      "path": "参考资料/Dungeon-World/README.md",
+      "sha256": "10291c1255991af0f01190fa9d240b490b66a8bea1aedfa8c850a9101e87ca44",
+      "bytes": 1230
+    },
+    {
+      "path": "参考资料/Worldbuilding-System/README.md",
+      "sha256": "31591cb0e7ce4cad7e39cf8bc07a4d822bda9d82f462fdcc52377ac7f48d95c1",
+      "bytes": 12503
+    },
+    {
+      "path": "参考资料/Dungeon-World/text/First_Session.xml",
+      "sha256": "cf946547a5f514c96d1e8dfe59ed7041c2b54944bcd83cc937d02a3109e662da",
+      "bytes": 12315
+    },
+    {
+      "path": "参考资料/Worldbuilding-System/Templates/Concepts/Deity.md",
+      "sha256": "f18b1a89921f750df1b4242373c20b8065811d295502c75dd0ca3ee2df3640ab",
+      "bytes": 12527
+    },
+    {
+      "path": "参考资料/Worldbuilding-System/Templates/Concepts/Magic System.md",
+      "sha256": "86626951638dfdda5992e3704fb6a63fe20e60e1ed84861610cac66a8f493871",
+      "bytes": 12134
+    },
+    {
+      "path": "参考资料/Worldbuilding-System/Templates/Concepts/Pantheon.md",
+      "sha256": "8ef962bfa7b9ebd57b6d28cd614ab303c84a217b66529fe8ba0d6a76305d362d",
+      "bytes": 11877
+    },
+    {
+      "path": "参考资料/Worldbuilding-System/Templates/Concepts/Plane of Existence.md",
+      "sha256": "679f3279126d66ebca5f09db79e24f8dcec78175c2700e4df19ec25118f1ab39",
+      "bytes": 14037
+    },
+    {
+      "path": "参考资料/Worldbuilding-System/Templates/Concepts/Prophecy.md",
+      "sha256": "cdd65559523a44ed23d7ff9590346aa8cb188b964054f1a7d95c9dbcd4a9dbce",
+      "bytes": 12897
+    },
+    {
+      "path": "参考资料/Worldbuilding-System/Templates/Concepts/Religion.md",
+      "sha256": "3f01b3ba0ebe759823e2c8875aba5148dbafbe755c6b968a8c8ee1287d241fee",
+      "bytes": 12191
+    },
+    {
+      "path": "参考资料/Worldbuilding-System/Templates/Reference/Connection Matrix.md",
+      "sha256": "76ce5c81b929f49c9c8590ce2bdd2f56a142e1d84c833cfb17837625d33c7edf",
+      "bytes": 8504
+    },
+    {
+      "path": "测试资料/模型/七阶持续火环测试.py",
+      "sha256": "9a4e881ae7107c5fe7a64f65bf23a507ae3618c3698e15a965e019104e2d6c9c",
+      "bytes": 1983
+    },
+    {
+      "path": "测试资料/模型/七阶火环测试.py",
+      "sha256": "9d1785dd0594c076aac8a71b99b5a3162f77f40a4ecbf0e990010819dce9e6f1",
+      "bytes": 1823
+    },
+    {
+      "path": "测试资料/模型/七阶燃烧压制测试.py",
+      "sha256": "e4fd42f3aa96913a9163293cffbabd810613ce7deb45cbb888b3b51acb931c9c",
+      "bytes": 2304
+    },
+    {
+      "path": "测试资料/模型/二维公国兵测试.py",
+      "sha256": "71731aade76945842face9ffb57e254a862d07cecf97aa04f3f7dd3ca6166800",
+      "bytes": 6760
+    },
+    {
+      "path": "测试资料/模型/二维火幕减伤测试.py",
+      "sha256": "3c2463fb0d171d2546e66cffb74b463bcdb0f5fe7f16f3c5ac177240b734ac42",
+      "bytes": 2364
+    },
+    {
+      "path": "测试资料/模型/二维火球冲刺测试.py",
+      "sha256": "f7155ffe9f74fbc3a23ae47b87fa7da9ffd144187d05022ff8ec2a2f94b8a6f0",
+      "bytes": 2757
+    },
+    {
+      "path": "测试资料/模型/大匠加护临时测试.py",
+      "sha256": "5c00a570d004f59738f606192e66ea3f75f4df84ec8ded6ade089637206529bd",
+      "bytes": 5895
+    },
+    {
+      "path": "测试资料/模型/战斗临时测试.py",
+      "sha256": "f3ec350b95d4cda75f4b90f9803faeea5822fee5f9026f3260ab003033290642",
+      "bytes": 3274
+    },
+    {
+      "path": "测试资料/模型/战术对照临时测试.py",
+      "sha256": "9d5ae9987e17d9e4b30f98e521c9d1ed1b3ab306d4ddb955cb0483a191fa4ffa",
+      "bytes": 5891
+    },
+    {
+      "path": "测试资料/模型/火兵偶修正测试.py",
+      "sha256": "ca47d172a28f697ba1c2f12a6247a5563e7866473d120b8da7c3e95a4123d5e2",
+      "bytes": 2564
+    },
+    {
+      "path": "测试资料/模型/火兵偶测试.py",
+      "sha256": "fc0657eb5ad99ca37e6ab62ef14090941102d824c7bf417f8a0d777080b1f254",
+      "bytes": 3759
+    },
+    {
+      "path": "测试资料/模型/火拳加一临时测试.py",
+      "sha256": "67cbd728cc7dcc2dd49dbe77f37dd7e9c9103a794e5055c0ad1a58401bd1e4a2",
+      "bytes": 6264
+    },
+    {
+      "path": "测试资料/模型/瞬发兵偶测试.py",
+      "sha256": "cd882b60a75a20d248020149d0a932364fadaa431a4366f562c45a79ec93f795",
+      "bytes": 1806
+    },
+    {
+      "path": "测试资料/模型/红骑士临时测试.py",
+      "sha256": "dcb49e5f40feeaeb6f6933c0237c111cb32cb04bf92680e3a5838ab0418a96e4",
+      "bytes": 6217
+    },
+    {
+      "path": "测试资料/模型/红骑士全攻击加一临时测试.py",
+      "sha256": "153e716cbc0212a129a1e473a241d93ae7103c2b4649ff515d17baa539912f8c",
+      "bytes": 6274
+    },
+    {
+      "path": "测试资料/瞬发兵偶测试/1-完整记录.txt",
+      "sha256": "748416832f2d6ab800e2f9e440f73249cf266c18a018d4d69364be12b4480888",
+      "bytes": 22013
+    },
+    {
+      "path": "测试资料/瞬发兵偶测试/2-完整记录.txt",
+      "sha256": "160d76e85f6cf2e60b817105d9fbbe7685e140c79d442bc498445356b381adea",
+      "bytes": 12645
+    },
+    {
+      "path": "测试资料/瞬发兵偶测试/200场汇总.json",
+      "sha256": "a1d4131cad7f0e11cebd832a47a8528772c1ba63a2d205cc08be21f8e1e7f85f",
+      "bytes": 1057613
+    },
+    {
+      "path": "测试资料/瞬发兵偶测试/3-完整记录.txt",
+      "sha256": "48b256074914a2f64520267df5aa4e3d0c1a7b085f32da1c6793b769d63ea171",
+      "bytes": 5682
+    },
+    {
+      "path": "测试资料/瞬发兵偶测试/4-完整记录.txt",
+      "sha256": "13ebe5017ce88f99ac8d7d9d47bb871e6086155f5ff8ec7333da5d44e975fd41",
+      "bytes": 20064
+    },
+    {
+      "path": "测试资料/瞬发兵偶测试/5-完整记录.txt",
+      "sha256": "01d47aa3c5ad2bfb2954348d40ca9e848baa14f09d09ac748b19793feab2ee7b",
+      "bytes": 12393
+    }
+  ]
+}

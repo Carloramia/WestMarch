@@ -1,0 +1,3904 @@
+{
+  "sha": "ea667e8758a84bdcae7e968cff5abc8a230e346a",
+  "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/ea667e8758a84bdcae7e968cff5abc8a230e346a",
+  "tree": [
+    {
+      "path": ".claude",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a645268ef80bcd696987f2cdb90b1b71130b60f1",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/a645268ef80bcd696987f2cdb90b1b71130b60f1"
+    },
+    {
+      "path": ".claude/agents",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d564d0bc3dd917926892c55e3706cc116d5b165e",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/d564d0bc3dd917926892c55e3706cc116d5b165e"
+    },
+    {
+      "path": ".claude/agents/.gitkeep",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": ".claude/rules",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d564d0bc3dd917926892c55e3706cc116d5b165e",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/d564d0bc3dd917926892c55e3706cc116d5b165e"
+    },
+    {
+      "path": ".claude/rules/.gitkeep",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": ".claude/settings.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb63274a8426405504618e80eccd304ffc8a7261",
+      "size": 828,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/cb63274a8426405504618e80eccd304ffc8a7261"
+    },
+    {
+      "path": ".claude/skills",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c5cb27db4aa81fa6927fe0e33d465d049968d125",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/c5cb27db4aa81fa6927fe0e33d465d049968d125"
+    },
+    {
+      "path": ".claude/skills/audit-world",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "028abd9292e8e1f2d89de3502b4bb057d0d8c01d",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/028abd9292e8e1f2d89de3502b4bb057d0d8c01d"
+    },
+    {
+      "path": ".claude/skills/audit-world/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9f2f494b15e0531c95ed0fe0227a7d552da562f4",
+      "size": 22902,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/9f2f494b15e0531c95ed0fe0227a7d552da562f4"
+    },
+    {
+      "path": ".claude/skills/campaign-arc",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "20a3b3db8a6cb3c2a46036cd2cf9ac0409f8ef88",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/20a3b3db8a6cb3c2a46036cd2cf9ac0409f8ef88"
+    },
+    {
+      "path": ".claude/skills/campaign-arc/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2172848b959b8ba4b5e25652838cdcee929ea303",
+      "size": 12741,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/2172848b959b8ba4b5e25652838cdcee929ea303"
+    },
+    {
+      "path": ".claude/skills/create-entity",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8042e8bba887c276a1c3818ce1386538558081b4",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/8042e8bba887c276a1c3818ce1386538558081b4"
+    },
+    {
+      "path": ".claude/skills/create-entity/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b8ce65bdf8ff932989a77ac20e06da7f8dfdceac",
+      "size": 12001,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/b8ce65bdf8ff932989a77ac20e06da7f8dfdceac"
+    },
+    {
+      "path": ".claude/skills/create-template",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e33066c7550e31f628fd7ef366554929030f113b",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/e33066c7550e31f628fd7ef366554929030f113b"
+    },
+    {
+      "path": ".claude/skills/create-template/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "43b19821ce7df6b4a2d55006db529c829e9a5c97",
+      "size": 3659,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/43b19821ce7df6b4a2d55006db529c829e9a5c97"
+    },
+    {
+      "path": ".claude/skills/create-world",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f110e836521f1ea514725684f9ba9a045b9a043d",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/f110e836521f1ea514725684f9ba9a045b9a043d"
+    },
+    {
+      "path": ".claude/skills/create-world/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2f5454d4ad5443a291bbb36bb59a258031d81f52",
+      "size": 19448,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/2f5454d4ad5443a291bbb36bb59a258031d81f52"
+    },
+    {
+      "path": ".claude/skills/expand-entity",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "934990fdb198a135abed2543dd1fdac35575e107",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/934990fdb198a135abed2543dd1fdac35575e107"
+    },
+    {
+      "path": ".claude/skills/expand-entity/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1df1e7cb4389a7ac1cde6da6b9b543901759c875",
+      "size": 6940,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/1df1e7cb4389a7ac1cde6da6b9b543901759c875"
+    },
+    {
+      "path": ".claude/skills/expand-faction",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0f3a6f7d14efb890cffbdecc0cb6961a2904e749",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/0f3a6f7d14efb890cffbdecc0cb6961a2904e749"
+    },
+    {
+      "path": ".claude/skills/expand-faction/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "28e0ed9647788f88a4fab98b73a2a303905db2fd",
+      "size": 14156,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/28e0ed9647788f88a4fab98b73a2a303905db2fd"
+    },
+    {
+      "path": ".claude/skills/expand-history",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "40d0973b9b54019f55bf21ccf9bf700db3e24aaa",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/40d0973b9b54019f55bf21ccf9bf700db3e24aaa"
+    },
+    {
+      "path": ".claude/skills/expand-history/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4670dc2cee09f20f15c0619c06f04ba8bd68ffa2",
+      "size": 15729,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/4670dc2cee09f20f15c0619c06f04ba8bd68ffa2"
+    },
+    {
+      "path": ".claude/skills/expand-region",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "50751685ed941bedaf4b8ffe454cf212a75c1a1c",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/50751685ed941bedaf4b8ffe454cf212a75c1a1c"
+    },
+    {
+      "path": ".claude/skills/expand-region/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a1ce20c48663940aaf90409247e553c30006f848",
+      "size": 14014,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/a1ce20c48663940aaf90409247e553c30006f848"
+    },
+    {
+      "path": ".claude/skills/expand-settlement",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "65535121282dbc29139cb4613f6aec9f6d5d2aec",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/65535121282dbc29139cb4613f6aec9f6d5d2aec"
+    },
+    {
+      "path": ".claude/skills/expand-settlement/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1e3c75f8736bd081775409afba3e864fa0642133",
+      "size": 10449,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/1e3c75f8736bd081775409afba3e864fa0642133"
+    },
+    {
+      "path": ".claude/skills/generate-culture",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3ac76c6b52e4680db61576950c1928ec6a01cf9b",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/3ac76c6b52e4680db61576950c1928ec6a01cf9b"
+    },
+    {
+      "path": ".claude/skills/generate-culture/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8a37cbaa792b2cff45d7863967977c569f41c29a",
+      "size": 18040,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/8a37cbaa792b2cff45d7863967977c569f41c29a"
+    },
+    {
+      "path": ".claude/skills/generate-economy",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6d42fb5d44aba4b2d0d163724087e630684f6c92",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/6d42fb5d44aba4b2d0d163724087e630684f6c92"
+    },
+    {
+      "path": ".claude/skills/generate-economy/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b461f0746013800702e897292c8652619ea19427",
+      "size": 16122,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/b461f0746013800702e897292c8652619ea19427"
+    },
+    {
+      "path": ".claude/skills/generate-image",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0d6f2a34539b057d7da4fb0d88cce69356ada0de",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/0d6f2a34539b057d7da4fb0d88cce69356ada0de"
+    },
+    {
+      "path": ".claude/skills/generate-image/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af887055154da3feb8e97330ef2a47c291762725",
+      "size": 4298,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/af887055154da3feb8e97330ef2a47c291762725"
+    },
+    {
+      "path": ".claude/skills/generate-politics",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2db2f16f7a237c4e162ed31930175b77a063ae16",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/2db2f16f7a237c4e162ed31930175b77a063ae16"
+    },
+    {
+      "path": ".claude/skills/generate-politics/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "52ed02cd498b611a2ce7d8e896c34db7e81b97af",
+      "size": 15051,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/52ed02cd498b611a2ce7d8e896c34db7e81b97af"
+    },
+    {
+      "path": ".claude/skills/generate-quests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "68a410aa1e044b3ea0e55d2d699340fe4cf817df",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/68a410aa1e044b3ea0e55d2d699340fe4cf817df"
+    },
+    {
+      "path": ".claude/skills/generate-quests/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "abcd01bc1273accbd2cc24623a91d7a8f3059b46",
+      "size": 15948,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/abcd01bc1273accbd2cc24623a91d7a8f3059b46"
+    },
+    {
+      "path": ".claude/skills/generate-world",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fce55a34dcfb061779a9ad95061ee7ea84bdcfb0",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/fce55a34dcfb061779a9ad95061ee7ea84bdcfb0"
+    },
+    {
+      "path": ".claude/skills/generate-world/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5b8fb518bbd01348a56379b491653ffde347bfe3",
+      "size": 30371,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/5b8fb518bbd01348a56379b491653ffde347bfe3"
+    },
+    {
+      "path": ".claude/skills/link-entities",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "574dba2fcc1b25c8ec87ee6787a491fcee94a385",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/574dba2fcc1b25c8ec87ee6787a491fcee94a385"
+    },
+    {
+      "path": ".claude/skills/link-entities/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0bf9c7542090a57cf0ed37d1d7384bb4270e7a7c",
+      "size": 6565,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/0bf9c7542090a57cf0ed37d1d7384bb4270e7a7c"
+    },
+    {
+      "path": ".claude/skills/linkify",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "36a214d9b71fb6319c21de91d192dbf5b5bce30d",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/36a214d9b71fb6319c21de91d192dbf5b5bce30d"
+    },
+    {
+      "path": ".claude/skills/linkify/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "186303883ec2334d53215a13b84404c482fd40b7",
+      "size": 11960,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/186303883ec2334d53215a13b84404c482fd40b7"
+    },
+    {
+      "path": ".claude/skills/map-relationships",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "96807221c94c104bd31bcf36a7cf80e24056a154",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/96807221c94c104bd31bcf36a7cf80e24056a154"
+    },
+    {
+      "path": ".claude/skills/map-relationships/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a8b80af0295209fe98d24cff5815383f2e13fae0",
+      "size": 13397,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/a8b80af0295209fe98d24cff5815383f2e13fae0"
+    },
+    {
+      "path": ".claude/skills/populate-entity",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "26cc15e87f5000a4c80261a3288ffb90e1d09b8b",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/26cc15e87f5000a4c80261a3288ffb90e1d09b8b"
+    },
+    {
+      "path": ".claude/skills/populate-entity/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "31aa20a4684728119465e38182b5df7315b400ef",
+      "size": 21101,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/31aa20a4684728119465e38182b5df7315b400ef"
+    },
+    {
+      "path": ".claude/skills/random-encounter",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "15e6b2012c254742806b255d2372ae02fab8548e",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/15e6b2012c254742806b255d2372ae02fab8548e"
+    },
+    {
+      "path": ".claude/skills/random-encounter/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "597b934bcfde94dc709287e6cf5829e5645ff489",
+      "size": 7325,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/597b934bcfde94dc709287e6cf5829e5645ff489"
+    },
+    {
+      "path": ".claude/skills/session-prep",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c2cdc88c83d7e654b2fbe13ff00f12fba5a05160",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/c2cdc88c83d7e654b2fbe13ff00f12fba5a05160"
+    },
+    {
+      "path": ".claude/skills/session-prep/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0e18ebee67ac57fd386f6e669a70a46033f0229e",
+      "size": 7607,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/0e18ebee67ac57fd386f6e669a70a46033f0229e"
+    },
+    {
+      "path": ".claude/skills/validate-template",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "75da01f4f0c843d5e94f668400c9b5607df0f648",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/75da01f4f0c843d5e94f668400c9b5607df0f648"
+    },
+    {
+      "path": ".claude/skills/validate-template/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "61bfaf6ad31ecf7d1d27220d377599b69cd8b608",
+      "size": 9455,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/61bfaf6ad31ecf7d1d27220d377599b69cd8b608"
+    },
+    {
+      "path": ".claude/skills/worldbuild",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "59bb59cb00115b9d9fbaab5222c1e2f4bd8389d8",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/59bb59cb00115b9d9fbaab5222c1e2f4bd8389d8"
+    },
+    {
+      "path": ".claude/skills/worldbuild/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "10e064d9e331c0a51ca725646797a7d42e38b66b",
+      "size": 170145,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/10e064d9e331c0a51ca725646797a7d42e38b66b"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "05177d4057a59879fef4d3fe0317b9d1451a701d",
+      "size": 273,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/05177d4057a59879fef4d3fe0317b9d1451a701d"
+    },
+    {
+      "path": ".obsidian",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7b4ee59260249596c437e9e12b02f7bcf284898b",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/7b4ee59260249596c437e9e12b02f7bcf284898b"
+    },
+    {
+      "path": ".obsidian/app.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9e26dfeeb6e641a33dae4961196235bdb965b21b",
+      "size": 2,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/9e26dfeeb6e641a33dae4961196235bdb965b21b"
+    },
+    {
+      "path": ".obsidian/appearance.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9e26dfeeb6e641a33dae4961196235bdb965b21b",
+      "size": 2,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/9e26dfeeb6e641a33dae4961196235bdb965b21b"
+    },
+    {
+      "path": ".obsidian/core-plugins.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0faa60d407f3e1c9546321b889209b779b0ec514",
+      "size": 697,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/0faa60d407f3e1c9546321b889209b779b0ec514"
+    },
+    {
+      "path": ".obsidian/graph.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "42a46ecafa5be07ad794ed16685f35e44f55ad29",
+      "size": 493,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/42a46ecafa5be07ad794ed16685f35e44f55ad29"
+    },
+    {
+      "path": "CLAUDE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "10f129df3e7793a1be41a2a9ae62d9dff7b9ef8a",
+      "size": 14760,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/10f129df3e7793a1be41a2a9ae62d9dff7b9ef8a"
+    },
+    {
+      "path": "D&D 5e 2024 Rules",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1266458de6020d2560fd6e7bc27ab3f1e6d1f17c",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/1266458de6020d2560fd6e7bc27ab3f1e6d1f17c"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Appendices",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7824235cd29c3b3ffdbf24f201c9ded86f4741ec",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/7824235cd29c3b3ffdbf24f201c9ded86f4741ec"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Appendices/Abbreviations.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2d15b1e0661a8cb4562ac8d446cc3a6bb4de24c8",
+      "size": 7734,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/2d15b1e0661a8cb4562ac8d446cc3a6bb4de24c8"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Appendices/Creature Types.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d5c16b7f395965fba24a581f563c4a4b0fca5da3",
+      "size": 10454,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/d5c16b7f395965fba24a581f563c4a4b0fca5da3"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Appendices/Damage Types.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "73c36e49d4656c7234b51d2dd717ecc862cd96d5",
+      "size": 8540,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/73c36e49d4656c7234b51d2dd717ecc862cd96d5"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Bastions",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "191a48ac25138d003e1b03473af9c95ea77e2340",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/191a48ac25138d003e1b03473af9c95ea77e2340"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Bastions/Bastion Facilities.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "752876b60606731f52366645d527204ed187056b",
+      "size": 16415,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/752876b60606731f52366645d527204ed187056b"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Bastions/Bastion Orders.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "70903ba34d397f9adafa3e7085325268e40ee284",
+      "size": 10152,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/70903ba34d397f9adafa3e7085325268e40ee284"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Bastions/Bastion Overview.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b84e20c631e0f10566934783c5236ecbc6f9f75c",
+      "size": 6817,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/b84e20c631e0f10566934783c5236ecbc6f9f75c"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Character Creation",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "32afb209abfe5809681bd58c5ad9006d66e8579f",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/32afb209abfe5809681bd58c5ad9006d66e8579f"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Character Creation/Alignment.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d843ec4b8303e61b98405a857139edb51cd241fa",
+      "size": 4609,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/d843ec4b8303e61b98405a857139edb51cd241fa"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Character Creation/Backgrounds",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ecf545c90c58c1cba6e1af35778ea8cdd876b464",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/ecf545c90c58c1cba6e1af35778ea8cdd876b464"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Character Creation/Backgrounds/Backgrounds.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "14f3b13d267571f5fe767140153a02a8960c2223",
+      "size": 5973,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/14f3b13d267571f5fe767140153a02a8960c2223"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Character Creation/Character Creation Overview.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "61c535ad6eedc90baeaa2351e4ebe6e23221f4f4",
+      "size": 4122,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/61c535ad6eedc90baeaa2351e4ebe6e23221f4f4"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Character Creation/Species",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7755cf8ff25e5fdda4ef64d6c23d114238e436e8",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/7755cf8ff25e5fdda4ef64d6c23d114238e436e8"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Character Creation/Species/Aasimar.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "146a64f6923f4f963acf0e8c219bb387ef749b32",
+      "size": 3880,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/146a64f6923f4f963acf0e8c219bb387ef749b32"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Character Creation/Species/Dragonborn.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c3b6b01b7034669588fbbd759da514275657292f",
+      "size": 4352,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/c3b6b01b7034669588fbbd759da514275657292f"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Character Creation/Species/Dwarf.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "720072caf59d77e4a7666f7a510a09ce84984b55",
+      "size": 4141,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/720072caf59d77e4a7666f7a510a09ce84984b55"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Character Creation/Species/Elf.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "05b652ea026964273b40baf0209ae41651757d82",
+      "size": 4180,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/05b652ea026964273b40baf0209ae41651757d82"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Character Creation/Species/Gnome.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a3241e4af92560291ea1c2dbc1c80c35213195b5",
+      "size": 4389,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/a3241e4af92560291ea1c2dbc1c80c35213195b5"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Character Creation/Species/Goliath.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b19e0e34d563a58c0de196f780023aa49e25414b",
+      "size": 5483,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/b19e0e34d563a58c0de196f780023aa49e25414b"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Character Creation/Species/Halfling.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f03b6627866502c1a95687a4b999b99531615930",
+      "size": 4195,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/f03b6627866502c1a95687a4b999b99531615930"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Character Creation/Species/Human.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3548eebe48bedf505ca01b71b303f96cda64786e",
+      "size": 4477,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/3548eebe48bedf505ca01b71b303f96cda64786e"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Character Creation/Species/Orc.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e00bb9f97118badc355b0fe75f93ce5741d44dec",
+      "size": 4624,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/e00bb9f97118badc355b0fe75f93ce5741d44dec"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Character Creation/Species/Species Overview.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "93ad03f72ccad9e06ea064f04fa8883db58c27cf",
+      "size": 4461,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/93ad03f72ccad9e06ea064f04fa8883db58c27cf"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Character Creation/Species/Tiefling.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bd72e805491a4f8d069903b7dca548ceca7952c3",
+      "size": 5232,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/bd72e805491a4f8d069903b7dca548ceca7952c3"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Classes",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ae05112aa9cc1ac5df406e622bbd512c08523074",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/ae05112aa9cc1ac5df406e622bbd512c08523074"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Classes/Barbarian.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2d8d1456caabc5961fb674f854a33d8892fa7de0",
+      "size": 5712,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/2d8d1456caabc5961fb674f854a33d8892fa7de0"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Classes/Bard.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "00cf80c97cb87353d8dc353d635dffd35ee8cc89",
+      "size": 5918,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/00cf80c97cb87353d8dc353d635dffd35ee8cc89"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Classes/Classes Overview.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1f8ef5218dff08dba6e8b6d4b3e774d2f2e479bf",
+      "size": 4923,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/1f8ef5218dff08dba6e8b6d4b3e774d2f2e479bf"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Classes/Cleric.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "37df37c15ed099d51da3e24d9190e977b246cdbc",
+      "size": 6813,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/37df37c15ed099d51da3e24d9190e977b246cdbc"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Classes/Druid.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a3dc9670b96a7b99fc2042a095208f392bf679e7",
+      "size": 6137,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/a3dc9670b96a7b99fc2042a095208f392bf679e7"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Classes/Fighter.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ebb3326a07e1612083a968211bd1c5ee10b0bc36",
+      "size": 6706,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/ebb3326a07e1612083a968211bd1c5ee10b0bc36"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Classes/Monk.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2e46c6608b093aa884b3d2f6af7dda803a46db68",
+      "size": 6040,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/2e46c6608b093aa884b3d2f6af7dda803a46db68"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Classes/Paladin.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "07887291fc7afe52517ab0b17fb8fd0c8d93653c",
+      "size": 6327,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/07887291fc7afe52517ab0b17fb8fd0c8d93653c"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Classes/Ranger.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7a931c49c4fe3a8967da49a60f31aa97349af622",
+      "size": 6899,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/7a931c49c4fe3a8967da49a60f31aa97349af622"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Classes/Rogue.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "264b61f85c5da70a98e113365b25b23fcf0604bb",
+      "size": 6319,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/264b61f85c5da70a98e113365b25b23fcf0604bb"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Classes/Sorcerer.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9103cb4bfb80b7274f014a0e4a2f22200b8b6f7c",
+      "size": 6278,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/9103cb4bfb80b7274f014a0e4a2f22200b8b6f7c"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Classes/Warlock.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8018ace265e074195dc9383c92be4e09782bd72a",
+      "size": 6489,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/8018ace265e074195dc9383c92be4e09782bd72a"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Classes/Wizard.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "677cbd0244bb72eeb7c03ce822c803e35ccefd8e",
+      "size": 7346,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/677cbd0244bb72eeb7c03ce822c803e35ccefd8e"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Core Rules",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f2dd04ece6b99ad3b9062e6b29996d85d758a46f",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/f2dd04ece6b99ad3b9062e6b29996d85d758a46f"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Core Rules/Ability Scores.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9107843a9158ec15878f5570f78537fb26da11ba",
+      "size": 2718,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/9107843a9158ec15878f5570f78537fb26da11ba"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Core Rules/Actions.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "175f61b599e216c01bc81d2fdc678d6c22e28278",
+      "size": 4669,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/175f61b599e216c01bc81d2fdc678d6c22e28278"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Core Rules/Combat.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f147ee2339e0f0e285dd6272106e13fa01f860bb",
+      "size": 5901,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/f147ee2339e0f0e285dd6272106e13fa01f860bb"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Core Rules/Conditions.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "41b3ff50e1b381d7ec33cb2d0a631fae0fa0f2d4",
+      "size": 5243,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/41b3ff50e1b381d7ec33cb2d0a631fae0fa0f2d4"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Core Rules/Cover and Obscurement.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0923f75df8b59ce5794b0e0e07de28d2a3ff6110",
+      "size": 5339,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/0923f75df8b59ce5794b0e0e07de28d2a3ff6110"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Core Rules/D20 Tests.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "58b25accee286fe1ed868d9cf42e73c0d033e3c6",
+      "size": 3413,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/58b25accee286fe1ed868d9cf42e73c0d033e3c6"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Core Rules/Damage and Healing.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "936d6b242209bb699e445686bd8378c312182fac",
+      "size": 5226,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/936d6b242209bb699e445686bd8378c312182fac"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Core Rules/Death and Dying.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5717896b32dd9b1c8662db7be3c287dda56b9d18",
+      "size": 5725,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/5717896b32dd9b1c8662db7be3c287dda56b9d18"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Core Rules/Heroic Inspiration.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "99da5d33a3a5e3693d484fc3ca97ab05804e0dd6",
+      "size": 3194,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/99da5d33a3a5e3693d484fc3ca97ab05804e0dd6"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Core Rules/Movement.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "17cd7740dda1fab9b07cc63f80800f8690f24174",
+      "size": 5040,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/17cd7740dda1fab9b07cc63f80800f8690f24174"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Core Rules/Multiclassing.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "498e8a07e40e6a92e776ed42884974930f2a4f4f",
+      "size": 6538,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/498e8a07e40e6a92e776ed42884974930f2a4f4f"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Core Rules/Resting.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "471b73b575adc619f7586e491dc6e47f25ba2dd6",
+      "size": 4061,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/471b73b575adc619f7586e491dc6e47f25ba2dd6"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Core Rules/Rules Glossary.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "464edbbdc64063a6246beee19e2bc7d8fb94d7a7",
+      "size": 7155,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/464edbbdc64063a6246beee19e2bc7d8fb94d7a7"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Core Rules/Variant Rules.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "40aa523b86331537a43863d69f6b426946174eed",
+      "size": 7961,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/40aa523b86331537a43863d69f6b426946174eed"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Equipment",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8a9beb3c43d56bef92471cb91f982c910184d249",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/8a9beb3c43d56bef92471cb91f982c910184d249"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Equipment/Adventuring Gear.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8f1af6015151a54fde3e51a4aa49c824bd89f736",
+      "size": 6040,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/8f1af6015151a54fde3e51a4aa49c824bd89f736"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Equipment/Armor.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6e86440d853628ce1b93b887f0c224fb6b7aee59",
+      "size": 4976,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/6e86440d853628ce1b93b887f0c224fb6b7aee59"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Equipment/Equipment Overview.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "981fdf890c328f6eaeda26c044dece04cc94aafa",
+      "size": 3824,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/981fdf890c328f6eaeda26c044dece04cc94aafa"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Equipment/Magic Items.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7f6de2b5213ce4843d993d45fd2a3f8ae6af0ba0",
+      "size": 8579,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/7f6de2b5213ce4843d993d45fd2a3f8ae6af0ba0"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Equipment/Mounts and Vehicles.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9c8fdb064f6c944211a1ae71a0d50d457f2ab5db",
+      "size": 5197,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/9c8fdb064f6c944211a1ae71a0d50d457f2ab5db"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Equipment/Tools.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "06424c5a8cd1661931fad47544b7824c25f60717",
+      "size": 5988,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/06424c5a8cd1661931fad47544b7824c25f60717"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Equipment/Weapons.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ed1432ee89b45af06a92b7ca82892253eb2c6582",
+      "size": 6568,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/ed1432ee89b45af06a92b7ca82892253eb2c6582"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Feats",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cb95904d4867657914e347d925ed95785d53015a",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/cb95904d4867657914e347d925ed95785d53015a"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Feats/Epic Boon Feats.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "caf67ef6482c9e7e6d3fb76b1b0f3a95c8b1d988",
+      "size": 5675,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/caf67ef6482c9e7e6d3fb76b1b0f3a95c8b1d988"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Feats/Feats Overview.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7b5ae3067603654415d419eea57f082390b693e0",
+      "size": 5113,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/7b5ae3067603654415d419eea57f082390b693e0"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Feats/Fighting Style Feats.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "18bb491313b50da6bbc3dcd3c66889218cd94c0d",
+      "size": 5016,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/18bb491313b50da6bbc3dcd3c66889218cd94c0d"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Feats/General Feats.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "21c4dc3db83cbc6d269af74b331628882b45144c",
+      "size": 7664,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/21c4dc3db83cbc6d269af74b331628882b45144c"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Feats/Origin Feats.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a3a998b1378796131186d8ffa518705073a9615a",
+      "size": 5091,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/a3a998b1378796131186d8ffa518705073a9615a"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Monsters",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d33cb4446aa77d6d2e8a61362df325cb14f1bb99",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/d33cb4446aa77d6d2e8a61362df325cb14f1bb99"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Monsters/Arctic Monsters.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9c6ae9c0a55b5d900fd7d2db52b1932c52050738",
+      "size": 4545,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/9c6ae9c0a55b5d900fd7d2db52b1932c52050738"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Monsters/CR and XP.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be4a3782b2284277ae8e191ba4fb67f71526ccc3",
+      "size": 7081,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/be4a3782b2284277ae8e191ba4fb67f71526ccc3"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Monsters/Coastal Monsters.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5eca5539ceb6e1797afc3988fce149e92b95afa8",
+      "size": 5506,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/5eca5539ceb6e1797afc3988fce149e92b95afa8"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Monsters/Desert Monsters.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c88e2957361cbda97464257b08e303f2fe780ef3",
+      "size": 5878,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/c88e2957361cbda97464257b08e303f2fe780ef3"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Monsters/Forest Monsters.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3b777abe0322d6f397d09191f5b31557494a8ad0",
+      "size": 7663,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/3b777abe0322d6f397d09191f5b31557494a8ad0"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Monsters/Grassland Monsters.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f03562f9b0f223972118808c409c94db7ca29b94",
+      "size": 6312,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/f03562f9b0f223972118808c409c94db7ca29b94"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Monsters/Hill Monsters.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6141792b560e5da9ddd2bf2da1bdc5ef884cf5c4",
+      "size": 6761,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/6141792b560e5da9ddd2bf2da1bdc5ef884cf5c4"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Monsters/Mountain Monsters.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f4a4a7fd683fa40fd3d9394357497083c33a8e82",
+      "size": 6003,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/f4a4a7fd683fa40fd3d9394357497083c33a8e82"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Monsters/Planar Monsters.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8725f96ced9010c0e405c19a414ea561344000ab",
+      "size": 8520,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/8725f96ced9010c0e405c19a414ea561344000ab"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Monsters/Swamp Monsters.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bff66a36ddb63010732fe6633e894679c3dd7c92",
+      "size": 4842,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/bff66a36ddb63010732fe6633e894679c3dd7c92"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Monsters/Underdark Monsters.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "577e1522e87af57f79a777bac3d9df75fe194b96",
+      "size": 7144,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/577e1522e87af57f79a777bac3d9df75fe194b96"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Monsters/Underwater Monsters.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e82a2f336893ec2538b710a538103d3e157b76ae",
+      "size": 5140,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/e82a2f336893ec2538b710a538103d3e157b76ae"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Monsters/Urban Monsters.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4ea6f61b315ba5bc48470a506fb9e07a99d8df79",
+      "size": 6691,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/4ea6f61b315ba5bc48470a506fb9e07a99d8df79"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4cb05b07cec52bc5e72600ff24543645a3b58c4e",
+      "size": 8295,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/4cb05b07cec52bc5e72600ff24543645a3b58c4e"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Spells",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1fa25b9ef5d2f5c8b4b5d84542211612ba7d6680",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/1fa25b9ef5d2f5c8b4b5d84542211612ba7d6680"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Spells/1st Level Spells.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d83d54c9e163d20eb2f1b32d89f6e6164f28a236",
+      "size": 15579,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/d83d54c9e163d20eb2f1b32d89f6e6164f28a236"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Spells/2nd Level Spells.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3534cce7a565934be7b467b885a8927f9cdc4a8d",
+      "size": 15846,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/3534cce7a565934be7b467b885a8927f9cdc4a8d"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Spells/3rd Level Spells.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "13e36e1beece81b2c634b80c92c7ea63ac556a31",
+      "size": 15302,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/13e36e1beece81b2c634b80c92c7ea63ac556a31"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Spells/4th Level Spells.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db0913fd31e73739e49d9fd7cc2aab65ed0c39e2",
+      "size": 13280,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/db0913fd31e73739e49d9fd7cc2aab65ed0c39e2"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Spells/5th Level Spells.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9a619e26a8f93a50071980f3b2578775225b3feb",
+      "size": 13333,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/9a619e26a8f93a50071980f3b2578775225b3feb"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Spells/6th Level Spells.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a37ad8d95341794a1649b85540bd386af24b29b3",
+      "size": 11288,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/a37ad8d95341794a1649b85540bd386af24b29b3"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Spells/7th Level Spells.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0270a88cba31e2336d1c7f15de2cce4403e81afc",
+      "size": 11856,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/0270a88cba31e2336d1c7f15de2cce4403e81afc"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Spells/8th Level Spells.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b3a39758faff455a5ecb9800c217ea741ab6e9ee",
+      "size": 9701,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/b3a39758faff455a5ecb9800c217ea741ab6e9ee"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Spells/9th Level Spells.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "82af632211d4a47377bc4e8dc1c685a281df76d4",
+      "size": 12982,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/82af632211d4a47377bc4e8dc1c685a281df76d4"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Spells/Cantrips.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "34da959d13a1d9fd3bdbc7bbd962976f5e4daa9b",
+      "size": 13202,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/34da959d13a1d9fd3bdbc7bbd962976f5e4daa9b"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Spells/Spell Lists by Class.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ba25a6c5cbf8d2e5cd89a6155af07e1c2c6f2eca",
+      "size": 16359,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/ba25a6c5cbf8d2e5cd89a6155af07e1c2c6f2eca"
+    },
+    {
+      "path": "D&D 5e 2024 Rules/Spells/Spellcasting Rules.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6ff18338e7f7b0cb7c95c60ddbe23557c6636c02",
+      "size": 11289,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/6ff18338e7f7b0cb7c95c60ddbe23557c6636c02"
+    },
+    {
+      "path": "GEMINI.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7a4c423b46eada83abf49539caa596147d061270",
+      "size": 6018,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/7a4c423b46eada83abf49539caa596147d061270"
+    },
+    {
+      "path": "GETTING_STARTED.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d184a7fbf0897fd5291cd0b9b66ba2c371bb6046",
+      "size": 6377,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/d184a7fbf0897fd5291cd0b9b66ba2c371bb6046"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "63c8368438138f1cd2d243b56f0f095b65ba830f",
+      "size": 12503,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/63c8368438138f1cd2d243b56f0f095b65ba830f"
+    },
+    {
+      "path": "TROUBLESHOOTING.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "262508608f0ab25ae10e280124f137796fd05e0d",
+      "size": 8565,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/262508608f0ab25ae10e280124f137796fd05e0d"
+    },
+    {
+      "path": "Templates",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f48169317788a67744e60e0ef71df7f04f582cbc",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/f48169317788a67744e60e0ef71df7f04f582cbc"
+    },
+    {
+      "path": "Templates/Character Options",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2bc0e4bf230d5694fc39505c8bb8ad2f7da128f8",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/2bc0e4bf230d5694fc39505c8bb8ad2f7da128f8"
+    },
+    {
+      "path": "Templates/Character Options/Character Background.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e3a0aba78575f48e2b09a06a8eb72cfbd9e6c00",
+      "size": 12037,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/5e3a0aba78575f48e2b09a06a8eb72cfbd9e6c00"
+    },
+    {
+      "path": "Templates/Character Options/Character Class.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57b4bb6aa8b94e15546c4179c05cadc19266c3cc",
+      "size": 13053,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/57b4bb6aa8b94e15546c4179c05cadc19266c3cc"
+    },
+    {
+      "path": "Templates/Character Options/Character Subclass.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca98f8d525480fc6b5690cf6a240ff61b721c93f",
+      "size": 12636,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/ca98f8d525480fc6b5690cf6a240ff61b721c93f"
+    },
+    {
+      "path": "Templates/Characters",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "24c8161af35ecf6c767b56b32181e6f5b574e595",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/24c8161af35ecf6c767b56b32181e6f5b574e595"
+    },
+    {
+      "path": "Templates/Characters/Antagonist.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7815f6d541afdbc1a15bbd3f7be3c05fa9354b58",
+      "size": 21449,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/7815f6d541afdbc1a15bbd3f7be3c05fa9354b58"
+    },
+    {
+      "path": "Templates/Characters/Background Character.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "48b0ff1fbafdcdeab2cf2aad2093b93e51fa8f5a",
+      "size": 9106,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/48b0ff1fbafdcdeab2cf2aad2093b93e51fa8f5a"
+    },
+    {
+      "path": "Templates/Characters/Divine Servant.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1a8ff984d3655df0431260ea422301cf73341cd0",
+      "size": 13622,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/1a8ff984d3655df0431260ea422301cf73341cd0"
+    },
+    {
+      "path": "Templates/Characters/Familiar.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c5be5a8ab5e61b6df78a9ae7e7101d4a5b464ee5",
+      "size": 12752,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/c5be5a8ab5e61b6df78a9ae7e7101d4a5b464ee5"
+    },
+    {
+      "path": "Templates/Characters/NPC Stat Block.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1246f37135e3ec475416fcac053b1636da8587ea",
+      "size": 5162,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/1246f37135e3ec475416fcac053b1636da8587ea"
+    },
+    {
+      "path": "Templates/Characters/Protagonist.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4a97d3e1c4b5c07077db1021e5873c92ff6057d6",
+      "size": 17875,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/4a97d3e1c4b5c07077db1021e5873c92ff6057d6"
+    },
+    {
+      "path": "Templates/Characters/Support Character.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "090cfff2a1ac7465e457d8e8423ca28b31df518b",
+      "size": 17731,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/090cfff2a1ac7465e457d8e8423ca28b31df518b"
+    },
+    {
+      "path": "Templates/Concepts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fbe0f9a90bf66e06761df7f7f4ec77e0ba94e939",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/fbe0f9a90bf66e06761df7f7f4ec77e0ba94e939"
+    },
+    {
+      "path": "Templates/Concepts/Calendar.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d4f8fd426c295f89eace0dc80619d7a7f4968bad",
+      "size": 13199,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/d4f8fd426c295f89eace0dc80619d7a7f4968bad"
+    },
+    {
+      "path": "Templates/Concepts/Currency.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9cf33c10c71feb0b701f860c03ae6b66d5899d82",
+      "size": 13498,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/9cf33c10c71feb0b701f860c03ae6b66d5899d82"
+    },
+    {
+      "path": "Templates/Concepts/Deity.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2de481606f11bc620c4a2639eb5245b4c9029e1d",
+      "size": 12527,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/2de481606f11bc620c4a2639eb5245b4c9029e1d"
+    },
+    {
+      "path": "Templates/Concepts/Language.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "87cf2633fb5077e040c5186bdff5fd3416c0494b",
+      "size": 13980,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/87cf2633fb5077e040c5186bdff5fd3416c0494b"
+    },
+    {
+      "path": "Templates/Concepts/Magic System.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "521ea1dafd0a622e8fb448fc1aa9c7a17032ef42",
+      "size": 12134,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/521ea1dafd0a622e8fb448fc1aa9c7a17032ef42"
+    },
+    {
+      "path": "Templates/Concepts/Pantheon.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d27aa0a1b876fa2aa219a58696b26e555526690c",
+      "size": 11877,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/d27aa0a1b876fa2aa219a58696b26e555526690c"
+    },
+    {
+      "path": "Templates/Concepts/Plane of Existence.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "51ed2b39d42551cb2a1d8a4cbc6212257618c2f9",
+      "size": 14037,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/51ed2b39d42551cb2a1d8a4cbc6212257618c2f9"
+    },
+    {
+      "path": "Templates/Concepts/Prophecy.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d644632cc5c3b5d832788b1daccf19bd02c8972c",
+      "size": 12897,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/d644632cc5c3b5d832788b1daccf19bd02c8972c"
+    },
+    {
+      "path": "Templates/Concepts/Religion.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "42be699fe964c129fc74133a200107084271da3e",
+      "size": 12191,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/42be699fe964c129fc74133a200107084271da3e"
+    },
+    {
+      "path": "Templates/Concepts/Technology.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dcb1c3274db6f68f4b2f5c25109e44a5d2cad92d",
+      "size": 11335,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/dcb1c3274db6f68f4b2f5c25109e44a5d2cad92d"
+    },
+    {
+      "path": "Templates/Creatures",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "da9ad2d309e7cd395de646fe987b45b128700e1a",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/da9ad2d309e7cd395de646fe987b45b128700e1a"
+    },
+    {
+      "path": "Templates/Creatures/Animal.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "93030e5b53f2192d88e2ec6c62878094dd408d57",
+      "size": 11656,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/93030e5b53f2192d88e2ec6c62878094dd408d57"
+    },
+    {
+      "path": "Templates/Creatures/Insect.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "845c72b56b1491b85507397763aba8b180f784f9",
+      "size": 13172,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/845c72b56b1491b85507397763aba8b180f784f9"
+    },
+    {
+      "path": "Templates/Creatures/Monster.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3d545a3e4281701f10c251750cdc8c27d5c78b12",
+      "size": 15876,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/3d545a3e4281701f10c251750cdc8c27d5c78b12"
+    },
+    {
+      "path": "Templates/Creatures/Plant.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d850172d8035aa8d5af1833d14f10ccd743a4759",
+      "size": 12539,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/d850172d8035aa8d5af1833d14f10ccd743a4759"
+    },
+    {
+      "path": "Templates/Creatures/Species.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6eab63297eaa5096dc1d19bfbb61b28ad9edaa52",
+      "size": 14609,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/6eab63297eaa5096dc1d19bfbb61b28ad9edaa52"
+    },
+    {
+      "path": "Templates/Encounters",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "28cf56111f11fae05cc6883f9d3b3ebf59482b15",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/28cf56111f11fae05cc6883f9d3b3ebf59482b15"
+    },
+    {
+      "path": "Templates/Encounters/Combat Encounter.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d4265f96817ddb47d662a0ba3e66a3248ac38c37",
+      "size": 12882,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/d4265f96817ddb47d662a0ba3e66a3248ac38c37"
+    },
+    {
+      "path": "Templates/Encounters/Exploration Encounter.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e0c2ccf988502e3eb35c4ccc3303a501931b6faf",
+      "size": 13252,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/e0c2ccf988502e3eb35c4ccc3303a501931b6faf"
+    },
+    {
+      "path": "Templates/Encounters/Social Encounter.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5d85e372b2c098d62c0e0ac80449b703b27e7fdd",
+      "size": 13450,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/5d85e372b2c098d62c0e0ac80449b703b27e7fdd"
+    },
+    {
+      "path": "Templates/Encounters/Trap.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "afe6cb8dbf44378af3f9621beba05f3bb4bfc9d9",
+      "size": 12870,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/afe6cb8dbf44378af3f9621beba05f3bb4bfc9d9"
+    },
+    {
+      "path": "Templates/Geography",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0457e1e5ffd1fa6262881a7727b3b42bfbce026b",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/0457e1e5ffd1fa6262881a7727b3b42bfbce026b"
+    },
+    {
+      "path": "Templates/Geography/Cave.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "12e9d55510f3c5e1b518eee924c8ec2055ba2969",
+      "size": 13230,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/12e9d55510f3c5e1b518eee924c8ec2055ba2969"
+    },
+    {
+      "path": "Templates/Geography/Coast.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2da839be0eebc99423052b7fcad6280350a67d38",
+      "size": 11347,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/2da839be0eebc99423052b7fcad6280350a67d38"
+    },
+    {
+      "path": "Templates/Geography/Continent.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4243a47336320d5e37e1d1bfa5be34e3e68b8c77",
+      "size": 11765,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/4243a47336320d5e37e1d1bfa5be34e3e68b8c77"
+    },
+    {
+      "path": "Templates/Geography/Desert.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0de8371e74083413bf92dcfb5a527f8e94da0ab1",
+      "size": 10619,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/0de8371e74083413bf92dcfb5a527f8e94da0ab1"
+    },
+    {
+      "path": "Templates/Geography/Dungeon.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f1e1f3e35f661f2a05a65671df41b1c23b3efd72",
+      "size": 13233,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/f1e1f3e35f661f2a05a65671df41b1c23b3efd72"
+    },
+    {
+      "path": "Templates/Geography/Forest.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ba4c9e73c7f2a4600ed4156eb9eb7e54d82028d5",
+      "size": 11424,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/ba4c9e73c7f2a4600ed4156eb9eb7e54d82028d5"
+    },
+    {
+      "path": "Templates/Geography/Hills.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "93b5bbc7a7b586f94cdcbb6dedad60b5294059bb",
+      "size": 10609,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/93b5bbc7a7b586f94cdcbb6dedad60b5294059bb"
+    },
+    {
+      "path": "Templates/Geography/Island.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dddd9e78990151a9ca14c5236f6ed024456dd5eb",
+      "size": 11959,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/dddd9e78990151a9ca14c5236f6ed024456dd5eb"
+    },
+    {
+      "path": "Templates/Geography/Lake.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "03c25c8b75e676bf8779854854138bbe2d0068de",
+      "size": 10808,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/03c25c8b75e676bf8779854854138bbe2d0068de"
+    },
+    {
+      "path": "Templates/Geography/Mountain Range.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "97d6ceeecba37cef8c5b6f3c6bf41d256215493f",
+      "size": 10112,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/97d6ceeecba37cef8c5b6f3c6bf41d256215493f"
+    },
+    {
+      "path": "Templates/Geography/Ocean.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c1ad981b0a2b07e0dfc7c492b9bf455936b1a6de",
+      "size": 11428,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/c1ad981b0a2b07e0dfc7c492b9bf455936b1a6de"
+    },
+    {
+      "path": "Templates/Geography/Pass.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "501ed94c7341e095dca953de6bb7891050ec5272",
+      "size": 11755,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/501ed94c7341e095dca953de6bb7891050ec5272"
+    },
+    {
+      "path": "Templates/Geography/Plains.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2f2250077cb5c0691afd911ec8b00a4ff54b9f23",
+      "size": 11157,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/2f2250077cb5c0691afd911ec8b00a4ff54b9f23"
+    },
+    {
+      "path": "Templates/Geography/Region.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0afe8a83d80a397b36df6dad853c30fc6d7a8b01",
+      "size": 11381,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/0afe8a83d80a397b36df6dad853c30fc6d7a8b01"
+    },
+    {
+      "path": "Templates/Geography/River.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ee31dbe10b9d1c60c60ec5d70a0c7945008b88e9",
+      "size": 10569,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/ee31dbe10b9d1c60c60ec5d70a0c7945008b88e9"
+    },
+    {
+      "path": "Templates/Geography/Road.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "98f9612c53228d120bc28339e02f559b9cedff61",
+      "size": 12024,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/98f9612c53228d120bc28339e02f559b9cedff61"
+    },
+    {
+      "path": "Templates/Geography/Steppes.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aeefd7490bc601c335a05965364894650a067f68",
+      "size": 11947,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/aeefd7490bc601c335a05965364894650a067f68"
+    },
+    {
+      "path": "Templates/Geography/Tundra.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f7a786cdb7d3b2f81ea99d1e2fb126d9a3452c1f",
+      "size": 11443,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/f7a786cdb7d3b2f81ea99d1e2fb126d9a3452c1f"
+    },
+    {
+      "path": "Templates/History",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "94f020442798a3a6ed7282e45939373063ec7360",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/94f020442798a3a6ed7282e45939373063ec7360"
+    },
+    {
+      "path": "Templates/History/Adventure.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bbf0b5626c4061c1ca9f35e4efc72f9290060375",
+      "size": 15141,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/bbf0b5626c4061c1ca9f35e4efc72f9290060375"
+    },
+    {
+      "path": "Templates/History/Age.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f22381394c165bf873f56f74d425c4f0c7c05622",
+      "size": 12709,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/f22381394c165bf873f56f74d425c4f0c7c05622"
+    },
+    {
+      "path": "Templates/History/Battle.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b6a2b3dfe22ace8e7cd0ee913e943f0aa4abe8d9",
+      "size": 10327,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/b6a2b3dfe22ace8e7cd0ee913e943f0aa4abe8d9"
+    },
+    {
+      "path": "Templates/History/Dynasty.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c32db01916ae44e8e0867773fb90149c56750f8a",
+      "size": 12338,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/c32db01916ae44e8e0867773fb90149c56750f8a"
+    },
+    {
+      "path": "Templates/History/Event.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c01b1f898a575b404549969b35a95bae09ca4ada",
+      "size": 10812,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/c01b1f898a575b404549969b35a95bae09ca4ada"
+    },
+    {
+      "path": "Templates/History/Trade Agreement.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e2713186307b601cebb3b1a954605299cea56d10",
+      "size": 10237,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/e2713186307b601cebb3b1a954605299cea56d10"
+    },
+    {
+      "path": "Templates/History/Tragedy.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "99703139feb499fcbf88f61686034662f5f1af19",
+      "size": 11803,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/99703139feb499fcbf88f61686034662f5f1af19"
+    },
+    {
+      "path": "Templates/History/Treaty.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c5102ec769eb7d865beae32a84830f1ddae3f653",
+      "size": 9980,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/c5102ec769eb7d865beae32a84830f1ddae3f653"
+    },
+    {
+      "path": "Templates/History/War.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9680f10ea7a7ac63d212a1867c0799205adabe10",
+      "size": 10984,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/9680f10ea7a7ac63d212a1867c0799205adabe10"
+    },
+    {
+      "path": "Templates/Items",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f6eccfb26e34e00c058f03285d6c3c3e02961da4",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/f6eccfb26e34e00c058f03285d6c3c3e02961da4"
+    },
+    {
+      "path": "Templates/Items/Armor.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "81ce6286061cc4a88a6bbddbb7cf2b3764be5993",
+      "size": 11942,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/81ce6286061cc4a88a6bbddbb7cf2b3764be5993"
+    },
+    {
+      "path": "Templates/Items/Artifact.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4d10b24e614ba8f568a40589fedb70d981cfb9d4",
+      "size": 13662,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/4d10b24e614ba8f568a40589fedb70d981cfb9d4"
+    },
+    {
+      "path": "Templates/Items/Book.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5a49c7de891fa9faaec5297fe0caf34e10a2346a",
+      "size": 12119,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/5a49c7de891fa9faaec5297fe0caf34e10a2346a"
+    },
+    {
+      "path": "Templates/Items/Container.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "86027604dc57bb4ccf6a3cc72aaa2fa87913cf35",
+      "size": 10736,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/86027604dc57bb4ccf6a3cc72aaa2fa87913cf35"
+    },
+    {
+      "path": "Templates/Items/Cursed Item.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "10f359df21f819b24bde4742d682d327c2f4eabb",
+      "size": 8516,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/10f359df21f819b24bde4742d682d327c2f4eabb"
+    },
+    {
+      "path": "Templates/Items/Drink.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "670702cd77f0641a39a7a30f18486f84f9f42962",
+      "size": 10975,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/670702cd77f0641a39a7a30f18486f84f9f42962"
+    },
+    {
+      "path": "Templates/Items/Food.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3ff10d57b9584dcc440f12dc680b61c3312953a5",
+      "size": 10187,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/3ff10d57b9584dcc440f12dc680b61c3312953a5"
+    },
+    {
+      "path": "Templates/Items/Gear.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "43d03b9367ab248557dbd79046a808389a4bec45",
+      "size": 10033,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/43d03b9367ab248557dbd79046a808389a4bec45"
+    },
+    {
+      "path": "Templates/Items/Potion.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e80989ff8a1c108faf7d0262fdd587185a2a5302",
+      "size": 11063,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/e80989ff8a1c108faf7d0262fdd587185a2a5302"
+    },
+    {
+      "path": "Templates/Items/Vehicle.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dc6b2c525c5087cd525416294ff67f5746fc1f86",
+      "size": 12352,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/dc6b2c525c5087cd525416294ff67f5746fc1f86"
+    },
+    {
+      "path": "Templates/Items/Weapon.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fa5c9fc2b1a39b1876880ad31f99153d10d2c9f0",
+      "size": 11952,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/fa5c9fc2b1a39b1876880ad31f99153d10d2c9f0"
+    },
+    {
+      "path": "Templates/Items/Wondrous Magic Item.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "44b0e79f38356ced38fb97467607ce4039623180",
+      "size": 12208,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/44b0e79f38356ced38fb97467607ce4039623180"
+    },
+    {
+      "path": "Templates/Maps",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a2e22dbeb69c2187040cca4f7b98bcbde75559b7",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/a2e22dbeb69c2187040cca4f7b98bcbde75559b7"
+    },
+    {
+      "path": "Templates/Maps/Continent Map.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "47e794010598299388fd4d69a1f1b57b53e4553f",
+      "size": 14299,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/47e794010598299388fd4d69a1f1b57b53e4553f"
+    },
+    {
+      "path": "Templates/Maps/Region Map.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "434bda72677e1adec0628d9c5f2f83702c470291",
+      "size": 14840,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/434bda72677e1adec0628d9c5f2f83702c470291"
+    },
+    {
+      "path": "Templates/Maps/Settlement Map.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f01b92ca7f6d2d589ef9a4c88b9759a1861cb900",
+      "size": 16299,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/f01b92ca7f6d2d589ef9a4c88b9759a1861cb900"
+    },
+    {
+      "path": "Templates/Maps/World Map.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3948eda3492ea3c25a6fc49d96d8c8bd46957d87",
+      "size": 9289,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/3948eda3492ea3c25a6fc49d96d8c8bd46957d87"
+    },
+    {
+      "path": "Templates/Organizations",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a811a6d90279d7a26c40858a3a9b3f82a7a19f24",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/a811a6d90279d7a26c40858a3a9b3f82a7a19f24"
+    },
+    {
+      "path": "Templates/Organizations/Academy.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8c464492b27f096fbe3b0466825a34dfbb4d4138",
+      "size": 15125,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/8c464492b27f096fbe3b0466825a34dfbb4d4138"
+    },
+    {
+      "path": "Templates/Organizations/Business.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0132f92aac05dd65df44f09eb8bd56d4b4dbdfcb",
+      "size": 9801,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/0132f92aac05dd65df44f09eb8bd56d4b4dbdfcb"
+    },
+    {
+      "path": "Templates/Organizations/Criminal Organization.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "68d7fbc101faa307a364aff67bf93e5a75df36c1",
+      "size": 10445,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/68d7fbc101faa307a364aff67bf93e5a75df36c1"
+    },
+    {
+      "path": "Templates/Organizations/Cult.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "048d51fab1225193d8d8a15ae0e8dacfeb6e7bea",
+      "size": 12174,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/048d51fab1225193d8d8a15ae0e8dacfeb6e7bea"
+    },
+    {
+      "path": "Templates/Organizations/Government.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4061e0f8deaf1455313a1172ee7cdd0102ee0b66",
+      "size": 13115,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/4061e0f8deaf1455313a1172ee7cdd0102ee0b66"
+    },
+    {
+      "path": "Templates/Organizations/Guild.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a4ccdeb4b1d9aecb860358a386652207c64a7611",
+      "size": 11181,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/a4ccdeb4b1d9aecb860358a386652207c64a7611"
+    },
+    {
+      "path": "Templates/Organizations/Military.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e18109269404f900836282182511f341a0b71ec7",
+      "size": 10447,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/e18109269404f900836282182511f341a0b71ec7"
+    },
+    {
+      "path": "Templates/Organizations/Organization (General).md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "61cbe6503a7c35d4df0e4edd0f80a168d8b8dc3b",
+      "size": 9963,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/61cbe6503a7c35d4df0e4edd0f80a168d8b8dc3b"
+    },
+    {
+      "path": "Templates/Organizations/Religious Order.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7ec058ef87929dc09bd0d1cd6a62e1a8caef2e3d",
+      "size": 9801,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/7ec058ef87929dc09bd0d1cd6a62e1a8caef2e3d"
+    },
+    {
+      "path": "Templates/Reference",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "754d7779c1ff07dd1fb9c54b244ef447423a7af6",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/754d7779c1ff07dd1fb9c54b244ef447423a7af6"
+    },
+    {
+      "path": "Templates/Reference/Connection Matrix.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "12af7e7c6f06a3de426709ee09089dcbf4639b2f",
+      "size": 8504,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/12af7e7c6f06a3de426709ee09089dcbf4639b2f"
+    },
+    {
+      "path": "Templates/Reference/Cultural Naming Guide.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b3f6240d52bfb1ba842a312174042d5f27727fb0",
+      "size": 10879,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/b3f6240d52bfb1ba842a312174042d5f27727fb0"
+    },
+    {
+      "path": "Templates/Reference/D&D 5e Stat Block Validation.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "baa48455ec2e4724a45f84df3a7dbbd0defae71c",
+      "size": 9731,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/baa48455ec2e4724a45f84df3a7dbbd0defae71c"
+    },
+    {
+      "path": "Templates/Reference/D&D Species Naming Conventions.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1ec426da874e9ddd772de89d2149a906950a6e37",
+      "size": 10970,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/1ec426da874e9ddd772de89d2149a906950a6e37"
+    },
+    {
+      "path": "Templates/Reference/Markdown Formatting Standards.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca63555572c00ea39ff6d5ccde8c65142f215500",
+      "size": 9576,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/ca63555572c00ea39ff6d5ccde8c65142f215500"
+    },
+    {
+      "path": "Templates/Reference/Tolkien Naming Conventions.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3a1f8f1859fd115faafcc5981c7c2a98549cbd35",
+      "size": 11427,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/3a1f8f1859fd115faafcc5981c7c2a98549cbd35"
+    },
+    {
+      "path": "Templates/Reference/YAML Frontmatter Reference.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "29491731b308b12ca9fd819f6b08cf63f5b8e03b",
+      "size": 13882,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/29491731b308b12ca9fd819f6b08cf63f5b8e03b"
+    },
+    {
+      "path": "Templates/Settlements",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "51ac13544f7a1c17edb78f8ea1ffc3a1de72fe9d",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/51ac13544f7a1c17edb78f8ea1ffc3a1de72fe9d"
+    },
+    {
+      "path": "Templates/Settlements/Bastion.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "98c543ac2aa5905b2a2439dd022363d1590833da",
+      "size": 7748,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/98c543ac2aa5905b2a2439dd022363d1590833da"
+    },
+    {
+      "path": "Templates/Settlements/City.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9f7e274d906fec4bf64d8f1d7c6c5e7530b31edf",
+      "size": 20825,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/9f7e274d906fec4bf64d8f1d7c6c5e7530b31edf"
+    },
+    {
+      "path": "Templates/Settlements/Library.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fe84e8e295a2ddf9763f3dd456283f2b9ed4fea5",
+      "size": 14100,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/fe84e8e295a2ddf9763f3dd456283f2b9ed4fea5"
+    },
+    {
+      "path": "Templates/Settlements/Shop.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "70d4e22a9b5c1c1915d58bd814368de39cb05410",
+      "size": 12864,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/70d4e22a9b5c1c1915d58bd814368de39cb05410"
+    },
+    {
+      "path": "Templates/Settlements/Stronghold.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ce9f3eac78eb5dfe16476e17b1c344e29ed000e3",
+      "size": 17289,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/ce9f3eac78eb5dfe16476e17b1c344e29ed000e3"
+    },
+    {
+      "path": "Templates/Settlements/Tavern.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cf4b3e5aeab830844a5b4e3cb7f505ec2fb28553",
+      "size": 13086,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/cf4b3e5aeab830844a5b4e3cb7f505ec2fb28553"
+    },
+    {
+      "path": "Templates/Settlements/Temple.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "12f259d4d2b03f5c81b787d59e059feaaffbc8de",
+      "size": 14119,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/12f259d4d2b03f5c81b787d59e059feaaffbc8de"
+    },
+    {
+      "path": "Templates/Settlements/Town.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5af260fa27a8362f48c2943519d43de1c84e7ea7",
+      "size": 15600,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/5af260fa27a8362f48c2943519d43de1c84e7ea7"
+    },
+    {
+      "path": "Templates/Settlements/Village.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "614eb429b581ca31f92cfa6575cbdee7697a55c2",
+      "size": 14358,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/614eb429b581ca31f92cfa6575cbdee7697a55c2"
+    },
+    {
+      "path": "Templates/worldbuild-state-template.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1d45ea3fb3692c24778ae55f76642ac64f36df3c",
+      "size": 918,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/1d45ea3fb3692c24778ae55f76642ac64f36df3c"
+    },
+    {
+      "path": "Worlds",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "29b47779d87923bd5e97149e0947aabd84bea116",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/29b47779d87923bd5e97149e0947aabd84bea116"
+    },
+    {
+      "path": "Worlds/Eldermyr",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e63a87bd8090aa666175eb53c2effeaa505d2d99",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/e63a87bd8090aa666175eb53c2effeaa505d2d99"
+    },
+    {
+      "path": "Worlds/Eldermyr/.obsidian",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c184624e19f066ce628fae2b177808f6e0fbf64f",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/c184624e19f066ce628fae2b177808f6e0fbf64f"
+    },
+    {
+      "path": "Worlds/Eldermyr/.obsidian/app.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9e26dfeeb6e641a33dae4961196235bdb965b21b",
+      "size": 2,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/9e26dfeeb6e641a33dae4961196235bdb965b21b"
+    },
+    {
+      "path": "Worlds/Eldermyr/.obsidian/appearance.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9e26dfeeb6e641a33dae4961196235bdb965b21b",
+      "size": 2,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/9e26dfeeb6e641a33dae4961196235bdb965b21b"
+    },
+    {
+      "path": "Worlds/Eldermyr/.obsidian/core-plugins.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "639b90da7172bebbc1a65e30ed0a1c611b5b26dc",
+      "size": 696,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/639b90da7172bebbc1a65e30ed0a1c611b5b26dc"
+    },
+    {
+      "path": "Worlds/Eldermyr/.obsidian/graph.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e21a18dc273108270255e8199871dcb9ca35db88",
+      "size": 494,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/e21a18dc273108270255e8199871dcb9ca35db88"
+    },
+    {
+      "path": "Worlds/Eldermyr/.obsidian/workspace.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e9c5ee1f7b788e6b3f2d4376c2c53041fa610266",
+      "size": 6555,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/e9c5ee1f7b788e6b3f2d4376c2c53041fa610266"
+    },
+    {
+      "path": "Worlds/Eldermyr/.worldbuild-state.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "18e9fd078826e59d6915b44809954839cd75901e",
+      "size": 12725,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/18e9fd078826e59d6915b44809954839cd75901e"
+    },
+    {
+      "path": "Worlds/Eldermyr/Campaign Hooks.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1380ad706a5e1d6c2b8457ac9e79300f0ff2b4b9",
+      "size": 10371,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/1380ad706a5e1d6c2b8457ac9e79300f0ff2b4b9"
+    },
+    {
+      "path": "Worlds/Eldermyr/Character Options",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "17c1008b99fe24db6ebc88e6cc61b2aa0bdb1632",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/17c1008b99fe24db6ebc88e6cc61b2aa0bdb1632"
+    },
+    {
+      "path": "Worlds/Eldermyr/Character Options/Barbarian.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3bd53c1944768bf42c9cd2524c00de0c6a7da5fc",
+      "size": 9024,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/3bd53c1944768bf42c9cd2524c00de0c6a7da5fc"
+    },
+    {
+      "path": "Worlds/Eldermyr/Character Options/Bard.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b15dc9dc96d9026932c46274a312fa8207cc7d7c",
+      "size": 8697,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/b15dc9dc96d9026932c46274a312fa8207cc7d7c"
+    },
+    {
+      "path": "Worlds/Eldermyr/Character Options/Cleric.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "67082e3bf38260ee8336f37ed9f3d583e1fdd76d",
+      "size": 8502,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/67082e3bf38260ee8336f37ed9f3d583e1fdd76d"
+    },
+    {
+      "path": "Worlds/Eldermyr/Character Options/Druid.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc26ae72b0a1dd5b263f2f106fef7304b87d89d2",
+      "size": 8689,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/cc26ae72b0a1dd5b263f2f106fef7304b87d89d2"
+    },
+    {
+      "path": "Worlds/Eldermyr/Character Options/Fighter.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eda9d66f67b06b995bf4972be67ff41ae272e5ca",
+      "size": 9017,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/eda9d66f67b06b995bf4972be67ff41ae272e5ca"
+    },
+    {
+      "path": "Worlds/Eldermyr/Character Options/Monk.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "98e2f0bf76212fa05845a30c9f0fccee8fe8df90",
+      "size": 8619,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/98e2f0bf76212fa05845a30c9f0fccee8fe8df90"
+    },
+    {
+      "path": "Worlds/Eldermyr/Character Options/Paladin.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c0c441a841be0d72d24948a65d7db959bbe52be8",
+      "size": 9136,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/c0c441a841be0d72d24948a65d7db959bbe52be8"
+    },
+    {
+      "path": "Worlds/Eldermyr/Character Options/Ranger.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bb9cb169b0b451984801ba98d373e94ede2615c8",
+      "size": 8225,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/bb9cb169b0b451984801ba98d373e94ede2615c8"
+    },
+    {
+      "path": "Worlds/Eldermyr/Character Options/Rogue.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bce7320e3f773b439cbbfe9645e3d28a393c8ea2",
+      "size": 8258,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/bce7320e3f773b439cbbfe9645e3d28a393c8ea2"
+    },
+    {
+      "path": "Worlds/Eldermyr/Character Options/Sorcerer.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "75f2cb5096fd39ecf9efd13ef15b07019b5575c9",
+      "size": 8636,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/75f2cb5096fd39ecf9efd13ef15b07019b5575c9"
+    },
+    {
+      "path": "Worlds/Eldermyr/Character Options/Warlock.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "95b3e59154f8a9bddc7150d98f943c77dbe08661",
+      "size": 8928,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/95b3e59154f8a9bddc7150d98f943c77dbe08661"
+    },
+    {
+      "path": "Worlds/Eldermyr/Character Options/Wizard.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "84ab820822b72cc9f3ff7e57701f3a62c39b04e7",
+      "size": 9039,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/84ab820822b72cc9f3ff7e57701f3a62c39b04e7"
+    },
+    {
+      "path": "Worlds/Eldermyr/Characters",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2d95ab5f24ca0f0422e5683cf349db1571cb1d5d",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/2d95ab5f24ca0f0422e5683cf349db1571cb1d5d"
+    },
+    {
+      "path": "Worlds/Eldermyr/Characters/Aleksei Karath.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "16691321c4d4111f379cac9758fc0de7e459056b",
+      "size": 8846,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/16691321c4d4111f379cac9758fc0de7e459056b"
+    },
+    {
+      "path": "Worlds/Eldermyr/Characters/Aleksei Karath.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8e1e4fbaaa1a90341a2bd3a32abd0c916b1a5131",
+      "size": 2391594,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/8e1e4fbaaa1a90341a2bd3a32abd0c916b1a5131"
+    },
+    {
+      "path": "Worlds/Eldermyr/Characters/Ambassador Valdren.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cfa15be494a15e68273a4229a479d461fd61c2aa",
+      "size": 15175,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/cfa15be494a15e68273a4229a479d461fd61c2aa"
+    },
+    {
+      "path": "Worlds/Eldermyr/Characters/Archmagister Corwin Ashford.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0ce1fd1d63c064edfdd89f0919959f5d31ed5ad1",
+      "size": 12629,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/0ce1fd1d63c064edfdd89f0919959f5d31ed5ad1"
+    },
+    {
+      "path": "Worlds/Eldermyr/Characters/Archmagister Corwin Ashford.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d852ff4f310d1ab797a21e0111c9bbe9bf51300b",
+      "size": 2996133,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/d852ff4f310d1ab797a21e0111c9bbe9bf51300b"
+    },
+    {
+      "path": "Worlds/Eldermyr/Characters/Black Donal.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "209317b66557449275bd199a1e58e46f88a02a3b",
+      "size": 13835,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/209317b66557449275bd199a1e58e46f88a02a3b"
+    },
+    {
+      "path": "Worlds/Eldermyr/Characters/Captain Alonzo the Bold.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "75ca6dd02efa2a2ada2ab99c570338ff69bf3959",
+      "size": 9453,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/75ca6dd02efa2a2ada2ab99c570338ff69bf3959"
+    },
+    {
+      "path": "Worlds/Eldermyr/Characters/Captain Alonzo the Bold.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c9e5befe3ae7d81b3c634710ccaca6202a15bcd8",
+      "size": 2731755,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/c9e5befe3ae7d81b3c634710ccaca6202a15bcd8"
+    },
+    {
+      "path": "Worlds/Eldermyr/Characters/Captain Helena Stern.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "626bc593df012c354ad2573178449f0c92260ebb",
+      "size": 14797,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/626bc593df012c354ad2573178449f0c92260ebb"
+    },
+    {
+      "path": "Worlds/Eldermyr/Characters/Commander Brennan Steel.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e2f56530167d614b9232b53496cc7db0d045b882",
+      "size": 14511,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/e2f56530167d614b9232b53496cc7db0d045b882"
+    },
+    {
+      "path": "Worlds/Eldermyr/Characters/Edric Valdren.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "16c7ab608507a366bb2c2def676c111f1d32b4bf",
+      "size": 16244,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/16c7ab608507a366bb2c2def676c111f1d32b4bf"
+    },
+    {
+      "path": "Worlds/Eldermyr/Characters/Edric Valdren.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a1343dc98a30603148e0681d9dbd7bb6b794af25",
+      "size": 2494910,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/a1343dc98a30603148e0681d9dbd7bb6b794af25"
+    },
+    {
+      "path": "Worlds/Eldermyr/Characters/Elder Faelar Moonwhisper.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e3af5016d2b1a4d46430b2346f1ad9fc1cdf679f",
+      "size": 4948,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/e3af5016d2b1a4d46430b2346f1ad9fc1cdf679f"
+    },
+    {
+      "path": "Worlds/Eldermyr/Characters/EldermyrCover.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a49ab5e0af76c5a910fb656a4f1a0ae93f1ccc5b",
+      "size": 3244862,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/a49ab5e0af76c5a910fb656a4f1a0ae93f1ccc5b"
+    },
+    {
+      "path": "Worlds/Eldermyr/Characters/EldermyrMap2.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a14af8dcecc52afaa95e0f61f882e0e7677b14cd",
+      "size": 3556441,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/a14af8dcecc52afaa95e0f61f882e0e7677b14cd"
+    },
+    {
+      "path": "Worlds/Eldermyr/Characters/EldermyrMap3.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "05b201c23cf78bc4764572770747d3f3dc7576b5",
+      "size": 3255567,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/05b201c23cf78bc4764572770747d3f3dc7576b5"
+    },
+    {
+      "path": "Worlds/Eldermyr/Characters/Father Aldric the Elder.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a913708ec3ec90851c2b5e774b8bc1e7de530d9b",
+      "size": 16669,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/a913708ec3ec90851c2b5e774b8bc1e7de530d9b"
+    },
+    {
+      "path": "Worlds/Eldermyr/Characters/Grandmaster Aldric Greymane.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bd6e7991fdde4355ec9837dbbf0888fb438e0f50",
+      "size": 13869,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/bd6e7991fdde4355ec9837dbbf0888fb438e0f50"
+    },
+    {
+      "path": "Worlds/Eldermyr/Characters/Grandmaster Aldric Greymane.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "93ffde04591a4855562b0486e6bcbe464bf311e8",
+      "size": 2532605,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/93ffde04591a4855562b0486e6bcbe464bf311e8"
+    },
+    {
+      "path": "Worlds/Eldermyr/Characters/Grimhild the Smith.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f899248611c4fe633485336f5e2716e8c46d6e29",
+      "size": 13318,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/f899248611c4fe633485336f5e2716e8c46d6e29"
+    },
+    {
+      "path": "Worlds/Eldermyr/Characters/Grimhild the Smith.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc1e3cdf772fd1e708263f88201f21da7a2794b7",
+      "size": 2894908,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/fc1e3cdf772fd1e708263f88201f21da7a2794b7"
+    },
+    {
+      "path": "Worlds/Eldermyr/Characters/High Confessor Maren.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ac71fee601b4a85aae5f5a21b914b2f648ddac2f",
+      "size": 22166,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/ac71fee601b4a85aae5f5a21b914b2f648ddac2f"
+    },
+    {
+      "path": "Worlds/Eldermyr/Characters/High Confessor Maren.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc2c41eac5ef8ec56633ef930677ec4334e5968e",
+      "size": 2576342,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/fc2c41eac5ef8ec56633ef930677ec4334e5968e"
+    },
+    {
+      "path": "Worlds/Eldermyr/Characters/High King Aldric II.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7260d851980728e0e7292eea43236f74803cbf52",
+      "size": 10683,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/7260d851980728e0e7292eea43236f74803cbf52"
+    },
+    {
+      "path": "Worlds/Eldermyr/Characters/High King Aldric II.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db59a7837dc0b4aeea0ed2c3fc3f79c2361b7d57",
+      "size": 2515834,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/db59a7837dc0b4aeea0ed2c3fc3f79c2361b7d57"
+    },
+    {
+      "path": "Worlds/Eldermyr/Characters/Lady Margret Thorne.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a406cc71c269dbd75860386564c796602d0c6f86",
+      "size": 18898,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/a406cc71c269dbd75860386564c796602d0c6f86"
+    },
+    {
+      "path": "Worlds/Eldermyr/Characters/Lady Margret Thorne.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2168a63ca169378e4f5fbcbdc3f764788c988e1a",
+      "size": 2400373,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/2168a63ca169378e4f5fbcbdc3f764788c988e1a"
+    },
+    {
+      "path": "Worlds/Eldermyr/Characters/Lady Vesper Thorne.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4584d387f9b40053541067d883042dd53e7e050a",
+      "size": 5515,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/4584d387f9b40053541067d883042dd53e7e050a"
+    },
+    {
+      "path": "Worlds/Eldermyr/Characters/Lady Whisper.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "31033bd0b805657a45c7e4d883ecb46176fca07f",
+      "size": 14630,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/31033bd0b805657a45c7e4d883ecb46176fca07f"
+    },
+    {
+      "path": "Worlds/Eldermyr/Characters/Lord Castellan Maren Ashford.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c92bdc26e421fe1f048ad4fbfd018c760c38ddbd",
+      "size": 15321,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/c92bdc26e421fe1f048ad4fbfd018c760c38ddbd"
+    },
+    {
+      "path": "Worlds/Eldermyr/Characters/Lord Draven Karath.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cfd5a9e7bc83436c483bfc18e59d77a04f388a83",
+      "size": 24658,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/cfd5a9e7bc83436c483bfc18e59d77a04f388a83"
+    },
+    {
+      "path": "Worlds/Eldermyr/Characters/Lord Draven Karath.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bb65ca21d2c0fe39991e185175aee53bbe469637",
+      "size": 2505523,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/bb65ca21d2c0fe39991e185175aee53bbe469637"
+    },
+    {
+      "path": "Worlds/Eldermyr/Characters/Lord Varic Valdren.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "53ff7c81aaf14cdd0340f7a61bf4dfcbd4b98b27",
+      "size": 15668,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/53ff7c81aaf14cdd0340f7a61bf4dfcbd4b98b27"
+    },
+    {
+      "path": "Worlds/Eldermyr/Characters/Lord Varic Valdren.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "165d63f06f5302719b3756df43180df258473b06",
+      "size": 2366198,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/165d63f06f5302719b3756df43180df258473b06"
+    },
+    {
+      "path": "Worlds/Eldermyr/Characters/Master Thrain Stonehammer.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e82164a78511d3c1831025da3c0c1d6d3f9ca022",
+      "size": 4723,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/e82164a78511d3c1831025da3c0c1d6d3f9ca022"
+    },
+    {
+      "path": "Worlds/Eldermyr/Characters/Mordai the Branded.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e15262159166cdd5b732b0ec8c2b34f1ccbebc85",
+      "size": 9007,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/e15262159166cdd5b732b0ec8c2b34f1ccbebc85"
+    },
+    {
+      "path": "Worlds/Eldermyr/Characters/Old Marta.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d2520a3395a7da5cccc48bb58405f04422179aa3",
+      "size": 14712,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/d2520a3395a7da5cccc48bb58405f04422179aa3"
+    },
+    {
+      "path": "Worlds/Eldermyr/Characters/Prince Edric the Liberator.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6b7d809504331001b392097e8dcb1ba229b6041d",
+      "size": 12900,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/6b7d809504331001b392097e8dcb1ba229b6041d"
+    },
+    {
+      "path": "Worlds/Eldermyr/Characters/Prince Edric the Liberator.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "77336270d54bc978f8974fcb3adcc21c068a3e6a",
+      "size": 2550044,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/77336270d54bc978f8974fcb3adcc21c068a3e6a"
+    },
+    {
+      "path": "Worlds/Eldermyr/Characters/Rosie Goodbarrel.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cae10d9c1f303708f0d95ab1bdc5de26425fbf12",
+      "size": 6869,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/cae10d9c1f303708f0d95ab1bdc5de26425fbf12"
+    },
+    {
+      "path": "Worlds/Eldermyr/Characters/Saltbeard Pete.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "56132030a1a850cc5954bfa8351343a2cf9f7198",
+      "size": 13964,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/56132030a1a850cc5954bfa8351343a2cf9f7198"
+    },
+    {
+      "path": "Worlds/Eldermyr/Characters/Ser Aldric Thorne.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1ac19c8c48a95aa8346eec9ce755af3153a07b5f",
+      "size": 10107,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/1ac19c8c48a95aa8346eec9ce755af3153a07b5f"
+    },
+    {
+      "path": "Worlds/Eldermyr/Characters/Ser Aldric Thorne.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e1f43a6a4ad60917e25315fa2ec9b7437295cf46",
+      "size": 2512609,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/e1f43a6a4ad60917e25315fa2ec9b7437295cf46"
+    },
+    {
+      "path": "Worlds/Eldermyr/Characters/Ser Konrad Thorne.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6b1f1d3b413053bd53e09c83ee2b9bb64e89a784",
+      "size": 9694,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/6b1f1d3b413053bd53e09c83ee2b9bb64e89a784"
+    },
+    {
+      "path": "Worlds/Eldermyr/Characters/Ser Konrad Thorne.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "443cb71c7b97eb6b0a984f243f8eacb96c5cb6e1",
+      "size": 2546918,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/443cb71c7b97eb6b0a984f243f8eacb96c5cb6e1"
+    },
+    {
+      "path": "Worlds/Eldermyr/Characters/Ser Viktor Thorne.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dd0300e1e7cd850aa86baa90f2395fbc8996ca1b",
+      "size": 10700,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/dd0300e1e7cd850aa86baa90f2395fbc8996ca1b"
+    },
+    {
+      "path": "Worlds/Eldermyr/Characters/Ser Viktor Thorne.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3705431ecee079ec8bb2a39594aa657fbeac1f2a",
+      "size": 2527074,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/3705431ecee079ec8bb2a39594aa657fbeac1f2a"
+    },
+    {
+      "path": "Worlds/Eldermyr/Characters/Shaman Masha Bloodmoon.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b1abea8835a90345ba2fb206982bbe985cdef01",
+      "size": 7587,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/0b1abea8835a90345ba2fb206982bbe985cdef01"
+    },
+    {
+      "path": "Worlds/Eldermyr/Characters/The Mad King.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3ab0a27f2e65fe770ebdb3976b65a85e88b48d20",
+      "size": 11127,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/3ab0a27f2e65fe770ebdb3976b65a85e88b48d20"
+    },
+    {
+      "path": "Worlds/Eldermyr/Characters/The Mad King.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3426daee3890bd111a973842a80300eab68353b0",
+      "size": 2287262,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/3426daee3890bd111a973842a80300eab68353b0"
+    },
+    {
+      "path": "Worlds/Eldermyr/Characters/The Rat King.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e71676996d484b7e467eb60459241a1c7498a251",
+      "size": 17146,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/e71676996d484b7e467eb60459241a1c7498a251"
+    },
+    {
+      "path": "Worlds/Eldermyr/Characters/Warchief Grokmar Ironjaw.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "79a64799c4f1bc6fd556f493192a6e79f21b647f",
+      "size": 7580,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/79a64799c4f1bc6fd556f493192a6e79f21b647f"
+    },
+    {
+      "path": "Worlds/Eldermyr/Characters/Yelena Karath.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e0daeb953eb2fb3df8680e24652a42a5c872859",
+      "size": 15344,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/5e0daeb953eb2fb3df8680e24652a42a5c872859"
+    },
+    {
+      "path": "Worlds/Eldermyr/Characters/Yelena Karath.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4a22b4375f1fffaa9713f83ec9900fb2bb4b6ce3",
+      "size": 2380513,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/4a22b4375f1fffaa9713f83ec9900fb2bb4b6ce3"
+    },
+    {
+      "path": "Worlds/Eldermyr/Concepts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "afad5612604dcc9e590615af9d887e0bb867a461",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/afad5612604dcc9e590615af9d887e0bb867a461"
+    },
+    {
+      "path": "Worlds/Eldermyr/Concepts/Magic of Eldermyr.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "86e3107169cf697006c6e9380ae54c10f3277e2d",
+      "size": 22737,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/86e3107169cf697006c6e9380ae54c10f3277e2d"
+    },
+    {
+      "path": "Worlds/Eldermyr/Concepts/The Chronicler.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "29c150f71786e8a5fd57f347820e2dcba3b591f9",
+      "size": 25977,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/29c150f71786e8a5fd57f347820e2dcba3b591f9"
+    },
+    {
+      "path": "Worlds/Eldermyr/Concepts/The Faith of the Three.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a3047a833d977ee735b9f99434a5491c742ea7ac",
+      "size": 23230,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/a3047a833d977ee735b9f99434a5491c742ea7ac"
+    },
+    {
+      "path": "Worlds/Eldermyr/Concepts/The Old Ways.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d5b3cb45c83160b71b5aa70ca7ccc68e2cb30c33",
+      "size": 5393,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/d5b3cb45c83160b71b5aa70ca7ccc68e2cb30c33"
+    },
+    {
+      "path": "Worlds/Eldermyr/Concepts/The Shepherd.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4bacafd9f6a5c7255e1e317ba8b635b3c13db584",
+      "size": 23950,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/4bacafd9f6a5c7255e1e317ba8b635b3c13db584"
+    },
+    {
+      "path": "Worlds/Eldermyr/Concepts/The Unnamed.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d43f5388cb45a7763ad7868a41025521ab6dc92b",
+      "size": 13224,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/d43f5388cb45a7763ad7868a41025521ab6dc92b"
+    },
+    {
+      "path": "Worlds/Eldermyr/Concepts/The Warden.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "02870f9e92369d89e63babe766f8b6affccf7623",
+      "size": 23047,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/02870f9e92369d89e63babe766f8b6affccf7623"
+    },
+    {
+      "path": "Worlds/Eldermyr/Creatures",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "951a0ace74177d01f12bd6179b22ff7976acf710",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/951a0ace74177d01f12bd6179b22ff7976acf710"
+    },
+    {
+      "path": "Worlds/Eldermyr/Creatures/Ashen Hound.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9feacd280ccf55d299a758631e822dd653538567",
+      "size": 11146,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/9feacd280ccf55d299a758631e822dd653538567"
+    },
+    {
+      "path": "Worlds/Eldermyr/Creatures/Ashen Revenant.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b0e0ce67b403f3bbe13bee493dc5bb634ce2288a",
+      "size": 17071,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/b0e0ce67b403f3bbe13bee493dc5bb634ce2288a"
+    },
+    {
+      "path": "Worlds/Eldermyr/Creatures/Corpse Amalgam.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f72c3ede9bb13fc9f6a34cc69ca22594a99e3342",
+      "size": 13713,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/f72c3ede9bb13fc9f6a34cc69ca22594a99e3342"
+    },
+    {
+      "path": "Worlds/Eldermyr/Creatures/Cursed Echo.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9503ff683f743e247ebeb69e5856077e46e5674f",
+      "size": 11457,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/9503ff683f743e247ebeb69e5856077e46e5674f"
+    },
+    {
+      "path": "Worlds/Eldermyr/Creatures/Dread Commander.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "56f5baab6e65bae667715186696013e54163f8bc",
+      "size": 18077,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/56f5baab6e65bae667715186696013e54163f8bc"
+    },
+    {
+      "path": "Worlds/Eldermyr/Creatures/Iron Peak Wyvern.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eb24cbb8fbc2d38a14a2eca1ded36d3770f37988",
+      "size": 11522,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/eb24cbb8fbc2d38a14a2eca1ded36d3770f37988"
+    },
+    {
+      "path": "Worlds/Eldermyr/Creatures/Northland Dire Wolf.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e534f7cab4069570d8e62b9fc1d495760e62708b",
+      "size": 11546,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/e534f7cab4069570d8e62b9fc1d495760e62708b"
+    },
+    {
+      "path": "Worlds/Eldermyr/Creatures/Risen Archer.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2a1791207f3719230e49efd2113efff038e9229f",
+      "size": 9809,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/2a1791207f3719230e49efd2113efff038e9229f"
+    },
+    {
+      "path": "Worlds/Eldermyr/Creatures/Risen Knight.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8d505446d4251d5de31f6d8b32d891726e94c20f",
+      "size": 12534,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/8d505446d4251d5de31f6d8b32d891726e94c20f"
+    },
+    {
+      "path": "Worlds/Eldermyr/Creatures/Risen Mage.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1eb421a0f9912f7e3c142d31fd0ab4ddd317b50a",
+      "size": 12263,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/1eb421a0f9912f7e3c142d31fd0ab4ddd317b50a"
+    },
+    {
+      "path": "Worlds/Eldermyr/Creatures/Risen Officer.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0df6e802f368585227278825d8bbf048530f3829",
+      "size": 11888,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/0df6e802f368585227278825d8bbf048530f3829"
+    },
+    {
+      "path": "Worlds/Eldermyr/Creatures/Risen Soldier.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4ad57f44102718949ccb39960840a308b17e0cc4",
+      "size": 17269,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/4ad57f44102718949ccb39960840a308b17e0cc4"
+    },
+    {
+      "path": "Worlds/Eldermyr/Creatures/Soul Warden.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "efe1af0bf902c186c66517fa46674a743afbcaac",
+      "size": 13114,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/efe1af0bf902c186c66517fa46674a743afbcaac"
+    },
+    {
+      "path": "Worlds/Eldermyr/Creatures/The Unnamed's Tendril.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0e6286dbf9a8c49f16306260332a05f3844cd210",
+      "size": 12787,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/0e6286dbf9a8c49f16306260332a05f3844cd210"
+    },
+    {
+      "path": "Worlds/Eldermyr/Creatures/Whisper Shade.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e2ae2cfaa8ead020c867924a20d04113e04665e3",
+      "size": 12245,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/e2ae2cfaa8ead020c867924a20d04113e04665e3"
+    },
+    {
+      "path": "Worlds/Eldermyr/Encounters",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "16f6dd9c8a39b2241661722d69ca529051dcd272",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/16f6dd9c8a39b2241661722d69ca529051dcd272"
+    },
+    {
+      "path": "Worlds/Eldermyr/Encounters/Audience with the Regent.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "436ac439bce5bb23f84ea3f64d4ad400ba8a84ca",
+      "size": 19856,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/436ac439bce5bb23f84ea3f64d4ad400ba8a84ca"
+    },
+    {
+      "path": "Worlds/Eldermyr/Encounters/The Ashen Patrol.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6caf331c6691e9ad7d62341453c0845d695267bd",
+      "size": 18918,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/6caf331c6691e9ad7d62341453c0845d695267bd"
+    },
+    {
+      "path": "Worlds/Eldermyr/Encounters/The Burning Brand.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "00117d1a148b9bb7c83a2eebb459e5e7cb338ee8",
+      "size": 12791,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/00117d1a148b9bb7c83a2eebb459e5e7cb338ee8"
+    },
+    {
+      "path": "Worlds/Eldermyr/Encounters/The Frozen Hunters.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af6e2d10a0c088ad9c9aef1b98062c6812b0fd71",
+      "size": 12902,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/af6e2d10a0c088ad9c9aef1b98062c6812b0fd71"
+    },
+    {
+      "path": "Worlds/Eldermyr/Encounters/Voices in the Deep Wood.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6091f62259968e38bc53cde94c3bb039d3d82eb7",
+      "size": 10803,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/6091f62259968e38bc53cde94c3bb039d3d82eb7"
+    },
+    {
+      "path": "Worlds/Eldermyr/Geography",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9616782adada957f82db47cae1617b10aa1821f8",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/9616782adada957f82db47cae1617b10aa1821f8"
+    },
+    {
+      "path": "Worlds/Eldermyr/Geography/EldermyrMapEnhanced.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fa024d7acab5ae3200926770611754942a8b3cc9",
+      "size": 11943729,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/fa024d7acab5ae3200926770611754942a8b3cc9"
+    },
+    {
+      "path": "Worlds/Eldermyr/Geography/Lo Stretto d'Oro.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "30694bb308726a1c44ac64a8487d9f8c9564f7ec",
+      "size": 6446,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/30694bb308726a1c44ac64a8487d9f8c9564f7ec"
+    },
+    {
+      "path": "Worlds/Eldermyr/Geography/Myrkvid.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fe468521d34c6ad7efa22ebc5a281f01c9a98d4b",
+      "size": 27503,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/fe468521d34c6ad7efa22ebc5a281f01c9a98d4b"
+    },
+    {
+      "path": "Worlds/Eldermyr/Geography/Ostmark Pass.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b003ca18b82cdae7f017e19c613295ae6697ecb9",
+      "size": 6783,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/b003ca18b82cdae7f017e19c613295ae6697ecb9"
+    },
+    {
+      "path": "Worlds/Eldermyr/Geography/The Ash Road.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3457cd9d589a4d6ed8a79ef5475fcbd673caa724",
+      "size": 6988,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/3457cd9d589a4d6ed8a79ef5475fcbd673caa724"
+    },
+    {
+      "path": "Worlds/Eldermyr/Geography/The Ashen Fields.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b03803d5e2c0a2978cbf6938dc606b1ba5515024",
+      "size": 12516,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/b03803d5e2c0a2978cbf6938dc606b1ba5515024"
+    },
+    {
+      "path": "Worlds/Eldermyr/Geography/The Bitter Coast.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eaf257305cee719b2941be9b0db66c1b3abb2cdc",
+      "size": 22753,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/eaf257305cee719b2941be9b0db66c1b3abb2cdc"
+    },
+    {
+      "path": "Worlds/Eldermyr/Geography/The Chorna.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0fd31f17f6bed0950989e1214103c8e507b6fb75",
+      "size": 22994,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/0fd31f17f6bed0950989e1214103c8e507b6fb75"
+    },
+    {
+      "path": "Worlds/Eldermyr/Geography/The Crown Lands.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ce644dddd1fc2fa19cc94ed993982c70f526a260",
+      "size": 18578,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/ce644dddd1fc2fa19cc94ed993982c70f526a260"
+    },
+    {
+      "path": "Worlds/Eldermyr/Geography/The Deep Delving.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4bb72b29da2938d03d8bd17a1dee16f7914b478c",
+      "size": 23948,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/4bb72b29da2938d03d8bd17a1dee16f7914b478c"
+    },
+    {
+      "path": "Worlds/Eldermyr/Geography/The Eastern March.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6836cb2a111923343caed19ec264ce45aa7427f3",
+      "size": 18326,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/6836cb2a111923343caed19ec264ce45aa7427f3"
+    },
+    {
+      "path": "Worlds/Eldermyr/Geography/The Greycrowns.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e3728d75c42ae76c648541b8c0d2add0b029ab2f",
+      "size": 26847,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/e3728d75c42ae76c648541b8c0d2add0b029ab2f"
+    },
+    {
+      "path": "Worlds/Eldermyr/Geography/The Iron Gate Pass.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "35fa0a64e15a4e5281e7189450b768b387462c8f",
+      "size": 20479,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/35fa0a64e15a4e5281e7189450b768b387462c8f"
+    },
+    {
+      "path": "Worlds/Eldermyr/Geography/The Karath Reach.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "35bb215550cd1b327cfe8a1bcf488f4178cc9389",
+      "size": 24060,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/35bb215550cd1b327cfe8a1bcf488f4178cc9389"
+    },
+    {
+      "path": "Worlds/Eldermyr/Geography/The King's Road.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ab8937fa76744bbffd7ef86a3b5dc3607bdc58f6",
+      "size": 20425,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/ab8937fa76744bbffd7ef86a3b5dc3607bdc58f6"
+    },
+    {
+      "path": "Worlds/Eldermyr/Geography/The King's Wood.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c29d25aa9d1ff821efb3ea95d343c47c848bd060",
+      "size": 24199,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/c29d25aa9d1ff821efb3ea95d343c47c848bd060"
+    },
+    {
+      "path": "Worlds/Eldermyr/Geography/The Kingswater.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "32b7d3cd401a4d0441b0e18c6b25f059d75fe610",
+      "size": 25311,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/32b7d3cd401a4d0441b0e18c6b25f059d75fe610"
+    },
+    {
+      "path": "Worlds/Eldermyr/Geography/The Northlands.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "935cfb2be270175a0823bb24664069f791a46f80",
+      "size": 18563,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/935cfb2be270175a0823bb24664069f791a46f80"
+    },
+    {
+      "path": "Worlds/Eldermyr/Geography/The Ostmark Range.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0895964442b7f52131d8e719490982cd9314314b",
+      "size": 21826,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/0895964442b7f52131d8e719490982cd9314314b"
+    },
+    {
+      "path": "Worlds/Eldermyr/Geography/The Shepherd's Teeth.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2302d0d4d3ae8f147f16472a596a2a395af16ffc",
+      "size": 18625,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/2302d0d4d3ae8f147f16472a596a2a395af16ffc"
+    },
+    {
+      "path": "Worlds/Eldermyr/Geography/The Silvermere.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c8e3c31527282af333a6ed23292415f643a339ae",
+      "size": 18084,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/c8e3c31527282af333a6ed23292415f643a339ae"
+    },
+    {
+      "path": "Worlds/Eldermyr/Geography/The Stahlfluss.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d17de879c59a8aa83ead18e75f6913a855bab4bf",
+      "size": 5240,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/d17de879c59a8aa83ead18e75f6913a855bab4bf"
+    },
+    {
+      "path": "Worlds/Eldermyr/Geography/The Thornwood.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "28d34096ac835d37b098340df396566d362d2f9b",
+      "size": 21818,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/28d34096ac835d37b098340df396566d362d2f9b"
+    },
+    {
+      "path": "Worlds/Eldermyr/Geography/The Trader's Sea.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "82884f7c09a2685dbda3c2c9dc3fc7f85a39022e",
+      "size": 24914,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/82884f7c09a2685dbda3c2c9dc3fc7f85a39022e"
+    },
+    {
+      "path": "Worlds/Eldermyr/Geography/The Valdren Isles.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "df32e4d0cbb455c631ad948a603e7926664a7cba",
+      "size": 23515,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/df32e4d0cbb455c631ad948a603e7926664a7cba"
+    },
+    {
+      "path": "Worlds/Eldermyr/Geography/The Valdris.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "382aaff4d8722e85c6e6d6cd6443cd333a5c7455",
+      "size": 5434,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/382aaff4d8722e85c6e6d6cd6443cd333a5c7455"
+    },
+    {
+      "path": "Worlds/Eldermyr/Geography/The Warden's March.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "03f0538ce273af25285f62562e141287f80e2f89",
+      "size": 19097,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/03f0538ce273af25285f62562e141287f80e2f89"
+    },
+    {
+      "path": "Worlds/Eldermyr/Geography/The Western Shore.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a9d93c858d8606c51fb76c33c49f8447aaeadddc",
+      "size": 18346,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/a9d93c858d8606c51fb76c33c49f8447aaeadddc"
+    },
+    {
+      "path": "Worlds/Eldermyr/Geography/eldermyrmaprealistic-1.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c5b21a61649a653a83efc51abc728bf44b5f4be5",
+      "size": 9879556,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/c5b21a61649a653a83efc51abc728bf44b5f4be5"
+    },
+    {
+      "path": "Worlds/Eldermyr/Geography/eldermyrmaprealistic5mb.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f7f5eae373838c6be336affe67b51f9a5b08c5aa",
+      "size": 4233701,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/f7f5eae373838c6be336affe67b51f9a5b08c5aa"
+    },
+    {
+      "path": "Worlds/Eldermyr/History",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a0b541e643f9f141fa733c4d43dc8f65e28fe6c6",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/a0b541e643f9f141fa733c4d43dc8f65e28fe6c6"
+    },
+    {
+      "path": "Worlds/Eldermyr/History/Death of Aldric II.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f89d0d3f7b4770222d57a0284f51502bd1d8d487",
+      "size": 9152,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/f89d0d3f7b4770222d57a0284f51502bd1d8d487"
+    },
+    {
+      "path": "Worlds/Eldermyr/History/The Battle of Ashen Fields.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f81067f22e1a6095a3b667903a680f3e26dc48cd",
+      "size": 10977,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/f81067f22e1a6095a3b667903a680f3e26dc48cd"
+    },
+    {
+      "path": "Worlds/Eldermyr/History/The Great War.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a0d4aa618d1116f0f8f75c52f7873a68fb9c5bcf",
+      "size": 10138,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/a0d4aa618d1116f0f8f75c52f7873a68fb9c5bcf"
+    },
+    {
+      "path": "Worlds/Eldermyr/History/The Parricide.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "38f166d244c415ead4316cf25142c99e9ef80574",
+      "size": 10233,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/38f166d244c415ead4316cf25142c99e9ef80574"
+    },
+    {
+      "path": "Worlds/Eldermyr/Items",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1ac33d1d2c5cbcdd36ad24750274a0395674a0ca",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/1ac33d1d2c5cbcdd36ad24750274a0395674a0ca"
+    },
+    {
+      "path": "Worlds/Eldermyr/Items/Grimhild's Commission.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7498e8944cd95c7d24bfdddfcd33b7dc340235c4",
+      "size": 9342,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/7498e8944cd95c7d24bfdddfcd33b7dc340235c4"
+    },
+    {
+      "path": "Worlds/Eldermyr/Items/The Blackened Crown.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3e5607fbb310a631d6ef48636b1650c8376d0371",
+      "size": 22329,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/3e5607fbb310a631d6ef48636b1650c8376d0371"
+    },
+    {
+      "path": "Worlds/Eldermyr/Items/The Iron Crown.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7e46390a9dbb25250d1d361b61e2081ab578710d",
+      "size": 23086,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/7e46390a9dbb25250d1d361b61e2081ab578710d"
+    },
+    {
+      "path": "Worlds/Eldermyr/Items/The Shepherd's Crook.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "85770416ab9f0b271ac4737e9886aa582fb44263",
+      "size": 18085,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/85770416ab9f0b271ac4737e9886aa582fb44263"
+    },
+    {
+      "path": "Worlds/Eldermyr/Items/Thornbane.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ce19752ab291ea35acc7243768ecdee8a9e88d22",
+      "size": 11174,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/ce19752ab291ea35acc7243768ecdee8a9e88d22"
+    },
+    {
+      "path": "Worlds/Eldermyr/Maps",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d82be7f381e77a5da363fb17bfdc0ed1eb2fe196",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/d82be7f381e77a5da363fb17bfdc0ed1eb2fe196"
+    },
+    {
+      "path": "Worlds/Eldermyr/Maps/Eldermyr World Map.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "00431f064272ad39ac2e4d161ab2bb3cac4bd2ff",
+      "size": 24868,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/00431f064272ad39ac2e4d161ab2bb3cac4bd2ff"
+    },
+    {
+      "path": "Worlds/Eldermyr/Organizations",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9b293b527c17599c2610a0a5b6675ae493f5255c",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/9b293b527c17599c2610a0a5b6675ae493f5255c"
+    },
+    {
+      "path": "Worlds/Eldermyr/Organizations/House Karath.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "31443e9d32d9b7827f1ee47e4779afc2c8db4cf4",
+      "size": 23870,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/31443e9d32d9b7827f1ee47e4779afc2c8db4cf4"
+    },
+    {
+      "path": "Worlds/Eldermyr/Organizations/House Thorne.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5564209d035eee5fc2c8fce35200dfc1a4bb80a3",
+      "size": 22092,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/5564209d035eee5fc2c8fce35200dfc1a4bb80a3"
+    },
+    {
+      "path": "Worlds/Eldermyr/Organizations/House Valdren.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d5b1af9f6805fb2de62c4968dde48a957480b9e9",
+      "size": 17529,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/d5b1af9f6805fb2de62c4968dde48a957480b9e9"
+    },
+    {
+      "path": "Worlds/Eldermyr/Organizations/The Arcane Academy.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "748450e838b02517f756f2da810f668041b9f8af",
+      "size": 24913,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/748450e838b02517f756f2da810f668041b9f8af"
+    },
+    {
+      "path": "Worlds/Eldermyr/Organizations/The Forgemasters Guild.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e74a40832ec9928598f3603ca3a7b665f030a5f5",
+      "size": 7155,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/e74a40832ec9928598f3603ca3a7b665f030a5f5"
+    },
+    {
+      "path": "Worlds/Eldermyr/Organizations/The Grey Wardens.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1f439ef257927da51646f71370c4298b22c97643",
+      "size": 18128,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/1f439ef257927da51646f71370c4298b22c97643"
+    },
+    {
+      "path": "Worlds/Eldermyr/Organizations/The Merchant Princes.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f1876571e376e63aa33f334de0da6f01316d6ebe",
+      "size": 5247,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/f1876571e376e63aa33f334de0da6f01316d6ebe"
+    },
+    {
+      "path": "Worlds/Eldermyr/Organizations/The Raven Circle.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b9c78f190a393f5e76b3ddb481ddb1f4c949ccb3",
+      "size": 5288,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/b9c78f190a393f5e76b3ddb481ddb1f4c949ccb3"
+    },
+    {
+      "path": "Worlds/Eldermyr/Organizations/The Spirit-Speakers.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c19b1537cbcfa7d3cb22a0d92b854443e9af8563",
+      "size": 9788,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/c19b1537cbcfa7d3cb22a0d92b854443e9af8563"
+    },
+    {
+      "path": "Worlds/Eldermyr/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "55c1bb3942b3a5ee51ad2f7dedc93c362ccc3290",
+      "size": 6907,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/55c1bb3942b3a5ee51ad2f7dedc93c362ccc3290"
+    },
+    {
+      "path": "Worlds/Eldermyr/Settlements",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "273dc4363c4529edd581c9a878c4cbb89e016107",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/273dc4363c4529edd581c9a878c4cbb89e016107"
+    },
+    {
+      "path": "Worlds/Eldermyr/Settlements/Aldersgate.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "27c378b1fabf5e5fec1fd9c9967681a26688fc54",
+      "size": 17457,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/27c378b1fabf5e5fec1fd9c9967681a26688fc54"
+    },
+    {
+      "path": "Worlds/Eldermyr/Settlements/Bastions",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "64f7d2c9eed164d8603cb8b522b77963956e4d3a",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/64f7d2c9eed164d8603cb8b522b77963956e4d3a"
+    },
+    {
+      "path": "Worlds/Eldermyr/Settlements/Bastions/Frostfang Lodge.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "02c385613de55365cae4d6c8f5084a3a22865afe",
+      "size": 9747,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/02c385613de55365cae4d6c8f5084a3a22865afe"
+    },
+    {
+      "path": "Worlds/Eldermyr/Settlements/Bastions/Ravenspire Tower.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ff186a3c7d71541ca87c9e69fb8ab535db928acd",
+      "size": 8831,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/ff186a3c7d71541ca87c9e69fb8ab535db928acd"
+    },
+    {
+      "path": "Worlds/Eldermyr/Settlements/Bastions/Shadowfen Priory.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cbd53acbe2324dc50e8026263faff3e86c49df64",
+      "size": 10718,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/cbd53acbe2324dc50e8026263faff3e86c49df64"
+    },
+    {
+      "path": "Worlds/Eldermyr/Settlements/Bastions/Stormbreak Keep.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3726e4084db7c79cadcf4afee1e4095aea97ec85",
+      "size": 9207,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/3726e4084db7c79cadcf4afee1e4095aea97ec85"
+    },
+    {
+      "path": "Worlds/Eldermyr/Settlements/Bastions/The Burned Hold.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eca2827ed812d134780727b18f99bd08cca1f241",
+      "size": 9562,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/eca2827ed812d134780727b18f99bd08cca1f241"
+    },
+    {
+      "path": "Worlds/Eldermyr/Settlements/Bastions/The Greenward.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e59d4069cacf3be091fc05d17ff998f339f75504",
+      "size": 10439,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/e59d4069cacf3be091fc05d17ff998f339f75504"
+    },
+    {
+      "path": "Worlds/Eldermyr/Settlements/Bastions/The Iron Redoubt.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2bab56f307a3ff71b3a99d5b95fc80fdfdc4bb6b",
+      "size": 9425,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/2bab56f307a3ff71b3a99d5b95fc80fdfdc4bb6b"
+    },
+    {
+      "path": "Worlds/Eldermyr/Settlements/Bastions/The Sunken Lighthouse.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1f2e2386060b3ec98ff5171fe818230aa3c93c25",
+      "size": 9676,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/1f2e2386060b3ec98ff5171fe818230aa3c93c25"
+    },
+    {
+      "path": "Worlds/Eldermyr/Settlements/Bastions/Whitehall Manor.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "698afc4a18774909746fbeccbd5754f14ec3cb53",
+      "size": 9488,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/698afc4a18774909746fbeccbd5754f14ec3cb53"
+    },
+    {
+      "path": "Worlds/Eldermyr/Settlements/Bastions/Wyrmbone Spire.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f95498115cbd5e56271957348db62d758395d823",
+      "size": 10062,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/f95498115cbd5e56271957348db62d758395d823"
+    },
+    {
+      "path": "Worlds/Eldermyr/Settlements/Chernogrod.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e97a8b78ae2f64ace6a1e345f0f13e931a98c768",
+      "size": 19130,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/e97a8b78ae2f64ace6a1e345f0f13e931a98c768"
+    },
+    {
+      "path": "Worlds/Eldermyr/Settlements/Coldwater.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fa42950887f2ffd07d9575366d59e33a372cf2c4",
+      "size": 15087,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/fa42950887f2ffd07d9575366d59e33a372cf2c4"
+    },
+    {
+      "path": "Worlds/Eldermyr/Settlements/Corvana.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6b0892df2c254133f0736b813ac26dc3800af7bc",
+      "size": 27486,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/6b0892df2c254133f0736b813ac26dc3800af7bc"
+    },
+    {
+      "path": "Worlds/Eldermyr/Settlements/Crossford.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8c26aba349ecff9bb26e1db0c8ab0dd41b75507e",
+      "size": 8052,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/8c26aba349ecff9bb26e1db0c8ab0dd41b75507e"
+    },
+    {
+      "path": "Worlds/Eldermyr/Settlements/Eldoria.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c52b3c64461940bf9afc0e7b3f0ebf3a09c496e9",
+      "size": 34512,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/c52b3c64461940bf9afc0e7b3f0ebf3a09c496e9"
+    },
+    {
+      "path": "Worlds/Eldermyr/Settlements/Fernglow Warren.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "01adba05115dc06bf6dc19fd13a1dbbd4cf90c01",
+      "size": 6202,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/01adba05115dc06bf6dc19fd13a1dbbd4cf90c01"
+    },
+    {
+      "path": "Worlds/Eldermyr/Settlements/Goldport.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1770cd29cae149f1511cf661455fb504a49a1e08",
+      "size": 15669,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/1770cd29cae149f1511cf661455fb504a49a1e08"
+    },
+    {
+      "path": "Worlds/Eldermyr/Settlements/Greenhollow.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "15baa5e4cc0d40d41e8052f8c8151291083bd27e",
+      "size": 13489,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/15baa5e4cc0d40d41e8052f8c8151291083bd27e"
+    },
+    {
+      "path": "Worlds/Eldermyr/Settlements/Grimhold.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4501ea51ca67dbc8c2ecfb00240b7291d2c5e6d1",
+      "size": 7258,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/4501ea51ca67dbc8c2ecfb00240b7291d2c5e6d1"
+    },
+    {
+      "path": "Worlds/Eldermyr/Settlements/Hammerhall.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d44c44fc40e9c975cb55caf85d04c74cfcbd0be4",
+      "size": 11041,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/d44c44fc40e9c975cb55caf85d04c74cfcbd0be4"
+    },
+    {
+      "path": "Worlds/Eldermyr/Settlements/Marevento.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6d1a4c86e8f9a59bb3f1507f1ed30b2f15783db4",
+      "size": 6040,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/6d1a4c86e8f9a59bb3f1507f1ed30b2f15783db4"
+    },
+    {
+      "path": "Worlds/Eldermyr/Settlements/Millford.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0c2e2ba656386defd269d05fc6ed98358412de86",
+      "size": 13082,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/0c2e2ba656386defd269d05fc6ed98358412de86"
+    },
+    {
+      "path": "Worlds/Eldermyr/Settlements/Port Corsair.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d65c404e353b721068db6a1de9621d874ef33fd8",
+      "size": 18141,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/d65c404e353b721068db6a1de9621d874ef33fd8"
+    },
+    {
+      "path": "Worlds/Eldermyr/Settlements/Porto Valdris.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "09e562b3e65e95a06ff9e85d40ebaeb34f33ce3c",
+      "size": 18000,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/09e562b3e65e95a06ff9e85d40ebaeb34f33ce3c"
+    },
+    {
+      "path": "Worlds/Eldermyr/Settlements/Ravnograd.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "66b65d2c2165abe6e3b1e0b0e25756a4751c6576",
+      "size": 8152,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/66b65d2c2165abe6e3b1e0b0e25756a4751c6576"
+    },
+    {
+      "path": "Worlds/Eldermyr/Settlements/Serenzia.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "02b967b08e4c6f8a1bc6e8fcedc78efa181085c8",
+      "size": 6721,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/02b967b08e4c6f8a1bc6e8fcedc78efa181085c8"
+    },
+    {
+      "path": "Worlds/Eldermyr/Settlements/Silvaneth.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dedd75f9c6390d73899f865882b1696b1e0188b8",
+      "size": 5956,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/dedd75f9c6390d73899f865882b1696b1e0188b8"
+    },
+    {
+      "path": "Worlds/Eldermyr/Settlements/Stahlburg.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d4237d05dfa7710cfd60158118dbf62260d1c448",
+      "size": 16076,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/d4237d05dfa7710cfd60158118dbf62260d1c448"
+    },
+    {
+      "path": "Worlds/Eldermyr/Settlements/The Crossed Swords Inn.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "024faa514b9755f6468a76323de7a05b11091549",
+      "size": 18111,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/024faa514b9755f6468a76323de7a05b11091549"
+    },
+    {
+      "path": "Worlds/Eldermyr/Settlements/The Drowned Rat Tavern.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "164018c43793334e59608e9e0fa02f923a51dc98",
+      "size": 16810,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/164018c43793334e59608e9e0fa02f923a51dc98"
+    },
+    {
+      "path": "Worlds/Eldermyr/Settlements/Thornhall.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d3fd1b7f472f38e919f485c2268760db3e652026",
+      "size": 16090,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/d3fd1b7f472f38e919f485c2268760db3e652026"
+    },
+    {
+      "path": "Worlds/Eldermyr/Settlements/Thornholt.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "71c0c6911072b430dcf253f738ab3e73b07ca367",
+      "size": 19974,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/71c0c6911072b430dcf253f738ab3e73b07ca367"
+    },
+    {
+      "path": "Worlds/Eldermyr/Settlements/Vindrheim.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "125d35064ad67266109229861a1ca7f745124114",
+      "size": 10248,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/125d35064ad67266109229861a1ca7f745124114"
+    },
+    {
+      "path": "Worlds/Eldermyr/Settlements/Volkovka.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "81843a80c0ae4d4a9767d18c744a13fd3de3d604",
+      "size": 7704,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/81843a80c0ae4d4a9767d18c744a13fd3de3d604"
+    },
+    {
+      "path": "Worlds/Eldermyr/Settlements/Wolfsberg.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "588942f344f20aa1f67913ecb5d41fc298e3c2a7",
+      "size": 6037,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/588942f344f20aa1f67913ecb5d41fc298e3c2a7"
+    },
+    {
+      "path": "Worlds/Eldermyr/Species",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "314a8f8aea0fa48a5eb84b677d6f44da74dd1e08",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/314a8f8aea0fa48a5eb84b677d6f44da74dd1e08"
+    },
+    {
+      "path": "Worlds/Eldermyr/Species/Aasimar.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1910c4d3c3a820e5fee7dd49c9451a82c0e5b27c",
+      "size": 22373,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/1910c4d3c3a820e5fee7dd49c9451a82c0e5b27c"
+    },
+    {
+      "path": "Worlds/Eldermyr/Species/Dragonborn.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d62fcc0b9258af57ad4cc79fb6143f217e4e64ca",
+      "size": 24556,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/d62fcc0b9258af57ad4cc79fb6143f217e4e64ca"
+    },
+    {
+      "path": "Worlds/Eldermyr/Species/Dwarves.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e99b5ffc90ed63f6f2a576978d3ead550717aeb4",
+      "size": 25936,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/e99b5ffc90ed63f6f2a576978d3ead550717aeb4"
+    },
+    {
+      "path": "Worlds/Eldermyr/Species/Elves.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e81cf4a03f197e313b6966c01307a10fd9513afb",
+      "size": 27740,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/e81cf4a03f197e313b6966c01307a10fd9513afb"
+    },
+    {
+      "path": "Worlds/Eldermyr/Species/Gnomes.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d9f374ef07c230272637a67a74ad4c73b333f91b",
+      "size": 24249,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/d9f374ef07c230272637a67a74ad4c73b333f91b"
+    },
+    {
+      "path": "Worlds/Eldermyr/Species/Goliaths.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "24b56d5b646816acd788ed07082e55d32dd2a34e",
+      "size": 24784,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/24b56d5b646816acd788ed07082e55d32dd2a34e"
+    },
+    {
+      "path": "Worlds/Eldermyr/Species/Halflings.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "52acda4ad43b830c5738387a9ca5bc0af7058e63",
+      "size": 23818,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/52acda4ad43b830c5738387a9ca5bc0af7058e63"
+    },
+    {
+      "path": "Worlds/Eldermyr/Species/Humans.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1ee7d46ce205510d32b0265ff9f41f35ac4b1dfc",
+      "size": 23901,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/1ee7d46ce205510d32b0265ff9f41f35ac4b1dfc"
+    },
+    {
+      "path": "Worlds/Eldermyr/Species/Orcs.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1266c60f799f27ba5a8458aaa6394412862caaff",
+      "size": 24851,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/1266c60f799f27ba5a8458aaa6394412862caaff"
+    },
+    {
+      "path": "Worlds/Eldermyr/Species/Tieflings.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ebdcf157381b5152638abe4da60e9fc1aac2c9ee",
+      "size": 22927,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/ebdcf157381b5152638abe4da60e9fc1aac2c9ee"
+    },
+    {
+      "path": "Worlds/Eldermyr/World Overview.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "017db3636f3c027615b0d913a5533c533f26a23a",
+      "size": 42954,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/017db3636f3c027615b0d913a5533c533f26a23a"
+    },
+    {
+      "path": "Worlds/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ac1b8e73dc4e454c4285b6c3aebaf4d797f8db68",
+      "size": 1055,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/ac1b8e73dc4e454c4285b6c3aebaf4d797f8db68"
+    },
+    {
+      "path": "scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "14feba32c930bf9e2aa0e56728a61d5a1d0ae2e0",
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/trees/14feba32c930bf9e2aa0e56728a61d5a1d0ae2e0"
+    },
+    {
+      "path": "scripts/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d420dbaec36a5f129401dd8a9c8dced73a0d4a3f",
+      "size": 5577,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/d420dbaec36a5f129401dd8a9c8dced73a0d4a3f"
+    },
+    {
+      "path": "scripts/check_metadata.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "247f3c200c183008b43f78e6ad894b633f4a0634",
+      "size": 11533,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/247f3c200c183008b43f78e6ad894b633f4a0634"
+    },
+    {
+      "path": "scripts/find_orphans.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8480606a687fed5cfba1a7d7ce3c9739f26e8f09",
+      "size": 8960,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/8480606a687fed5cfba1a7d7ce3c9739f26e8f09"
+    },
+    {
+      "path": "scripts/fix_table_links.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9c1d85078824a8cedd88df79af5b4cf1cf57fcb7",
+      "size": 3774,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/9c1d85078824a8cedd88df79af5b4cf1cf57fcb7"
+    },
+    {
+      "path": "scripts/linkify_dry_run.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8e155fa30af038f2f62564228d46c3b304e3aec8",
+      "size": 81529,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/8e155fa30af038f2f62564228d46c3b304e3aec8"
+    },
+    {
+      "path": "scripts/linkify_world.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0e82ada404c7c5e0de432dffb272bf518798b639",
+      "size": 19348,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/0e82ada404c7c5e0de432dffb272bf518798b639"
+    },
+    {
+      "path": "scripts/validate_templates.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "74683acc8e513db46cc28af0df1c450973de1bfc",
+      "size": 12072,
+      "url": "https://api.github.com/repos/hopeoverture/Worldbuilding-System/git/blobs/74683acc8e513db46cc28af0df1c450973de1bfc"
+    }
+  ],
+  "truncated": false
+}

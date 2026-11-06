@@ -1,0 +1,67 @@
+{
+  "repository": "https://github.com/hopeoverture/Worldbuilding-System",
+  "commit": "ea667e8758a84bdcae7e968cff5abc8a230e346a",
+  "retrieved_date": "2026-10-19",
+  "scope": "selected reference texts, not full repository",
+  "verification": "All downloaded Git blobs verified against recorded commit tree",
+  "files": [
+    {
+      "bytes": 12503,
+      "path": "README.md",
+      "git_blob_sha1": "63c8368438138f1cd2d243b56f0f095b65ba830f",
+      "source": "https://github.com/hopeoverture/Worldbuilding-System/blob/ea667e8758a84bdcae7e968cff5abc8a230e346a/README.md",
+      "sha256": "31591CB0E7CE4CAD7E39CF8BC07A4D822BDA9D82F462FDCC52377AC7F48D95C1"
+    },
+    {
+      "bytes": 12527,
+      "path": "Templates/Concepts/Deity.md",
+      "git_blob_sha1": "2de481606f11bc620c4a2639eb5245b4c9029e1d",
+      "source": "https://github.com/hopeoverture/Worldbuilding-System/blob/ea667e8758a84bdcae7e968cff5abc8a230e346a/Templates/Concepts/Deity.md",
+      "sha256": "F18B1A89921F750DF1B4242373C20B8065811D295502C75DD0CA3EE2DF3640AB"
+    },
+    {
+      "bytes": 12134,
+      "path": "Templates/Concepts/Magic System.md",
+      "git_blob_sha1": "521ea1dafd0a622e8fb448fc1aa9c7a17032ef42",
+      "source": "https://github.com/hopeoverture/Worldbuilding-System/blob/ea667e8758a84bdcae7e968cff5abc8a230e346a/Templates/Concepts/Magic System.md",
+      "sha256": "86626951638DFDDA5992E3704FB6A63FE20E60E1ED84861610CAC66A8F493871"
+    },
+    {
+      "bytes": 11877,
+      "path": "Templates/Concepts/Pantheon.md",
+      "git_blob_sha1": "d27aa0a1b876fa2aa219a58696b26e555526690c",
+      "source": "https://github.com/hopeoverture/Worldbuilding-System/blob/ea667e8758a84bdcae7e968cff5abc8a230e346a/Templates/Concepts/Pantheon.md",
+      "sha256": "8EF962BFA7B9EBD57B6D28CD614AB303C84A217B66529FE8BA0D6A76305D362D"
+    },
+    {
+      "bytes": 14037,
+      "path": "Templates/Concepts/Plane of Existence.md",
+      "git_blob_sha1": "51ed2b39d42551cb2a1d8a4cbc6212257618c2f9",
+      "source": "https://github.com/hopeoverture/Worldbuilding-System/blob/ea667e8758a84bdcae7e968cff5abc8a230e346a/Templates/Concepts/Plane of Existence.md",
+      "sha256": "679F3279126D66EBCA5F09DB79E24F8DCEC78175C2700E4DF19EC25118F1AB39"
+    },
+    {
+      "bytes": 12897,
+      "path": "Templates/Concepts/Prophecy.md",
+      "git_blob_sha1": "d644632cc5c3b5d832788b1daccf19bd02c8972c",
+      "source": "https://github.com/hopeoverture/Worldbuilding-System/blob/ea667e8758a84bdcae7e968cff5abc8a230e346a/Templates/Concepts/Prophecy.md",
+      "sha256": "CDD65559523A44ED23D7FF9590346AA8CB188B964054F1A7D95C9DBCD4A9DBCE"
+    },
+    {
+      "bytes": 12191,
+      "path": "Templates/Concepts/Religion.md",
+      "git_blob_sha1": "42be699fe964c129fc74133a200107084271da3e",
+      "source": "https://github.com/hopeoverture/Worldbuilding-System/blob/ea667e8758a84bdcae7e968cff5abc8a230e346a/Templates/Concepts/Religion.md",
+      "sha256": "3F01B3BA0EBE759823E2C8875ABA5148DBAFBE755C6B968A8C8EE1287D241FEE"
+    },
+    {
+      "bytes": 8504,
+      "path": "Templates/Reference/Connection Matrix.md",
+      "git_blob_sha1": "12af7e7c6f06a3de426709ee09089dcbf4639b2f",
+      "source": "https://github.com/hopeoverture/Worldbuilding-System/blob/ea667e8758a84bdcae7e968cff5abc8a230e346a/Templates/Reference/Connection Matrix.md",
+      "sha256": "76CE5C81B929F49C9C8590CE2BDD2F56A142E1D84C833CFB17837625D33C7EDF"
+    }
+  ],
+  "license_status": "No root LICENSE found; internal research only",
+  "remaining": "Selected core templates complete"
+}

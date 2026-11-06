@@ -1,0 +1,127 @@
+{
+  "nodes": [
+    {
+      "id": "file-0",
+      "type": "file",
+      "file": "外境.md",
+      "x": 0,
+      "y": 0,
+      "width": 700,
+      "height": 300
+    },
+    {
+      "id": "file-1",
+      "type": "file",
+      "file": "世界与历史.md",
+      "x": -850,
+      "y": 400,
+      "width": 700,
+      "height": 500
+    },
+    {
+      "id": "file-2",
+      "type": "file",
+      "file": "未亡地.md",
+      "x": 0,
+      "y": 400,
+      "width": 700,
+      "height": 500
+    },
+    {
+      "id": "file-3",
+      "type": "file",
+      "file": "角色与超凡体系.md",
+      "x": 850,
+      "y": 400,
+      "width": 700,
+      "height": 500
+    },
+    {
+      "id": "file-4",
+      "type": "file",
+      "file": "NPC与剧情.md",
+      "x": 0,
+      "y": 1100,
+      "width": 700,
+      "height": 500
+    },
+    {
+      "id": "file-5",
+      "type": "file",
+      "file": "规则与待定事项.md",
+      "x": 850,
+      "y": 1100,
+      "width": 700,
+      "height": 500
+    },
+    {
+      "id": "file-6",
+      "type": "file",
+      "file": "材料实验.md",
+      "x": 1700,
+      "y": 1100,
+      "width": 700,
+      "height": 500
+    },
+    {
+      "id": "file-combat",
+      "type": "file",
+      "file": "战斗规则与测试.md",
+      "x": 850,
+      "y": 1800,
+      "width": 700,
+      "height": 500
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge-0",
+      "fromNode": "file-0",
+      "fromSide": "bottom",
+      "toNode": "file-1",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-1",
+      "fromNode": "file-0",
+      "fromSide": "bottom",
+      "toNode": "file-2",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-2",
+      "fromNode": "file-0",
+      "fromSide": "bottom",
+      "toNode": "file-3",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-3",
+      "fromNode": "file-2",
+      "fromSide": "bottom",
+      "toNode": "file-4",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-4",
+      "fromNode": "file-3",
+      "fromSide": "bottom",
+      "toNode": "file-5",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-5",
+      "fromNode": "file-5",
+      "fromSide": "bottom",
+      "toNode": "file-6",
+      "toSide": "top"
+    },
+    {
+      "id": "edge-combat",
+      "fromNode": "file-3",
+      "fromSide": "bottom",
+      "toNode": "file-combat",
+      "toSide": "top"
+    }
+  ]
+}
