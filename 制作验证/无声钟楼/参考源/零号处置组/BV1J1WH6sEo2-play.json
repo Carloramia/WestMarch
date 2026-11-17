@@ -1,0 +1,72 @@
+{
+  "code": 0,
+  "message": "OK",
+  "ttl": 1,
+  "data": {
+    "from": "local",
+    "result": "suee",
+    "message": "",
+    "quality": 64,
+    "format": "mp4720",
+    "timelength": 154816,
+    "accept_format": "mp4720,mp4",
+    "accept_description": [
+      "高清 720P",
+      "流畅 360P"
+    ],
+    "accept_quality": [
+      64,
+      16
+    ],
+    "video_codecid": 7,
+    "seek_param": "start",
+    "seek_type": "offset",
+    "durl": [
+      {
+        "order": 1,
+        "length": 154816,
+        "size": 9526709,
+        "ahead": "",
+        "vhead": "",
+        "url": "https://upos-sz-mirrorcosov.bilivideo.com/upgcxcode/88/11/43455221188/43455221188-1-192.mp4?e=ig8euxZM2rNcNbRVhwdVhwdlhWdVhwdVhoNvNC8BqJIzNbfq9rVEuxTEnE8L5F6VnEsSTx0vkX8fqJeYTj_lta53NCM=&nbs=1&oi=1737993300&os=cosovbv&trid=cfb0e53ac15348009459f8fba4ac785h&platform=html5&deadline=1794946298&uipk=5&gen=playurlv3&og=cos&mid=0&upsig=e5eeb96ab1fea35a0ac253d3cd4e1618&uparams=e,nbs,oi,os,trid,platform,deadline,uipk,gen,og,mid&bvc=vod&nettype=0&bw=494893&lrs=0&V=v3.1.2&build=0&dl=0&f=h_0_0&agrr=1&buvid=&orderid=0,1",
+        "backup_url": null
+      }
+    ],
+    "support_formats": [
+      {
+        "quality": 64,
+        "format": "mp4720",
+        "new_description": "720P 准高清",
+        "display_desc": "720P",
+        "superscript": "",
+        "codecs": null,
+        "can_watch_qn_reason": 0,
+        "limit_watch_reason": 0,
+        "report": {}
+      },
+      {
+        "quality": 16,
+        "format": "mp4",
+        "new_description": "360P 流畅",
+        "display_desc": "360P",
+        "superscript": "",
+        "codecs": null,
+        "can_watch_qn_reason": 0,
+        "limit_watch_reason": 0,
+        "report": {}
+      }
+    ],
+    "high_format": null,
+    "last_play_time": 0,
+    "last_play_cid": 0,
+    "view_info": null,
+    "play_conf": {
+      "is_new_description": false
+    },
+    "cur_language": "",
+    "cur_production_type": 0,
+    "auto_qn_resp": {
+      "dyeid": ""
+    }
+  }
+}
