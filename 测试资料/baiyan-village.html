@@ -1,0 +1,572 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>百岩村 · 聚居地推演</title>
+<style>
+:root{color-scheme:dark;--bg:#161816;--panel:#222521;--line:#43483e;--ink:#f1ecdf;--mute:#b8bdaf;--accent:#f2a38c;--gold:#ead0a2}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top right,#312723,transparent 53%),var(--bg);color:var(--ink);font:15px/1.6 "Microsoft YaHei",sans-serif}main{max-width:1150px;margin:auto;padding:32px 22px}header{border-bottom:1px solid var(--line);padding-bottom:16px}h1{font: bold clamp(42px,8vw,70px)/1.15 SimSun,serif;margin:4px 0 10px;letter-spacing:.1em}h2{font-size:17px;margin:0 0 10px}p{margin:5px 0}small,.muted{color:var(--mute)}.eyebrow{color:var(--accent);letter-spacing:.14em}.bar,.actions{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:15px 0}.bar strong{margin-right:auto;color:var(--gold)}button,input,select{font:inherit;color:inherit;border:1px solid #646657;background:#2a2e28;border-radius:6px;padding:6px 10px}button{cursor:pointer}button:hover{background:#3f4439}button[aria-pressed=true],button.primary{color:#271a15;background:var(--accent);border-color:var(--accent);font-weight:bold}:focus-visible{outline:2px solid var(--gold);outline-offset:2px}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.split{display:grid;grid-template-columns:1fr 1fr;gap:12px}section{background:var(--panel);padding:15px;border:1px solid var(--line);border-radius:9px;min-width:0}section.full{grid-column:1/-1}table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}th,td{text-align:left;border-bottom:1px solid var(--line);padding:5px;vertical-align:top}form{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}label{display:grid;gap:4px;color:var(--mute)}input,select{width:100%;min-width:0}form button{align-self:end}ul{margin:5px 0;padding-left:20px}.feed{max-height:260px;overflow:auto}.feed li{margin-bottom:6px}details{margin-top:12px}summary{cursor:pointer;color:var(--gold)}[hidden]{display:none!important}.sub{margin-top:12px}@media(max-width:820px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:560px){main{padding:20px 12px}.grid,.split{grid-template-columns:1fr}form{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.chain{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;list-style:none;padding:0;margin:12px 0}.chain li{padding:10px;border:1px solid var(--line);border-radius:6px;background:#191d19;animation:trace .55s both;animation-delay:calc(var(--step)*85ms)}.chain strong{display:block;color:var(--gold)}.chain small{display:block}@keyframes trace{from{opacity:.65;border-color:var(--accent);transform:translateY(3px)}to{opacity:1;transform:none}}@media(max-width:560px){.chain{grid-template-columns:1fr}}@media(prefers-reduced-motion:reduce){.chain li{animation:none}}
+</style>
+<main>
+<header><div class="eyebrow">未亡地 / 聚居地测试</div><h1>百岩村</h1><p class="muted">穿过曲折的岩缝，才能抵达这座靠天顶裂口采光的矿村。</p></header>
+<div class="bar"><strong id="date"></strong><button id="public" aria-pressed="true">通用层</button><button id="ability" aria-pressed="false">能力层</button><button id="admin" aria-pressed="false">企划层</button><button id="play">自动推进</button><button id="one">推进一周</button><button id="week">推进一月</button><button id="reset">重置</button></div>
+<div id="cards" class="grid"></div>
+<section class="sub">
+<h2>缺粮干预测试</h2>
+<p class="muted">每次重开从相同村况开始。下周商队将遇险，可先调查，也可直接安排干预。</p>
+<div class="actions"><button id="shortage">重开缺粮试场</button><button id="escort">安排护送商队</button><button id="plant">请人以仪式培育粮植</button></div>
+<p id="intervention" role="status"></p>
+<div id="investigation" hidden>
+<div class="actions"><button id="provisions">补给能力：盘点粮仓</button><button id="route">商路能力：评估运粮</button><button id="inspect">神秘能力：调查井边植株</button></div>
+<p id="clue" role="status" class="muted"></p>
+</div>
+</section>
+<section class="sub" id="disaster-test">
+<h2>灾难缓冲试场</h2>
+<p class="muted">独立试场。每条路线都从同一百岩村快照开始，使用同一场岩壁崩裂。每步模拟现实一天，通常对应大世界七天。</p>
+<div class="actions">
+<button id="disaster-none">开始无人介入对照</button>
+<button id="disaster-rescue">开始玩家救援对照</button>
+<button id="disaster-step">推进一个反应步</button>
+<button id="disaster-help">组织救援</button>
+</div>
+<div id="disaster-status" aria-live="polite"></div>
+<div id="disaster-comparison" class="split sub"></div>
+</section>
+<div id="console" class="sub" hidden>
+<section><h2>执行链路</h2><p id="chain-status" class="muted" aria-live="polite"></p><ol id="chain" class="chain"></ol></section>
+<section><h2>调整推演输入</h2>
+<form id="settings">
+<label>主要族群劳动力（组）<input name="workers" type="number" step="1" min="0" max="500" required></label>
+<label>主要族群非劳动力（组）<input name="dependents" type="number" step="1" min="0" max="500" required></label>
+<label>次要族群劳动力（组）<input name="otherWorkers" type="number" step="1" min="0" max="500" required></label>
+<label>次要族群非劳动力（组）<input name="otherDependents" type="number" step="1" min="0" max="500" required></label>
+<label>矿井产能（%）<input name="mineRate" type="number" min="0" max="300" required></label>
+<label>存粮（批）<input name="food" type="number" step="1" min="0" max="10000" required></label>
+
+<label>商路<select name="road"><option value="open">通行</option><option value="closed">中断</option></select></label>
+<label>红教团庇护<select name="patron"><option value="yes">维持</option><option value="no">失去</option></select></label>
+<label>玩家势力支持<select name="support"><option value="no">无</option><option value="yes">有</option></select></label>
+<label>地区局势<select name="region"><option value="calm">平常</option><option value="unstable">区域震荡频发</option></select></label>
+<label>应对倾向<select name="culture"><option value="normal">常规</option><option value="mutual">共济文化</option></select></label>
+<button class="primary">应用修改</button>
+</form>
+<div class="actions"><button data-event="collapse">触发矿井塌方</button><button data-event="quake">触发地层震荡</button><button data-event="distributed">部署分布式采掘</button><button id="repair">将抢修列入下周优先事项</button><button data-event="curse">植入隐性诅咒</button><button data-event="raid">触发盗匪袭扰</button><button data-event="road">中断商路</button><button data-event="tax">撤除庇护</button></div>
+<p class="muted" id="notice" role="status"></p>
+</section>
+<div class="split sub"><section><h2>后台结算记录</h2><ul id="audit" class="feed"></ul></section>
+<section><h2>暂用的联动假设</h2><p class="muted">后台保留结算零头，玩家通常通过村况描述判断。相关能力可以成为取得更细情报的依据。恢复通路等定性干预会进入同一套结算。</p><ul><li>后台用组和批展示。测试折算为一组居民约 10 人，一批口粮相当于原型的 100 份，一批矿石为 20 筐，一批造物为 5 件。每次按整组或整批调整，内部保留零头供后续累计，企划层可查看精确人数。人口按族群与劳动类别计量。受伤和隐性异常会减少可用生产力。守备会占用劳力。</li><li>劳力用于采矿，制造用于生产造物和检修，神秘用于处理诅咒。人口各自消耗粮食。</li><li>平时的矿粮交易只够百岩村维持收支。每四周结算一次商队。商路通畅时仍有 10% 的测试概率在途中出事，缺席后等下个月。</li><li>保护影响袭扰风险与求援选项。缺粮和遇袭压低民心，民心与文化影响应对倾向。求援发出一周后按通路和援方关系结算。</li><li>塌方和盗匪每周判定一次。当前普通塌方为每周 3.5%，有教团庇护的袭扰为每周 6%。袭扰进入同一个战略点战斗入口，由道路、守备和工事模拟结算。随机序列在重置后可复现。</li><li>事件有默认持续期。抢修占用劳力，到期时检查制造能力和备件。分布式采掘可在持续期内抵消地层震荡的减产和额外塌方风险。</li><li>矿难与洗劫可导致伤员和死亡。伤员恢复后可以重新工作，死亡会扣除劳动力人口。剧情角色由主持人裁定。</li><li>村民每周决策一次，同时执行一项有期限的行动。撤离到期时需要通路开放，严重缺粮仍可在等待期间造成人口死亡。</li></ul><p class="muted">该页是本地原型。双视图用于验证信息分层，线上版本应在服务端限制后台数据的读取。</p></section></div>
+</div>
+</main>
+<script>
+"use strict";
+const profiles = [
+  {name:"主要族群",workers:"workers",dependents:"dependents",labor:1,make:.55,mystic:.12,food:1},
+  {name:"次要族群",workers:"otherWorkers",dependents:"otherDependents",labor:.8,make:.75,mystic:.3,food:1.25}
+];
+const pools = {
+  collapse:{name:"矿井塌方",pool:"地区池",hidden:false,days:8},
+  quake:{name:"地层震荡",pool:"地区池",hidden:false,days:6},
+  distributed:{name:"分布式采掘",pool:"村庄应对",hidden:false,days:30},
+  curse:{name:"古老诅咒",pool:"地区池",hidden:true,days:20},
+  raid:{name:"盗匪洗劫",pool:"势力池",hidden:false,days:1},
+  hunger:{name:"口粮短缺",pool:"通用池",hidden:false,days:5}
+};
+const units={population:10,food:100,ore:20,goods:5};
+function batches(value,unit) {
+  if(value>0&&value<unit/10) return "<0.1";
+  return String(Math.round(value/unit*10)/10);
+}
+function groups(value) {
+  if(value>0&&value<units.population/2)return "<0.5";
+  return String(Math.round(value/units.population*2)/2);
+}
+const weekDays=7;
+const monthDays=4*weekDays;
+const caravanFailureChance=.10;
+const testPlantDailyFood=48;
+const initial = {day:1,workers:58,dependents:50,otherWorkers:10,otherDependents:8,mineRate:100,food:3100,ore:22,goods:6,nextTrade:1+monthDays,road:"open",patron:"yes",support:"no",culture:"normal",region:"calm",trust:72,action:null,repairPriority:false,actionLog:[],escort:false,plantReady:null,forcedRisk:false,wounded:0,deaths:0,movedOut:0,fort:3,seed:1973,events:{},publicLog:[],auditLog:[],lastFlow:null};
+const clamp = (value,minimum,maximum) => Math.max(minimum,Math.min(maximum,value));
+function log(v, message, isPublic = false) {
+  const entry = "第 " + v.day + " 天 · " + message;
+  v.auditLog = [entry,...v.auditLog].slice(0,50);
+  if (isPublic) v.publicLog = [entry,...v.publicLog].slice(0,12);
+}
+function random(v) {
+  v.seed = (Math.imul(v.seed,1664525) + 1013904223) >>> 0;
+  return v.seed / 4294967296;
+}
+function totals(v) {
+  const workers = profiles.reduce((sum,g)=>sum+v[g.workers],0);
+  const population = profiles.reduce((sum,g)=>sum+v[g.workers]+v[g.dependents],0);
+  const health = workers ? Math.max(0,workers-v.wounded)/workers : 0;
+  const guards = Math.min(Math.floor(workers*health),Math.ceil(population*(v.patron==="yes" ? .055 : .1)));
+  const available = workers ? Math.max(0,health-(guards+(v.action?.kind==="repair" && v.events.collapse ? Math.min(8,Math.max(0,workers-v.wounded-guards)) : 0))/workers) : 0;
+  const curse = v.events.curse ? .72 : 1;
+  const shortage = v.events.hunger ? .8 : 1;
+  const capacity = key => Math.floor(profiles.reduce((sum,g)=>sum+v[g.workers]*g[key],0)*available*curse*shortage);
+  const labor = capacity("labor");
+  const make = capacity("make");
+  const mystic = capacity("mystic");
+  const demand = Math.ceil(profiles.reduce((sum,g)=>sum+(v[g.workers]+v[g.dependents])*g.food,0));
+  const ore = Math.floor(labor*.42*v.mineRate/100*(v.events.collapse ? .45 : 1)*(v.events.quake&&!v.events.distributed ? .75 : 1));
+  return {workers,population,guards,labor,make,mystic,ore,demand,goods:Math.floor(make/22)};
+}
+function casualties(v, injured, killed, reason) {
+  let dead = 0;
+  for(let i=0;i<killed;i++) {
+    const group = profiles.find(g=>v[g.workers]>0);
+    if(!group) break;
+    v[group.workers]--;
+    dead++;
+  }
+  const workers = totals(v).workers;
+  const wounded = Math.min(injured,Math.max(0,workers-v.wounded));
+  v.wounded = Math.min(workers,v.wounded+wounded);
+  v.deaths += dead;
+  log(v,reason+"：新增伤员 "+groups(wounded)+" 组，死亡 "+groups(dead)+" 组。");
+  if(wounded||dead) log(v,reason+"，村里有人"+(dead?"死伤":"受伤")+"。",true);
+}
+function begin(v,key) {
+  if(v.events[key]) return false;
+  const definition=pools[key];
+  v.events[key]={since:v.day,deadline:v.day+definition.days,revealed:false};
+  log(v,definition.name+"出现",!definition.hidden);
+  if(key==="collapse") casualties(v,4,1,"矿井塌方");
+  if(key==="distributed" && v.events.quake) log(v,"分布式采掘抵消了地层震荡的减产。",true);
+  if(key==="quake" && v.events.distributed) log(v,"各矿点分开运作，采掘未因震荡减产。",true);
+  return true;
+}
+function expire(v) {
+  for(const [key,event] of Object.entries(v.events)) {
+    if(v.day>=event.deadline && key!=="hunger") close(v,key,pools[key].name+"持续期结束。");
+  }
+}
+const actionLabels={aid:"求援",repair:"抢修",retreat:"撤离"};
+function actionNote(v,message) {
+  v.actionLog.push({day:v.day,message});
+  log(v,message,true);
+}
+function decideWeeklyAction(v) {
+  if(v.action||!totals(v).population) return;
+  const plan=response(v);
+  const repairable=v.events.collapse && v.events.collapse.deadline>v.day+4 && totals(v).make>=10;
+  let kind, days, provider;
+  if(v.repairPriority&&repairable) {kind="repair";days=4;}
+  else if(v.events.hunger&&plan.key==="request") {
+    kind="aid";days=weekDays;provider=v.support==="yes"?"玩家盟友":"红教团";
+  } else if(v.events.hunger&&plan.key==="retreat") {kind="retreat";days=weekDays;}
+  else if(repairable) {kind="repair";days=4;}
+  if(!kind) return;
+  if(kind==="repair") v.repairPriority=false;
+  v.action={kind,provider,deadline:v.day+days};
+  actionNote(v,"村民安排"+actionLabels[kind]+(provider?"（"+provider+"）":"")+"，第 "+v.action.deadline+" 天结算。");
+}
+function settleAction(v) {
+  const action=v.action;
+  const none={aid:0,goodsUsed:0};
+  if(!action||v.day<action.deadline) return none;
+  const workforce=totals(v);
+  v.action=null;
+  if(action.kind==="aid") {
+    const linked=action.provider==="玩家盟友"?v.support==="yes":v.patron==="yes";
+    const aid=linked&&v.road==="open"?Math.ceil(workforce.demand*1.5):0;
+    actionNote(v,action.provider+(aid?"送来救济粮。":"的援助未能到达。"));
+    return {aid,goodsUsed:0};
+  }
+  if(action.kind==="repair") {
+    if(!v.events.collapse||workforce.make<10||!v.goods) {
+      actionNote(v,"抢修结束，本次没有提前复工。");
+      return none;
+    }
+    v.goods--;
+    close(v,"collapse","矿井复工。");
+    actionNote(v,"抢修完成，使用了库存备件。");
+    return {aid:0,goodsUsed:1};
+  }
+  const moved=v.road==="open"&&v.events.hunger
+    ? reduceResidents(v,profiles.flatMap(group=>[group.dependents,group.workers]),2):0;
+  v.movedOut+=moved;
+  actionNote(v,moved?"撤离完成，有居民离村。":"撤离到期，本次无人离村。");
+  return none;
+}
+function close(v,key,message) {
+  if(!v.events[key]) return;
+  const visible = !pools[key].hidden || v.events[key].revealed;
+  delete v.events[key];
+  log(v,message,visible);
+}
+function resolveBattle(v, points) {
+  const occupied = points.map(point=>({...point,held:point.defense+random(v)*2>=point.pressure}));
+  const held = occupied.filter(point=>point.held).length;
+  return {occupied,won:held>=2};
+}
+function raid(v) {
+  if(!begin(v,"raid")) return;
+  const {guards}=totals(v);
+  const points=[
+    {name:"窄缝入口",defense:v.fort+guards*.22,pressure:4.2},
+    {name:"背运小径",defense:guards*.27+(v.support==="yes"?1.6:0),pressure:4.4},
+    {name:"村口货棚",defense:guards*.28+v.fort*.4,pressure:4.5}
+  ];
+  const result=resolveBattle(v,points);
+  log(v,result.occupied.map(p=>p.name+(p.held?"守住":"失守")).join("、"));
+  if(result.won) {
+    v.trust=clamp(v.trust+3,0,100);
+    log(v,"守口人击退了盗匪。",true);
+  } else {
+    const lost=Math.min(v.food,Math.ceil(v.food*.12));
+    v.food-=lost;
+    casualties(v,3,result.occupied.filter(point=>!point.held).length>=2?1:0,"盗匪洗劫");
+    v.trust=clamp(v.trust-12,0,100);
+    log(v,"袭扰损失口粮 "+batches(lost,units.food)+" 批。");
+    log(v,"货棚遭劫。",true);
+  }
+}
+function response(v) {
+  const score=v.trust+(v.culture==="mutual"?18:0);
+  if(score>=48) return {key:"ration",label:"组织配给与自救"};
+  if(v.patron==="yes"||v.support==="yes") return {key:"request",label:"缩减开支，向庇护方或盟友求援"};
+  return {key:"retreat",label:"缩减开支，部分居民准备外迁"};
+}
+function reduceResidents(v, fields, count) {
+  let removed=0;
+  for(let i=0;i<count;i++) {
+    const largest=fields.reduce((left,right)=>v[left]>=v[right]?left:right);
+    if(!v[largest]) break;
+    v[largest]--;
+    removed++;
+  }
+  v.wounded=Math.min(v.wounded,totals(v).workers);
+  return removed;
+}
+function settleChronicShortage(v,demand,consumed) {
+  const hunger=v.events.hunger;
+  hunger.days=(hunger.days??0)+1;
+  hunger.deficit=(hunger.deficit??0)+(demand-consumed);
+  hunger.demand=(hunger.demand??0)+demand;
+  if(hunger.days<weekDays) return;
+  const deficit=hunger.deficit/hunger.demand;
+  hunger.days=0;
+  hunger.deficit=0;
+  hunger.demand=0;
+  if(deficit<.25) return;
+
+  const working=profiles.map(group=>group.workers);
+  const others=profiles.map(group=>group.dependents);
+  if(deficit>=.5) {
+    const dead=reduceResidents(v,others.some(key=>v[key]>0)?others:working,1);
+    v.deaths+=dead;
+    if(dead) log(v,"持续缺粮，出现死亡。",true);
+  }
+}
+function shortageScenario() {
+  const v={...structuredClone(initial),food:0,ore:21*monthDays,nextTrade:initial.day+weekDays,forcedRisk:true};
+  begin(v,"hunger");
+  return v;
+}
+function daily(v) {
+  v.day++;
+  expire(v);
+  const {aid,goodsUsed}=settleAction(v);
+  if(totals(v).population && !v.events.quake && v.region==="unstable" && random(v)<.18) begin(v,"quake");
+  const weekly=(v.day-initial.day)%weekDays===0;
+  if(weekly && totals(v).workers && !v.events.collapse && random(v)<(v.events.quake&&!v.events.distributed?.16:.035)) begin(v,"collapse");
+  const attackRisk=clamp(.18-(v.patron==="yes"?.12:0)-(v.support==="yes"?.04:0),0,1);
+  const attacked=weekly && !!totals(v).population && random(v)<attackRisk;
+  if(attacked) raid(v);
+  const t=totals(v);
+  v.ore+=t.ore;
+  v.goods+=t.goods;
+  let traded=0, imported=0, missed=0;
+  if(v.day>=v.nextTrade) {
+    v.nextTrade+=monthDays;
+    const risk=v.road==="open" && (v.forcedRisk || random(v)<caravanFailureChance);
+    const escort=v.escort;
+    v.forcedRisk=false;
+    v.escort=false;
+    if(v.road==="closed") {
+      missed=1;
+      log(v,"商路中断，本月商队未能到村。",true);
+    } else if(risk && !escort) {
+      missed=1;
+      log(v,"商队途中出事，本月未能到村。",true);
+    } else {
+      if(risk && escort) log(v,"护送队带商队绕过险情，货物抵达百岩村。",true);
+      traded=Math.min(v.ore,21*monthDays);
+      imported=traded*5;
+      v.ore-=traded;
+      log(v,traded ? "商队抵达，按约以矿换粮。" : "商队抵达，村庄无矿可换，本次没有粮食入库。",true);
+    }
+  }
+  if(v.day===v.plantReady) log(v,"仪式培育的粮植成熟，开始持续供粮。",true);
+  const plant=v.plantReady!==null&&v.day>=v.plantReady&&t.population?testPlantDailyFood:0;
+  const local=Math.floor(t.population*.22)+plant;
+  const available=v.food+local+imported+aid;
+  const consumed=Math.min(available,t.demand);
+  v.food=available-consumed;
+  v.lastFlow={ore:t.ore,goods:t.goods,local,traded,imported,demand:t.demand,consumed,aid,plant,goodsUsed,attacks:Number(attacked),misses:missed};
+  if(consumed<t.demand) {
+    const started=!v.events.hunger;
+    begin(v,"hunger");
+    if(v.day>=v.events.hunger.deadline) {
+      v.events.hunger.deadline=v.day+pools.hunger.days;
+      log(v,"口粮短缺持续，进入下一期。");
+    }
+    v.trust=clamp(v.trust-9,0,100);
+    settleChronicShortage(v,t.demand,consumed);
+  } else {
+    close(v,"hunger","村内口粮恢复供应。");
+    if(t.population) v.trust=clamp(v.trust+1,0,100);
+  }
+  if(!v.events.collapse) v.repairPriority=false;
+  if(weekly) decideWeeklyAction(v);
+  if(v.events.curse?.revealed && t.mystic>=5) close(v,"curse","村民在神秘工作者协助下清除了受污染的植株。");
+  if(v.wounded&&v.day%3===0) v.wounded--;
+  if(weekly) log(v,"周末库存：口粮 "+batches(v.food,units.food)+" 批，矿石 "+batches(v.ore,units.ore)+" 批。");
+}
+const id = key=>document.getElementById(key);
+const form=id("settings");
+const inputUnits={workers:units.population,dependents:units.population,otherWorkers:units.population,otherDependents:units.population,food:units.food};
+let village, mode="public", timer, trace;
+const disasterTiming={warning:1,response:2};
+const disasterResults={};
+let trial=null;
+
+function startDisaster(route) {
+  return {route,phase:"warning",elapsed:0,world:initial.day,local:initial.day,
+    remaining:disasterTiming.warning,help:false,outcome:null,
+    notes:["预警：岩壁裂纹正在扩展。若岩壁坍落并封死唯一入口，百岩村可能无法继续维持。"]};
+}
+function stepDisaster(test) {
+  if(test.phase==="pending")return;
+  test.elapsed++;
+  test.world+=weekDays;
+  if(test.phase==="warning")test.local+=weekDays;
+  test.remaining--;
+  if(test.remaining>0)return;
+  if(test.phase==="warning") {
+    test.phase="paused";
+    test.remaining=disasterTiming.response;
+    test.notes.push("时灾：当地时间暂停，反应窗口继续计时。玩家可在窗口内发起救援。");
+    return;
+  }
+  test.phase="pending";
+  test.outcome=test.help
+    ? "救援队按预案抵达并接通临时通道，避难和补给具备可行条件。建议暂缓判定聚居地消亡。"
+    : "岩壁坍落，出入口和主要补给通路失效。聚居地可能被弃置或消亡。";
+  test.notes.push("反应期结束。灾害结果提交企划确认。");
+}
+function interveneDisaster(test) {
+  if(!test||test.phase!=="paused"||test.route!=="rescue"||test.help)return false;
+  test.help=true;
+  test.notes.push("玩家及时组织救援，提交接应居民与打通临时通道的行动。");
+  return true;
+}
+function drawDisaster() {
+  const test=trial;
+  id("disaster-step").disabled=!test||test.phase==="pending";
+  id("disaster-help").disabled=!test||test.phase!=="paused"||test.route!=="rescue"||test.help;
+  if(!test) id("disaster-status").innerHTML=paragraph("选择一条路线开始。完成两条路线后可并排查看结果。");
+  else {
+    const stage=test.phase==="warning"?"预警期":test.phase==="paused"?"当地停时 · 反应期":"待企划确认";
+    const window=test.phase==="pending"?"已结束":("剩 "+test.remaining+" 个现实日步");
+    id("disaster-status").innerHTML=paragraph("<strong>"+stage+"</strong> · 大世界第 "+test.world+" 天 · 当地第 "+test.local+" 天 · "+window)+list(test.notes);
+  }
+  id("disaster-comparison").innerHTML=[["none","无人介入"],["rescue","玩家救援路线"]].map(([key,title])=>{
+    const result=disasterResults[key];
+    return card(title,result?paragraph("<strong>待企划确认</strong>")+paragraph(result.outcome)+paragraph("百岩村去向：待裁定。具名 NPC 去向：待裁定。涉及本事件的推斯特等人物由企划逐一核对。"):paragraph("等待完成该路线。"));
+  }).join("");
+}
+for(const [button,route] of [["disaster-none","none"],["disaster-rescue","rescue"]]) {
+  id(button).onclick=()=>{
+    stop();
+    trial=startDisaster(route);
+    delete disasterResults[route];
+    drawDisaster();
+  };
+}
+id("disaster-step").onclick=()=>{
+  if(!trial)return;
+  stepDisaster(trial);
+  if(trial.phase==="pending")disasterResults[trial.route]=trial;
+  drawDisaster();
+};
+id("disaster-help").onclick=()=>{
+  if(interveneDisaster(trial))drawDisaster();
+};
+drawDisaster();
+const npcNames= ["收矿铺管事","守口人","准备首次远行的少年"];
+function card(title, body) {return "<section><h2>"+title+"</h2>"+body+"</section>";}
+function paragraph(s) {return "<p>"+s+"</p>";}
+function list(items) {return "<ul>"+items.map(item=>"<li>"+item+"</li>").join("")+"</ul>";}
+function table(head, rows) {
+  return "<table><thead><tr>"+head.map(x=>"<th scope='col'>"+x+"</th>").join("")+"</tr></thead><tbody>"+rows.map(row=>"<tr>"+row.map(x=>"<td>"+x+"</td>").join("")+"</tr>").join("")+"</tbody></table>";
+}
+function publicCards(v,t) {
+  const visible=Object.keys(v.events).filter(key=>!pools[key].hidden||v.events[key].revealed);
+  return [
+    card("名称",paragraph("百岩村 · 未亡地")),
+    card("特征",paragraph("【闭塞】狭窄岩缝连接外界。<br>【岩矿丰富】采光裂口下聚集着屋舍与矿棚。")),
+    card("人口",paragraph(t.population===0?"村中已无人常住。":t.population<70?"村里住户稀少，大多彼此认识。":t.population<250?"规模不大的矿村，可见不同族群的居民。":"村庄规模已超出原本的矿村。")),
+    card("产业",paragraph((v.events.collapse?"矿井受阻，出货变少。":v.mineRate?"矿棚仍在出货。":"矿棚暂停出货。")+(v.food<t.demand?"口粮紧张。":"村内还有口粮。"))+list(["收矿铺 · 换粮与补给"+(v.road==="closed"?"暂缓":""),"修具棚 · 镐头、绳索与背架检修"])),
+    card("外交",paragraph(v.patron==="yes"?"岩缝外的铁链上挂着红布，红教团仍庇护此地。":"村口的红布已经撤去。")+(v.support==="yes"?paragraph("有玩家势力为百岩村提供支援。"):"")),
+    card("防卫",paragraph(t.guards?"缝口设有守岗与路障，村民也参与轮值。":"缝口少见守岗的人。")),
+    card("事件",visible.length?list(visible.map(key=>pools[key].hidden?"已查明：植株受一种古老诅咒污染。":pools[key].name)):paragraph("暂时没有可直接获知的在办事件。")),
+    card("讯息",v.publicLog.length?list(v.publicLog.slice(0,5).concat("周边传闻：哭泣少女石雕一带将有护送队经过。")):paragraph("传闻称，护送队将在哭泣少女石雕处与收税方汇合。")),
+    card("角色",t.population?list(npcNames):paragraph("已无常驻人口。剧中人物的去向待主持人裁定。"))
+  ];
+}
+function adminCards(v,t) {
+  const flow=trace?.flow;
+  const populationRows=profiles.map(g=>[g.name,groups(v[g.workers]),groups(v[g.dependents]),g.labor+" / "+g.make+" / "+g.mystic,batches(g.food*units.population,units.food)]);
+  const eventRows=Object.entries(v.events).map(([key,event])=>[pools[key].name,pools[key].pool,pools[key].hidden?(event.revealed?"调查已发现":"隐藏"):"可见","第 "+event.since+" 天"+(event.provider?" · "+event.provider:""),Math.max(0,event.deadline-v.day)+" 天"+(event.repairing?" · 抢修中":"")+(key==="quake"&&v.events.distributed?" · 减产已抵消":"")]);
+  return [
+    card("名称",paragraph("百岩村 · 聚居地")),
+    card("特征",paragraph("灰白沙砾岩山腹、曲折岩缝、天顶采光。商路："+(v.road==="open"?"开放":"中断")+ "。地区局势："+(v.region==="unstable"?"岩层震荡":"平常")+"。")),
+    card("人口与生产力",paragraph("精确总人口 "+t.population+" 人，劳动力 "+t.workers+" 人，非劳动力 "+(t.population-t.workers)+" 人。现有伤员 "+v.wounded+" 人，累计死亡 "+v.deaths+" 人，累计外迁 "+v.movedOut+" 人。")+table(["族群","劳动力（人）","非劳动力（人）"],profiles.map(g=>[g.name,v[g.workers],v[g.dependents]]))+paragraph("总人口约 "+groups(t.population)+" 组，伤员 "+groups(v.wounded)+" 组，累计死亡 "+groups(v.deaths)+" 组，累计外迁 "+groups(v.movedOut)+" 组"+"。当前劳力 / 制造 / 神秘 "+t.labor+" / "+t.make+" / "+t.mystic+"。")+table(["族群","劳动力组","非劳动力组","生产系数","每组日粮（批）"],populationRows)),
+    card("产业与资源",table(["资源（批）","现存","本轮收入","本轮支出"],[
+      ["口粮",batches(v.food,units.food),flow?batches(flow.local+flow.imported+flow.aid,units.food):"—",flow?batches(flow.consumed,units.food)+" / "+batches(flow.demand,units.food):"—"],
+      ["矿石",batches(v.ore,units.ore),flow?batches(flow.ore,units.ore):"—",flow?batches(flow.traded,units.ore):"—"],
+      ["造物",batches(v.goods,units.goods),flow?batches(flow.goods,units.goods):"—",flow?batches(flow.goodsUsed,units.goods):"—"]
+    ])+paragraph("预计周采矿 "+batches(t.ore*weekDays,units.ore)+" 批。下一班商队第 "+v.nextTrade+" 天。")),
+    card("外交与决策",paragraph("教团庇护 "+(v.patron==="yes"?"有":"无")+" · 玩家支援 "+(v.support==="yes"?"有":"无"))+paragraph("民心 "+v.trust+" · "+(v.culture==="mutual"?"共济文化":"常规倾向"))+paragraph(v.action?actionLabels[v.action.kind]+"进行中，第 "+v.action.deadline+" 天结算。":"当前没有执行中的村民行动。")),
+    card("防卫",paragraph("轮值 "+groups(t.guards)+" 组 · 工事状态 "+v.fort+"（测试参数）")+list(["窄缝入口 · 工事及守卫","背运小径 · 守卫及盟方声援","村口货棚 · 守卫及工事"])),
+    card("事件",eventRows.length?table(["事件","来源","公开状态","开始","剩余"],eventRows):paragraph("无在办事件。")+paragraph("测试池：地区（塌方、地层震荡、诅咒），势力（洗劫），通用（缺粮），村庄应对（分布式采掘）。")),
+    card("讯息",v.publicLog.length?list(v.publicLog.slice(0,5)):paragraph("待传播：血税护送、哭泣少女石雕汇合。")),
+    card("角色",list(npcNames.concat(["推斯特 · 汇合处，7 阶战争修士；携两名兵偶。"]))+paragraph("测试模型中剧情角色独立于人口损耗。村落消失后的去向由主持人裁定。"))
+  ];
+}
+function drawTrace() {
+  const container=id("chain");
+  if(!trace) {
+    id("chain-status").textContent="推进一周或一月，查看该时段实际结算的数据。";
+    container.replaceChildren();
+    return;
+  }
+  const {start,end,before,after,flow}=trace;
+  const arrow=(a,b)=>a+" → "+b;
+  id("chain-status").textContent="第 "+start+"–"+end+" 天。产出与消耗为本轮合计，人口与库存为期初 → 期末。";
+  const nodes=[
+    ["① 局势与事件","发生洗劫 "+flow.attacks+" 次 · 商队缺席 "+flow.misses+" 次"],
+    ["② 人口与劳力（组）","总人口 "+arrow(groups(before.population),groups(after.population))+" · 劳动力 "+arrow(groups(before.workers),groups(after.workers))+" · 非劳动力 "+arrow(groups(before.population-before.workers),groups(after.population-after.workers))+" · 伤员 "+arrow(groups(before.wounded),groups(after.wounded))+" · 轮值 "+arrow(groups(before.guards),groups(after.guards))],
+    ["③ 生产与商队（批）","矿产 +"+batches(flow.ore,units.ore)+" · 造物 +"+batches(flow.goods,units.goods)+" · 本地产粮 +"+batches(flow.local,units.food)+"（粮植 +"+batches(flow.plant,units.food)+"） · 换粮 +"+batches(flow.imported,units.food)+" · 援粮 +"+batches(flow.aid,units.food)+" · 交矿 "+batches(flow.traded,units.ore)],
+    ["④ 库存与消耗（批）","存粮 "+arrow(batches(before.food,units.food),batches(after.food,units.food))+" · 存矿 "+arrow(batches(before.ore,units.ore),batches(after.ore,units.ore))+" · 口粮 "+batches(flow.consumed,units.food)+" / "+batches(flow.demand,units.food)+" · 造物支出 "+batches(flow.goodsUsed,units.goods)],
+    ["⑤ 村庄应对","民心 "+arrow(before.trust,after.trust)+" · "+after.plan+(trace.actions.length?"<br>"+trace.actions.join("<br>"):"")],
+    ["⑥ 写回村况","死亡 "+groups(after.deaths-before.deaths)+" 组 · 外迁 "+groups(after.movedOut-before.movedOut)+" 组"+" · 期末在办事件 "+after.events]
+  ];
+  container.innerHTML=nodes.map(([name,details],i)=>"<li style='--step:"+i+"'><strong>"+name+"</strong><small>"+details+"</small></li>").join("");
+}
+function render(sync=true) {
+  const t=totals(village);
+  id("date").textContent="第 "+village.day+" 天";
+  id("cards").innerHTML=(mode==="admin"?adminCards(village,t):publicCards(village,t)).join("");
+  id("console").hidden=mode!=="admin";
+  id("investigation").hidden=mode!=="ability";
+  id("ability").setAttribute("aria-pressed",mode==="ability");
+  id("escort").disabled=village.escort;
+  id("plant").disabled=village.plantReady!==null;
+  id("intervention").textContent=[village.escort?"护送已经安排，将随下一班商队出发。":"",village.plantReady!==null?(village.day<village.plantReady?"粮植仪式已安排，正在培育。":"粮植已成熟，持续补充口粮。"):""].filter(Boolean).join(" ");
+  id("public").setAttribute("aria-pressed",mode==="public");
+  id("admin").setAttribute("aria-pressed",mode==="admin");
+  id("repair").disabled=!village.events.collapse||village.repairPriority||village.action?.kind==="repair";
+  if(mode==="admin") drawTrace();
+  id("audit").replaceChildren(...village.auditLog.map(entry=>{const row=document.createElement("li");row.textContent=entry;return row;}));
+  if(sync) for(const field of form.elements) if(field.name) {
+    const unit=inputUnits[field.name];
+    field.value=String(unit?Math.max(Number(village[field.name]>0),Math.round(village[field.name]/unit)):village[field.name]);
+    field.dataset.rendered=field.value;
+  }
+}
+function stop(){clearInterval(timer);timer=null;id("play").textContent="自动推进";}
+function capture(v) {
+  const {population,guards,workers}=totals(v);
+  return {population,guards,workers,wounded:v.wounded,food:v.food,ore:v.ore,trust:v.trust,deaths:v.deaths,movedOut:v.movedOut,events:Object.keys(v.events).length,plan:v.action?actionLabels[v.action.kind]+"第 "+v.action.deadline+" 天结算":"期末无执行中的行动"};
+}
+function advance(days) {
+  id("clue").textContent="";
+  const start=village.day+1;
+  const before=capture(village);
+  const actionStart=village.actionLog.length;
+  const flow={ore:0,goods:0,local:0,traded:0,imported:0,demand:0,consumed:0,goodsUsed:0,aid:0,plant:0,attacks:0,misses:0};
+  for(let i=0;i<days;i++) {
+    daily(village);
+    for(const key of Object.keys(flow)) flow[key]+=village.lastFlow[key]??0;
+  }
+  trace={start,end:village.day,before,after:capture(village),flow,actions:village.actionLog.slice(actionStart).map(item=>"第 "+item.day+" 天 · "+item.message)};
+  render();
+}
+function reset(){stop();trial=null;delete disasterResults.none;delete disasterResults.rescue;drawDisaster();village=structuredClone(initial);trace=null;id("notice").textContent="";id("clue").textContent="";render();}
+function edit(message){id("clue").textContent="";id("notice").textContent=message;render();}
+id("play").onclick=()=>{if(timer){stop();return;}id("play").textContent="暂停";timer=setInterval(()=>advance(weekDays),1100);};
+id("one").onclick=()=>{stop();advance(weekDays);};
+id("week").onclick=()=>{stop();advance(monthDays);};
+id("reset").onclick=reset;
+for(const button of ["public","ability","admin"])id(button).onclick=()=>{mode=button;id("clue").textContent="";render();};
+form.addEventListener("focusin",stop);
+form.onsubmit=event=>{
+  event.preventDefault();
+  for(const field of form.elements) if(field.name) {
+    if(field.value===field.dataset.rendered) continue;
+    const value=field.type==="number"?field.valueAsNumber*(inputUnits[field.name]??1):field.value;
+    village[field.name]=value;
+  }
+  village.wounded=Math.min(village.wounded,totals(village).workers);
+  log(village,"主持人调整了推演输入。");
+  edit("已应用。推进日期查看后续结算。");
+};
+document.querySelectorAll("[data-event]").forEach(button=>button.onclick=()=>{
+  stop();
+  const key=button.dataset.event;
+  if(key==="road"){village.road="closed";log(village,"商路暂时中断。",true);}
+  else if(key==="tax"){village.patron="no";log(village,"村口的红布被取下。",true);}
+  else if(key==="raid")raid(village);
+  else begin(village,key);
+  edit("已注入测试情境。");
+});
+id("repair").onclick=()=>{
+  stop();
+  if(!village.events.collapse||village.repairPriority)return;
+  village.repairPriority=true;
+  edit("已列入下次周决策。");
+};
+id("shortage").onclick=()=>{
+  stop();village=shortageScenario();trace=null;
+  id("notice").textContent="";id("clue").textContent="";render();
+};
+id("escort").onclick=()=>{
+  stop();if(village.escort)return;
+  village.escort=true;log(village,"村民安排护送下一班商队。",true);render();
+};
+id("plant").onclick=()=>{
+  stop();if(village.plantReady!==null)return;
+  village.plantReady=village.day+weekDays;
+  log(village,"村民请人举行粮植仪式。",true);render();
+};
+function estimate(value,unit) {
+  if(!value)return "没有";
+  if(value<unit)return "不足 1 批";
+  const lower=Math.floor(value/unit);
+  return "约 "+lower+"–"+(lower+1)+" 批";
+}
+id("provisions").onclick=()=>{
+  stop();
+  id("clue").textContent="补给评估 · 存粮"+estimate(village.food,units.food)+"，一周口粮需求"+estimate(totals(village).demand*weekDays,units.food)+"。";
+};
+id("route").onclick=()=>{
+  stop();
+  const weeks=Math.max(1,Math.ceil((village.nextTrade-village.day)/weekDays));
+  id("clue").textContent="商路评估 · 预计约 "+weeks+" 周后到期；按当前存矿估算，可换粮"+estimate(Math.min(village.ore,21*monthDays)*5,units.food)+"，以商队实际到达为前提。";
+};
+id("inspect").onclick=()=>{
+  stop();
+  if(village.events.curse) {
+    village.events.curse.revealed=true;
+    id("clue").textContent="调查结果：几处井边的植株有同样的异常，查明是古老的诅咒。";
+  } else id("clue").textContent="这次调查没有发现植株受到诅咒的迹象。";
+  render();
+};
+reset();
+</script>
+</html>
