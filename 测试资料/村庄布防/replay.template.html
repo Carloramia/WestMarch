@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>村庄布防 · 自走棋试场</title>
+<link rel="icon" href="data:,">
+<style>
+:root{color-scheme:dark;--bg:#10181b;--panel:#182328;--line:#455355;--ink:#e2e6df;--muted:#a3afa9;--def:#e0bb73;--atk:#de8e80;--memory:#8d9eaa}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.6 'Microsoft YaHei',sans-serif}main{max-width:1500px;margin:auto;padding:24px}h1{font-size:28px;margin:0 0 6px}p{margin:5px 0;color:var(--muted)}.controls{display:flex;gap:12px;flex-wrap:wrap;align-items:end;margin:20px 0 12px}label{display:grid;gap:4px;font-size:13px;color:var(--muted)}button,select,input[type=number]{font:inherit;background:var(--panel);color:var(--ink);border:1px solid var(--line);padding:7px 12px;border-radius:4px}button{cursor:pointer}button:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid var(--def);outline-offset:3px}.layout{display:grid;grid-template-columns:165px minmax(0,1fr) 265px;gap:20px}.map{width:100%;display:block;border:1px solid var(--line);background:#202b2d}.map .unit{cursor:grab}input[type=number]{width:90px}#stats input{width:78px}button:disabled{opacity:.4;cursor:default}#status{min-height:26px;color:#e0bb73}.time{flex-wrap:wrap;gap:8px}.info{background:var(--panel);padding:16px;border-radius:5px}h2{font-size:16px;margin:0 0 8px}.info p{margin:6px 0}.muted{color:var(--muted)}input[type=range]{width:100%;accent-color:var(--def)}.time{display:flex;justify-content:space-between;margin-top:9px;font-variant-numeric:tabular-nums}.events{padding-left:18px;font-size:13px;max-height:240px;overflow:auto}.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:13px;margin:9px 0}.legend span::before{content:'●';margin-right:5px}.legend .d{color:var(--def)}.legend .a{color:var(--atk)}.legend .m{color:var(--memory)}.note{border-top:1px solid var(--line);padding-top:14px;margin-top:20px;font-size:13px}.tag{color:var(--def)}svg text{font-family:'Microsoft YaHei',sans-serif;pointer-events:none}details{margin-top:18px}summary{cursor:pointer;color:var(--def)}table{border-collapse:collapse;width:100%;font-size:14px}td,th{padding:8px;text-align:left;border-bottom:1px solid var(--line)}@media(max-width:750px){main{padding:16px}.layout{grid-template-columns:1fr}h1{font-size:23px}}
+.layout>*{min-width:0}.roster{padding:12px}.roster label{margin:10px 0}.roster select{max-width:100%;padding:6px}.roster p{font-size:12px}.roster hr{border:0;border-top:1px solid var(--line);margin:16px 0}.piece-card{display:block;width:100%;padding:12px;margin-top:9px;text-align:left;cursor:grab;border-left:3px solid var(--def)}.piece-card small{display:block;color:var(--muted)}.info input[type=text],.info select{width:100%}.info input[type=text]{background:var(--bg);color:var(--ink);border:1px solid var(--line);padding:8px;font:inherit}.loadout label{margin:9px 0}.loadout input[type=checkbox]{width:auto;justify-self:start}.morale{background:var(--panel);padding:8px 12px;margin-bottom:8px;font-size:13px}.roster #add-kind{width:100%}@media(max-width:1050px) and (min-width:751px){.layout{grid-template-columns:130px minmax(0,1fr)}.layout>aside:last-child{grid-column:1/-1}}@media(max-width:750px){.layout{grid-template-columns:1fr}#palette{display:grid;grid-template-columns:1fr 1fr;gap:8px}.roster .piece-card{margin:0}.roster{order:0}}
+.fx-toggle{display:flex;align-items:center;gap:5px;align-self:center}.map{overflow:hidden}.map .unit{will-change:transform}.skill-panel{margin:12px 0;padding:8px;border:1px solid var(--line);min-width:0}.skill-panel legend{color:var(--def)}.skill-panel p{font-size:12px}.skill-panel ol{padding-left:20px;margin:8px 0}.skill-panel li{margin-bottom:10px}.skill-panel button{padding:2px 8px;font-size:12px;margin:3px 4px 0 0}
+body{background:radial-gradient(ellipse at 50% 0,#293127 0,#121b1c 52%);color:#eee6d3}
+header,.primary-controls,.info,.board{border:1px solid #516050;border-radius:8px}
+header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 22px;background:#1a2524}
+header h1{font-size:clamp(24px,4vw,40px);letter-spacing:.04em;line-height:1.2}
+header p{color:#bac4ae}.primary-controls{padding:12px;background:#151f20}
+#simulate{background:#e0bb73;color:#18201e;border:1px solid #f2d39c;font-weight:700}
+#tutorial-open{border-color:#99865b;color:#f2d39c;white-space:nowrap}
+.board{background:#111a1c;padding:9px;align-self:start}.info{align-self:start}
+.command-flow{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;color:#afbea9;font-size:13px}
+.command-flow span{border:1px solid #566453;padding:3px 9px;border-radius:4px}
+.command-flow span[aria-current=step]{background:#e0bb73;color:#18201e;border-color:#e0bb73;font-weight:700}
+#lesson-note:not([hidden]){padding:8px 12px;border-left:3px solid #9bd2a5;background:#203528;color:#d5ecd3}
+#tutorial{width:min(560px,calc(100% - 24px));max-height:85vh;background:#1c2929;color:var(--ink);border:1px solid #a58d58;border-radius:10px;padding:22px}
+#tutorial::backdrop{background:#071111bb}#tutorial h2{font-size:23px}#tutorial li{margin:12px 0}#tutorial .controls{margin-bottom:0}
+.rotation-summary{padding:5px 10px;color:#b6d8b7;font-size:12px}
+@media(max-width:750px){header{padding:12px;align-items:flex-start}.primary-controls{gap:8px}.board{padding:5px}}
+.campaign-mode .sandbox-only{display:none!important}.campaign-mode .layout{grid-template-columns:minmax(0,1fr) 300px}@media(max-width:750px){.campaign-mode .layout{grid-template-columns:1fr}}
+#campaign-dialog{width:min(500px,calc(100% - 24px));background:#1c2929;color:var(--ink);border:1px solid #a58d58;border-radius:10px;padding:22px}
+#campaign-dialog::backdrop{background:#071111bb}
+#campaign-dialog select,#campaign-dialog p{width:100%;margin:10px 0}
+#campaign-hud:not([hidden]){background:#203528;color:#e8e3c6;padding:9px 12px;border-left:3px solid #e0bb73}
+.campaign-mode #unit-detail label{margin:10px 0}
+.campaign-mode #unit-detail li button{padding:2px 5px;font-size:12px;margin-right:3px}
+.header-actions{display:flex;gap:7px;flex-wrap:wrap;justify-content:flex-end}
+@media(max-width:500px){header{flex-wrap:wrap}.header-actions{justify-content:flex-start}}
+#order-controls:not([hidden]){display:flex;flex-wrap:wrap;gap:10px;align-items:end;padding:8px 10px;border:1px solid var(--line);margin:6px 0}
+#milestone-list{display:flex;flex-wrap:wrap;gap:6px}#milestone-list button{font-size:12px;padding:4px 7px}
+#settlement-panel{padding:8px 12px;margin:8px 0;background:#263632;border:1px solid #50675c}
+#settlement-panel p{margin:5px 0}#settlement-sites{display:flex;flex-wrap:wrap;gap:5px 16px;padding-left:18px}
+#settlement-sites button{padding:1px 5px}
+.map{aspect-ratio:4/3}.map[data-pan]{cursor:grab}.map[data-dragging]{cursor:grabbing}
+.map-tools{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-bottom:7px}.map-tools button,.map-tools select{padding:4px 8px}.map-tools button[aria-pressed=true]{border-color:#e0bb73;color:#e0bb73}
+[hidden]{display:none!important}
+</style>
+<main>
+<header><div><h1>村庄防卫战</h1><p>部署部队，观看双方实时交战。</p></div><div class="header-actions"><button id="tutorial-open">上手教程</button><button id="campaign-enter">守城关卡</button></div></header>
+<nav class="command-flow" aria-label="对局阶段"><span id="phase-deploy">1 · 布阵</span><span id="phase-battle">2 · 自动战斗</span><span id="phase-replay">3 · 复盘</span></nav>
+<dialog id="tutorial" aria-labelledby="tutorial-title">
+<h2 id="tutorial-title">上手教程</h2>
+<ol>
+<li><strong>布阵。</strong> 从左侧拖棋子到空格。双击棋子，在右侧调整技能优先级、装备和任务。守方保护粮仓，攻方取粮后从西侧撤离。</li>
+<li><strong>看战况。</strong> 点击「开始战斗」。棋子会自行移动、接敌和支援。用暂停、单步或倍速观察，切换观察立场可只看该方掌握的信息。</li>
+<li><strong>练习换防。</strong> 给一枚守区棋子勾选「轮换后备」，放在同类战友后方。它休息满 3 步、且前线疲劳到 3 后会去接岗。接岗成功才换下原守军，新上阵的棋子接下来 4 步命中率额外增加 16 个百分点。</li>
+<li><strong>守城传令。</strong> 在关卡中先把一两名守军的任务设为「机动回援」，把其他守军留在各门。开战后可选一扇门传令一次。暂停时也可传令，单步推进可看到命令生效。</li>
+<li><strong>村庄经营。</strong> 进入守城关卡前勾选「村庄经营」。先试着把一名守军拉到工料场，比较预计产出。点城门安排工程，点守军安排训练。在预警期检查是否要收回外围守军，再推进时间。</li>
+<li><strong>复盘。</strong> 点棋子可看行动原因。守城战结束后从「战报转折点」跳到关键时刻。返回布防后勾选「沿用上场敌情」，可以调整部署再重打一遍。</li>
+</ol>
+<div class="controls"><button id="lesson-load">载入换防演练</button><button id="tutorial-close">关闭</button></div>
+</dialog>
+<dialog id="campaign-dialog" aria-labelledby="campaign-title">
+<h2 id="campaign-title">选择守城关卡</h2>
+<label>关卡<select id="campaign-level"></select></label>
+<p id="campaign-description"></p>
+<p>守军有相同的基础近战和防护，第一项训练免费。点守军配装，点城门购买加固、瞭望塔或弩炮，再开始战斗。守到时限或击退敌军即可获胜；补给被运出或守军失去作战能力则失败。敌军将在开战时抽选入口，只有被发现后才显示。训练射手并装备远程武器，部署到内墙的青色射击点，就能朝墙外射击。</p>
+<label><input type="checkbox" id="settlement-enable"> 村庄经营 · 连续防守三次突袭</label>
+<div class="controls"><button id="campaign-load">进入关卡</button><button id="campaign-close">关闭</button></div>
+</dialog>
+<div class="controls primary-controls">
+<label class="sandbox-only fx-toggle"><input id="alarm-bell" type="checkbox">启用守方警钟</label>
+<label class="sandbox-only">守方初始情报<select id="intel-D"><option value="none">无报告</option><option value="all">全部敌方位置</option><option value="custom">指定敌方单位</option></select></label>
+<label class="sandbox-only">攻方初始情报<select id="intel-A"><option value="none">无报告</option><option value="all">全部敌方位置</option><option value="custom">指定敌方单位</option></select></label>
+<label class="sandbox-only">随机种子<input id="seed" type="number" min="0" max="999999" value="7"></label>
+<label class="sandbox-only">推演轮数<input id="limit" type="number" min="1" max="144" value="72"></label>
+<label id="retry-control" class="fx-toggle" hidden><input id="same-attack" type="checkbox">沿用上场敌情</label><button id="simulate">开始战斗</button><button id="advance-three" hidden>推进最多 3 步</button><button id="edit">返回布防</button><button class="sandbox-only" id="reset">恢复默认</button><button class="sandbox-only" id="lesson-restore" hidden>恢复演练前布防</button><button id="campaign-exit" hidden>返回自由试场</button>
+</div><p id="campaign-hud" hidden></p>
+<section id="settlement-panel" hidden>
+<p id="settlement-summary"></p>
+<p id="settlement-jobs"></p>
+<p id="settlement-tip"></p>
+<details><summary>生产点与经营规则</summary><ul id="settlement-sites"></ul>
+<p>每两步结算产出。外围生产点需要 4 格内有城外守军，敌人进入 3 格即停产。安全期可自由布置、下达工程和训练。批量推进遇到工程或训练完工、进入预警期或袭击开始就停止。交战时训练暂停，城门附近有敌人也会暂停施工。</p></details>
+</section>
+<p><strong id="mode"></strong> · <span id="counts"></span></p><p id="status" role="status">拖动棋子换位；选择兵种后点击空地添加。选择敌方棋子可指定开局报告。</p>
+<details class="sandbox-only"><summary>双方指挥与攻方集结</summary>
+<div class="controls">
+<label>守方威信<input id="authority-D" type="number" min="0" max="3" step="1" value="2" required></label>
+<label>攻方威信<input id="authority-A" type="number" min="0" max="3" step="1" value="2" required></label>
+<label>每区最低留守<input id="minimum-watch" type="number" min="0" max="3" step="1" value="1" required></label>
+<label class="fx-toggle"><input id="attack-rally" type="checkbox">攻方先集结</label>
+<label>集合 X<input id="rally-x" type="number" min="0" max="13" step="1" value="11" required></label>
+<label>集合 Y<input id="rally-y" type="number" min="0" max="23" step="1" value="6" required></label>
+</div><p>集合坐标从 0 开始。两名攻方到位后推进，有攻城单位时至少等到一名。最多等 12 步。威信低于棋子的要求时，该棋子沿用原习惯。</p></details>
+<details class="sandbox-only"><summary>调整四种预设数值</summary><p>每种起始预设提供一套基础数值。双击棋子可独立增删和排序技能。命中与致伤分别判定；两次伤势后失能。每个演算步交替激活，自动决策；标准速度每0.4秒推进一步。</p><div style="overflow-x:auto"><table id="stats"><thead><tr><th>兵种</th><th>视野/格</th><th>射程/格</th><th>命中率</th><th>致伤率</th><th>步数/轮</th><th>救护次数</th></tr></thead><tbody></tbody></table></div></details>
+<div class="controls">
+<label>观察立场<select id="view"><option value="D">守方掌握的信息</option><option value="A">攻方掌握的信息</option><option value="all">全知调试</option></select></label>
+<label>战斗速度<select id="speed"><option value="0.5">0.5倍</option><option value="1" selected>1倍</option><option value="2">2倍</option><option value="4">4倍</option></select></label><label class="fx-toggle"><input id="impact-fx" type="checkbox" checked>打击反馈</label><label class="fx-toggle"><input id="sound-fx" type="checkbox" checked>音效</label><label class="fx-toggle"><input id="screen-shake" type="checkbox" checked>轻微震动</label><button id="play" type="button">播放</button><button id="step" type="button">下一轮</button>
+</div>
+<div id="order-controls" hidden><label>调派机动守军至<select id="order-gate"></select></label><button id="field-order">传令 · 1 次</button><p>最多两名，下一步生效，持续 8 步。请先在布阵时配置机动回援。</p></div>
+<div class="layout">
+<aside class="info roster sandbox-only"><h2>棋子预设</h2><p>拖到地图空地落子</p><label>落子阵营<select id="add-team"><option value="D">守方</option><option value="A">攻方</option></select></label>
+<label>布防工具<select id="add-kind"><option value="">选择 / 拖动</option><option value="guard">添加守卫</option><option value="archer">添加射手</option><option value="scout">添加斥候</option><option value="medic">添加救护者</option><option value="gate">放置城门</option><option value="wall">画障碍</option><option value="cover">画掩体</option><option value="rough">画泥地</option><option value="erase">清除地形</option></select></label>
+<div id="palette"></div><p>单击选择，双击打开棋子；拖动已有棋子换位。</p><hr><h2>士气判定</h2><label>检查间隔 / 演算步<input id="morale-interval" type="number" min="1" max="30" step="1" value="5"></label><label>溃逃概率 / 次<input id="morale-chance" type="number" min="0" max="1" step="0.05" value="0.25"></label><p>存活数 ÷ 初始总数 × 10。有效战旗 +4 点，上限10，不叠加。仅低于棋子士气属性时检查。</p></aside>
+<div class="board"><div id="morale-summary" class="morale"></div><div id="rotation-summary" class="rotation-summary" hidden></div><p class="sandbox-only" id="lesson-note" hidden></p>
+<div class="map-tools" aria-label="地图视角">
+<button type="button" id="map-pan" aria-pressed="false">拖地图</button>
+<button type="button" id="map-out" aria-label="缩小地图">−</button><button type="button" id="map-in" aria-label="放大地图">＋</button>
+<button type="button" id="map-fit">全图</button><select id="map-locate" aria-label="定位地点"><option value="">定位地点</option></select>
+</div>
+<svg id="map" class="map" viewBox="0 0 640 480" role="img" aria-label="村庄地图与当前观察方掌握的单位位置" aria-describedby="map-hint"></svg>
+<p id="map-hint">滚轮缩放。中键或按住空格拖地图。左键拖棋子。触屏可先点「拖地图」。</p>
+<div class="legend"><span class="d">守方</span><span class="a">攻方</span><span class="m">虚线：最后目击</span><span id="slit-legend" hidden>青色箭头：射击点，可向箭头方向射击</span><span>绿色条纹：掩体（命中率−15个百分点）</span><span>棕色：泥地（奇数轮停步）</span></div>
+<input id="round" type="range" min="0" max="72" step="1" value="0" aria-label="回放轮次">
+<div class="time"><span id="time"></span><span id="known"></span></div>
+<details id="campaign-milestones" hidden><summary>战报转折点</summary><div id="milestone-list"></div></details>
+</div>
+<aside class="info"><h2 id="unit-title">选择一个己方单位</h2><div id="unit-detail"></div><h2 style="margin-top:22px">该轮可见交战记录</h2><ul id="events" class="events"></ul></aside>
+</div>
+<details><summary>组合技能与优先级</summary>
+<p>兵种卡提供基础数值和初始技能。双击棋子，在右侧增删技能，用上下箭头排序。每次行动先处理溃逃、携粮撤离等状态，再执行第一个满足条件的技能，其余留待下一步判断。双击守方棋子可选原地守区、机动回援或保护粮仓。想开战即触发，可把一枚攻方棋子拖到城门外六格内，再把守方初始情报设为「全部敌方位置」。</p></details>
+<p class="note sandbox-only">独立规则试场，全部数值为临时测试值。守方阻止补给外运，攻方需夺粮并从西侧撤离；轮次截止不自动判守方胜。灰色障碍阻挡移动和视线，掩体与泥地可通行。地形支持多处开口；可用画笔封路或开路，完全封死会导致不可达。没有可用技能时，守方回部署点，攻方继续执行场景目标。初始报告保留8轮，随后由实际观察更新。最多32枚棋子。开始战斗后按实时节拍逐步计算；可暂停、继续、调速。结束后可复盘，返回布防再修改。</p>
+</main>
+<script id="data" type="application/json">__SIMULATION_DATA__</script>
+<script src="editor.js"></script>
+<script src="battle-stage.js"></script>
+<script>
+(()=>{
+const data=JSON.parse(document.getElementById('data').textContent);
+const el=id=>document.getElementById(id), NS='http://www.w3.org/2000/svg';
+let selected='D1',timer=null;
+
+const sandbox=createSandbox(data,draw,stop);
+const stage=createBattleStage(el('map'),data,id=>{if(sandbox.editing)sandbox.pick(id);else{selected=id;draw();}});
+window.battleStage=stage;
+el('simulate').addEventListener('click',()=>stage.unlock());
+el('play').addEventListener('click',()=>stage.unlock());
+el('sound-fx').addEventListener('change',()=>stage.unlock());
+function make(tag,attrs,parent,text){const n=document.createElementNS(NS,tag);Object.entries(attrs).forEach(([k,v])=>n.setAttribute(k,v));if(text!==undefined)n.textContent=text;parent.append(n);return n;}
+function color(team){return team==='D'?'#e0bb73':'#de8e80';}
+function current(){return sandbox.replay||data.replays[0];}
+function stop(){if(timer)clearInterval(timer);timer=null;el('play').textContent='播放';}
+function draw(){
+ sandbox.controls();
+ el('slit-legend').hidden=!sandbox.campaign;
+ const phase=sandbox.editing?'deploy':sandbox.live?'battle':'replay';
+ for(const id of ['deploy','battle','replay']){
+  const node=el('phase-'+id);
+  if(id===phase)node.setAttribute('aria-current','step');else node.removeAttribute('aria-current');
+ }
+ const replay=current(), t=Math.min(+el('round').value,replay.frames.length-1), f=sandbox.editing?sandbox.frame():replay.frames[t],view=sandbox.campaign?'D':sandbox.editing?'all':el('view').value;
+ if(sandbox.editing)selected=sandbox.selected;
+ const timeline=el('campaign-milestones');
+ timeline.hidden=!sandbox.campaign||sandbox.editing||sandbox.live;
+ if(!timeline.hidden){
+  const marks=new Map();
+  for(const frame of replay.frames){
+   const contact=Object.values(frame.intel.D)[0];
+   if(!marks.has('contact')&&contact)marks.set('contact',[frame.round,'首次发现敌情',contact.pos]);
+   for(const event of frame.events){
+    const label={breach:'首次破门',field_order:'发出传令',order_arrival:'传令部队到位',loot:'发现敌人取粮',rout:'出现溃逃',rotation:'发生轮换',site_contested:'生产点遇袭',construction:'工程完工'}[event.kind];
+    const pos=event.pos??frame.structures.find(g=>g.id===event.gate)?.cells[0]??(frame.units.find(u=>u.id===event.actor)||frame.intel.D[event.actor])?.pos;
+    if(label&&!marks.has(event.kind))marks.set(event.kind,[frame.round,label,pos]);
+   }
+  }
+  marks.set('end',[replay.frames.length-1,'战斗结束']);
+  const list=el('milestone-list');
+  list.replaceChildren(...[...marks.values()].sort((a,b)=>a[0]-b[0]).map(([round,label,pos])=>{
+   const button=document.createElement('button');button.type='button';button.textContent=`第 ${round} 步 · ${label}`;
+   button.onclick=()=>{stop();el('round').value=round;if(pos)sandbox.locate(pos);draw();};return button;
+  }));
+ }
+ el('round').max=replay.frames.length-1;el('round').value=t;el('time').textContent=`第 ${f.round} / ${sandbox.live?sandbox.limit:replay.frames.length-1} 步`;
+ let shown=[];
+ if(view==='all')shown=f.units.filter(u=>!u.escaped).map(u=>({...u,ghost:false}));
+ else{shown=f.units.filter(u=>u.team===view&&!u.escaped).map(u=>({...u,ghost:false}));for(const m of Object.values(f.intel[view]))shown.push({...m,ghost:true,age:f.round-m.seen_at});}
+ const ownIDs=new Set(f.units.filter(u=>view==='all'||u.team===view).map(u=>u.id));
+ const allowedEvents=f.events.filter(e=>view==='all'||((!e.team||e.team===view)&&((!e.actor||ownIDs.has(e.actor)||shown.some(u=>u.id===e.actor))&&(!e.target||ownIDs.has(e.target)||shown.some(u=>u.id===e.target)))));
+ stage.render(f,shown,allowedEvents,selected,{editing:sandbox.editing,live:sandbox.live,paused:sandbox.paused,speed:+el('speed').value,view,mode:sandbox.editing?'edit':'battle',terrain:sandbox.terrain,gates:sandbox.gates,single:true});
+ el('known').textContent=view==='all'?'全知调试：显示实际位置':`已知敌人 ${Object.keys(f.intel[view]).length} / 未知位置保持隐藏`;
+ sandbox.renderMorale(f,view);
+ const watch=f.units.filter(u=>u.active&&u.rotation_state&&(view==='all'||view===u.team));
+ const rotationHud=el('rotation-summary');rotationHud.hidden=!watch.length;
+ rotationHud.textContent=watch.length?`轮换 · 在岗 ${watch.filter(u=>u.rotation_state==='在岗').length} · 休整 ${watch.filter(u=>u.rotation_state==='休整').length} · 接岗 ${watch.filter(u=>u.rotation_state==='接岗中').length} · 精力充沛 ${watch.filter(u=>u.vigor>0).length}`:'';
+ if(!el('lesson-note').hidden){
+  const finished=replay.frames.slice(0,t+1).some(row=>row.events.some(e=>e.kind==='rotation'&&e.text.includes('精力充沛')));
+  el('lesson-note').textContent=sandbox.editing?'换防演练 · 第一班在岗，第二班已设为轮换后备。点击「开始战斗」。':finished?'演练完成 · 后备已接岗。点选第二班查看精力加成，再用时间轴查看交接。':'演练目标 · 等待第二班接岗。点击任一守方棋子可查看疲劳和休整进度。';
+ }
+ if(sandbox.editing){sandbox.details(el('unit-detail'));el('known').textContent=sandbox.campaign?'战争迷雾 · 敌军部署未知':'布防视图显示全部棋子；战斗决策只用各自情报';el('time').textContent='尚未开始 · 先布阵再推演';el('events').replaceChildren();return;}
+ el('time').textContent+= ' · '+sandbox.summary();
+ if(f.alarm_gate&&(view==='D'||view==='all'))el('known').textContent+=` · 警钟：${f.alarm_name||('第'+(f.alarm_gate[1]+1)+'行入口')}`;
+ const u=shown.find(u=>u.id===selected);el('unit-detail').replaceChildren();
+ if(u){el('unit-title').textContent=u.name||u.id;
+ const actionNames={move:'移动',hold:'原地警戒',attack:'交战',heal:'救护',loot:'夺取物资',siege:'攻击城门'};
+ const reserve=u.reinforcement;
+ const values=u.ghost?[`最后目击：(${u.pos.join(', ')})`,`记忆年龄：${u.age}轮`,`来源：${u.source==='initial_report'?'开局报告':u.source}`,'未知当前行动，不显示真实决策。']:[`生效技能顺序：${u.skills?.map(key=>data.skills[key].label).join(' → ')||'无'}`,`执行技能：${data.skills[u.current_skill]?.label||'基本任务'}`,`装备：${u.armor?'护甲':'无护甲'} / ${{default:'兵种默认',none:'无武器',melee:'近战武器',ranged:'远程武器',siege:'攻城武器'}[u.weapon||'default']}${u.banner?' / 战旗':''}`,`士气属性：${u.morale_threshold??5}`,`状态：${u.escaped?'已逃离':u.routed?'溃逃中':u.active?(u.wound?'受伤':'可行动'):'失能'}`,`逻辑：${u.logic}`,`原因：${u.reason}`, ...(u.rotation_state?[`轮换：${u.rotation_state} · 疲劳 ${u.fatigue}/6`,...(u.rotation_state==='休整'?[`休整 ${Math.min(u.rest_steps,3)}/3 步`]:[]),...(u.vigor?[`精力充沛：剩余 ${u.vigor} 步 · 命中 +16 个百分点`]:[])]:[]),...(u.order_note?[`指挥：${u.order_note}`]:[]),...(reserve?[`回援命令：${reserve.gate_name||('第'+(reserve.gate[1]+1)+'行入口')} · ${reserve.mission==='stock'?'粮仓岗位':reserve.role==='guard'?'门内拦截位':'门后射击位'} (${reserve.goal.join(', ')})`]:[]),`行动：${actionNames[u.action]||u.action}${u.cargo?' · 携带补给':''}`];
+ for(const s of values){const p=document.createElement('p');p.textContent=s;el('unit-detail').append(p);}}
+ else{el('unit-title').textContent='当前立场没有该单位的位置';const p=document.createElement('p');p.textContent='选择地图上的己方圆点，查看它为何这样行动。';el('unit-detail').append(p);}
+ el('events').replaceChildren();for(const e of allowedEvents){const li=document.createElement('li');li.textContent=e.text;el('events').append(li);}if(!allowedEvents.length){const li=document.createElement('li');li.textContent='该轮无可显示交战事件';el('events').append(li);}
+}
+el('view').addEventListener('change',()=>{selected=el('view').value==='A'?'A0':'D1';draw();});
+el('round').addEventListener('input',()=>{stop();draw();});
+el('step').addEventListener('click',()=>{if(sandbox.stepLive())return;stop();el('round').value=Math.min(+el('round').max,+el('round').value+1);draw();});
+el('play').addEventListener('click',()=>{if(sandbox.toggleLive())return;if(timer){stop();return;}if(+el('round').value>=+el('round').max)el('round').value=0;el('play').textContent='暂停';timer=setInterval(()=>{el('round').value=+el('round').value+1;draw();if(+el('round').value>=+el('round').max)stop();},360);});
+draw();
+})();
+</script></html>
