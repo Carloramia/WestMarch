@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>外境角色编辑器</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#151a18;color:#eeeadd;font:15px/1.5 "Microsoft YaHei",sans-serif}header,main{max-width:1200px;margin:auto;padding:24px}header{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}h1,h2{margin:0}h1{font-size:24px}h2{font-size:16px;margin-bottom:12px}main{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(300px,1fr);gap:18px;padding-top:0}.panel{border:1px solid #414841;border-radius:12px;background:#222924;padding:16px;min-width:0}canvas{display:block;width:100%;background:#d5ceb4;border-radius:8px}fieldset{border:1px solid #444d44;border-radius:8px;margin:0 0 12px;padding:10px}legend{color:#d7b67c}label{display:flex;justify-content:space-between;align-items:center;gap:8px;margin:6px 0}button,select,input{font:inherit;color:inherit;background:#303a31;border:1px solid #657062;border-radius:6px;padding:5px 9px}button{cursor:pointer}button:hover{background:#465246}button:disabled,select:disabled,input:disabled{opacity:.45}input[type=color]{width:48px;height:28px;padding:1px}input[type=file]{width:100%}.row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}.muted,small{color:#c1c7b8}#status{min-height:1.5em;margin:8px 0}details{margin-top:12px}summary{cursor:pointer}a{color:#e1bd80}@media(max-width:760px){main{grid-template-columns:1fr}header,main{padding:12px}}
+.game-stage{position:relative;display:grid;place-items:center;aspect-ratio:560/540;background:radial-gradient(ellipse at 48% 40%,#e6dcc4,#b1a78e);border-radius:8px;overflow:hidden}.game-stage[hidden],canvas[hidden],.row[hidden]{display:none}.game-stage img{position:absolute;width:82%;height:82%;object-fit:contain}.game-stage .portrait-layer{width:92%;height:92%;image-rendering:auto}.game-stage .missing{color:#352e26;padding:24px;text-align:center}.asset-label{display:block;margin-top:8px}.original-stage{position:relative;max-width:540px;margin:auto;width:100%;aspect-ratio:1;background:radial-gradient(ellipse,#e7ddc3,#aca181);border-radius:8px;overflow:hidden}.original-stage img{position:absolute;object-fit:fill}.original-stage[hidden]{display:none}[hidden]{display:none!important}.limbus-scar{position:absolute;border-radius:50%;background:#8b352e;opacity:.78;transform:rotate(-35deg);pointer-events:none}.limbus-scar.short{transform:rotate(65deg) scaleX(.62)}</style></head>
+<body><header><h1>外境 · 角色编辑器</h1><label>编辑模式 <select id="mode"><option value="npc">NPC 策划</option><option value="create">玩家创建</option><option value="wardrobe">玩家换装</option></select></label></header>
+<main><section class="panel"><h2>角色预览</h2><div class="row"><label>预览来源 <select id="previewSource"><option value="limbusEditor">边狱巴士 · 捏脸与换装</option><option value="original">废墟图书馆 · 捏脸与换装</option><option value="limbus">边狱巴士 · 美术参考</option><option value="game">工坊姿势对照</option><option value="editor">外境配方预览</option></select></label></div><div id="originalTools" class="row"><label>构图 <select id="originalFraming"><option value="body">全身</option><option value="face">脸部近景</option></select></label><label>方向 <select id="originalDirection"><option value="Front">正面</option><option value="Side">侧面</option></select></label><label>表情 <select id="originalExpression"><option value="Normal">常态</option><option value="Atk">攻击</option><option value="Damaged">受击</option></select></label></div><div id="originalStage" class="original-stage" aria-label="原版角色头部"></div><small id="originalNote" class="asset-label"></small><section id="limbusEditorPanel" hidden><div class="row"><label>构图 <select id="limbusZoom"><option value="full">全身</option><option value="head">脸部近景</option></select></label><button id="limbusPng" type="button">导出透明 PNG</button></div><div id="limbusEditorStage" class="original-stage" aria-label="边狱巴士拼接小人"></div><small id="limbusEditorNote" class="asset-label"></small></section><section id="limbusPanel" hidden><div class="row"><label>参考样本 <select id="limbusSample"></select></label><a id="limbusSource" target="_blank" rel="noopener noreferrer">打开图像来源</a><a href="https://limbus-archive.com/anim" target="_blank" rel="noopener noreferrer">查看 Spine 动作目录</a></div><div id="limbusStage" class="game-stage"></div><p id="limbusStatus" class="muted"></p></section><div id="gameTools" class="row"><label>视图 <select id="gameView"><option value="body">全身姿势</option><option value="face">头部拼接</option></select></label><label>姿势 <select id="gamePose"><option>Default</option><option>Move</option><option>Slash</option><option>Guard</option><option>Damaged</option></select></label><label>表情 <select id="gameFace" disabled><option>Default</option><option>Attack</option><option>Damaged</option></select></label><label><input id="gameHair" type="checkbox" checked disabled>叠加前发</label></div><div id="gameStage" class="game-stage" aria-label="本机游戏工坊贴图"></div><small id="gameNote" class="asset-label"></small><div class="row" id="editorTools" hidden><button id="view" type="button">切换脸部近景</button><select id="pose" aria-label="预览姿势"><option>站姿</option><option>移动</option></select><button id="exportPng">导出预览 PNG</button></div>
+<canvas hidden id="preview" width="560" height="540" aria-label="角色预览图"></canvas>
+<p id="status" role="status"></p><div class="row"><button id="save">保存配方</button><label>载入配方 <input id="load" type="file" accept=".json,application/json"></label></div>
+<details><summary>本地《废墟图书馆》姿势样本</summary><p class="muted">选择含 ModInfo.Xml 和 ClothCustom 的角色皮肤文件夹。读取图片和姿势信息，在下方核对资源结构。文件留在本机，预览和角色配方独立。</p><input id="sample" type="file" webkitdirectory multiple><label>姿势图 <select id="samplePose" disabled></select></label><small id="sampleInfo"></small><canvas id="sampleCanvas" width="560" height="340" hidden></canvas></details></section>
+<section class="panel"><h2>外观配置</h2><form id="controls"></form><fieldset id="limbusControls" hidden><legend>边狱巴士部件</legend></fieldset><fieldset id="originalControls"><legend>原版部件</legend></fieldset><button id="finish">完成创建并锁定身份</button></section></main>
+<script src=".local-unpacked/ruina/editor-parts.js"></script><script src="original-preview.js"></script><script src="limbus-reference.js"></script><script src=".local-unpacked/limbus-cache/editor/parts.js"></script><script src="limbus-editor.js"></script><script>
+"use strict";
+const fields = [
+ ["基础身份", [["body","体型",["匀称","修长","结实"]],["identity","性别标识",["未指定","女性","男性","自定义"]],["face","脸型",["圆脸","长脸","方脸"]],["eyes","眼型",["平视","上挑","圆眼"]],["brows","眉型",["柔眉","锐眉"]],["mouth","嘴型",["平静","微笑","抿嘴"]],["skin","肤色","#bd8669"],["iris","天然瞳色","#928358"],["hairColor","天然发色","#312723"]]],
+ ["日常造型", [["frontHair","前发",["斜分","碎发","无"]],["backHair","后发",["短发","长发","无"]],["dye","染发",["天然","铜红","浅金","墨蓝"]],["lens","美瞳",["无","琥珀","灰蓝"]],["clothes","服饰",["行装","长袍","便衣"]],["headwear","头饰",["无","半面罩","兜帽"]],["makeup","妆容",["无","眼线","颊纹"]]]],
+ ["途径附加件", [["scar","面部疤痕",["无","斜疤"]],["armor","骨甲",["无","肩甲"]],["limb","额外肢体",["无","额外双臂"]]]]
+];
+const defaults = Object.fromEntries(fields.flatMap(([, group]) => group.map(([key,,options]) => [key, Array.isArray(options) ? options[0] : options])));
+const $ = id => document.getElementById(id);
+let recipe = {...defaults};
+let locked = false;
+let closeup = false;
+const inputs = new Map();
+const message = value => $("status").textContent = value;
+function mode() { return $("mode").value; }
+function editable(group) { return mode() === "npc" || group === "日常造型" || (group === "基础身份" && mode() === "create" && !locked); }
+function sync() {
+ for (const [key, {input, group}] of inputs) { input.value = recipe[key]; input.disabled = !editable(group); }
+ $("finish").disabled = mode() !== "create" || locked;
+ draw();
+ if($("previewSource").value==="original")drawOriginal();
+ if($("previewSource").value==="limbusEditor")renderLimbusEditor();
+}
+for (const [group, entries] of fields) {
+ const box = document.createElement("fieldset");
+ const title = document.createElement("legend");
+ title.textContent = group;
+ box.append(title);
+ for (const [key, label, options] of entries) {
+   const row = document.createElement("label");
+   row.textContent = label;
+   const input = document.createElement(Array.isArray(options) ? "select" : "input");
+   input.id = key;
+   if (Array.isArray(options)) for (const option of options) input.add(new Option(option));
+   else input.type = "color";
+   input.addEventListener("input", () => {
+      if (editable(group)) { recipe[key] = input.value; draw(); }
+   });
+   inputs.set(key, {input,group});
+   row.append(input);
+   box.append(row);
+ }
+ $("controls").append(box);
+}
+const c = $("preview"), ctx = c.getContext("2d");
+function shape(fill, points, stroke="#302823", width=3) {
+ ctx.beginPath();
+ ctx.moveTo(...points[0]);
+ for (const point of points.slice(1)) point.length===2 ? ctx.lineTo(...point) : ctx.quadraticCurveTo(...point);
+ ctx.closePath();
+ if(fill){ctx.fillStyle=fill;ctx.fill();}
+ if(stroke){ctx.strokeStyle=stroke;ctx.lineWidth=width;ctx.stroke();}
+}
+function ellipse(x,y,rx,ry,fill){ctx.beginPath();ctx.ellipse(x,y,rx,ry,0,0,Math.PI*2);ctx.fillStyle=fill;ctx.fill();}
+function line(color,width,points){ctx.beginPath();ctx.moveTo(...points[0]);for(const p of points.slice(1))p.length===2?ctx.lineTo(...p):ctx.quadraticCurveTo(...p);ctx.strokeStyle=color;ctx.lineWidth=width;ctx.lineCap="round";ctx.stroke();}
+function draw(){
+ const a=recipe, move=$("pose").selectedIndex===1;
+ const lean=move?22:0, headX=lean+10, headY=move?-8:0;
+ const hair=({"铜红":"#a64836","浅金":"#bb9354","墨蓝":"#253e55"})[a.dye]||a.hairColor;
+ const iris=({"琥珀":"#b67b36","灰蓝":"#526d82"})[a.lens]||a.iris;
+ const suit=({"行装":"#455c51","长袍":"#694f64","便衣":"#826043"})[a.clothes];
+ const width=({"匀称":1,"修长":.85,"结实":1.2})[a.body];
+ ctx.setTransform(1,0,0,1,0,0);ctx.clearRect(0,0,c.width,c.height);
+ const ground=ctx.createLinearGradient(0,0,0,c.height);ground.addColorStop(0,"#e2dac3");ground.addColorStop(1,"#ada787");ctx.fillStyle=ground;ctx.fillRect(0,0,c.width,c.height);
+ ctx.translate(closeup?250:260, closeup?405:480);
+ ctx.scale(closeup?2.6:1,closeup?2.6:1);
+ ellipse(5,0,115,15,"#8c886d");
+ ctx.save();ctx.transform(width,0,move?-.12:0,1,0,0);
+ if(a.limb!=="无") for(const side of [-1,1]){
+   const x=side*45;line("#362c26",23,[[x,-171],[side*118,-159,side*127,-98]]);line(a.skin,15,[[x,-171],[side*118,-159,side*127,-98]]);
+   ellipse(side*128,-97,8,11,a.skin);
+ }
+ shape(suit,[[-52,-220],[0,-246,53,-219],[69,-146],[51,-136],[48,-79],[-51,-79],[-61,-140],[-76,-151]]);
+ shape("#373632",[[-45,-103],[48,-103],[63,-24],[72,-7],[28,-7],[5,-78],[-12,-76],[-31,-7],[-73,-7],[-55,-26]]);
+ if(a.clothes==="长袍")shape(suit,[[-46,-216],[47,-216],[64,-54],[4,-63,-72,-49]]);
+ line("#cfb27d",5,[[-51,-142],[51,-147]]);
+ if(a.armor!=="无")for(const side of [-1,1])shape("#e5d6ad",[[side*32,-222],[side*61,-236],[side*78,-208],[side*62,-213],[side*82,-191],[side*46,-198]]);
+ ctx.restore();
+ ctx.save(); ctx.translate(headX,-315+headY);
+ if(a.backHair!=="无") shape(hair,[[-54,-11],[-72,-78,7,-76],[76,-64,61,5],[65,a.backHair==="长发"?103:38],[24,42],[-52,a.backHair==="长发"?96:32]]);
+ shape(a.skin,[[-16,37],[20,39],[23,85],[0,97,-21,85]]);
+ const f=a.face;
+ shape(a.skin,[[-52,-15],[-65,-69,7,-67],[61,-64,59,-6],[58,35,f==="方脸"?42:28,49],[8,f==="长脸"?72:61,-19,57],[-57,29,-52,-15]]);
+ for(const x of [-25,23]){
+   const dy=a.eyes==="上挑"?-4:0;
+   line("#49372d",4,[[x-12,-17],[x,-23,x+12,-17+(a.brows==="锐眉"?5:0)]]);
+   if(a.makeup==="眼线")line("#382e42",4,[[x-16,2],[x,-9,x+17,dy]]);
+   ellipse(x,0,13,a.eyes==="圆眼"?10:6,"#f6eddf");ellipse(x+2,0,6,6,iris);ellipse(x+3,0,2.8,4,"#272327");
+   if(a.makeup==="颊纹")line("#843c47",3,[[x-9,18],[x+7,22]]);
+ }
+ line("#795042",2,[[2,4],[-3,19,7,18]]);
+ line("#6e423d",3,[[-12,34],[0,a.mouth==="微笑"?43:34,15,a.mouth==="抿嘴"?33:32]]);
+ if(a.scar!=="无"&&a.headwear!=="半面罩")line("#86474b",3,[[19,-13],[31,8],[41,23]]);
+ if(a.frontHair!=="无")shape(hair,[[-55,-6],[-74,-65,-18,-76],[44,-84,61,-44],[54,-25],[29,-48],[a.frontHair==="碎发"?15:2,-22],[0,-45],[-33,-18],[-22,-54],[-53,-22]]);
+ if(a.headwear==="半面罩")shape("#49585a",[[-51,-12],[1,-20,53,-12],[47,15],[6,34,-46,20]]);
+ if(a.headwear==="兜帽")shape(suit,[[-64,42],[-83,-44,-31,-76],[15,-100,53,-74],[83,-48,70,43],[51,31],[63,-57,17,-65],[-43,-76,-52,-22],[-49,32]]);
+ ctx.restore();
+}
+function validate(data){
+ if(!data || data.version!==1 || !data.look || typeof data.look!=="object")throw Error("配方格式不支持");
+ const result={...defaults};
+ for(const [,group] of fields) for(const [key,,choices] of group){
+    if(!Object.hasOwn(data.look,key))continue;
+    const value=data.look[key];
+    if(typeof value!=="string" || (Array.isArray(choices)?!choices.includes(value):!/^#[a-f0-9]{6}$/i.test(value)))throw Error("配方字段无效："+key);
+    result[key]=value;
+ }
+ return result;
+}
+function download(blob,name){
+ const url=URL.createObjectURL(blob);
+ const a=document.createElement("a");a.href=url;a.download=name;a.click();
+ setTimeout(()=>URL.revokeObjectURL(url),1500);
+}
+$("mode").onchange=()=>{sync();message("");};
+$("pose").onchange=draw;
+$("view").onclick=()=>{closeup=!closeup;$("view").textContent=closeup?"切换全身":"切换脸部近景";draw();};
+$("finish").onclick=()=>{if(mode()!=="create"||locked)return;locked=true;$("mode").value="wardrobe";sync();message("创建完成。基础身份已锁定。");};
+$("save").onclick=()=>download(new Blob([JSON.stringify({version:1,locked,look:recipe,originalParts:chosenParts,limbusParts:limbusLook},null,2)],{type:"application/json"}),"外境角色.json");
+$("load").onchange=async e=>{
+ const file=e.target.files[0];
+ if(!file)return;
+ try{
+   const data=JSON.parse(await file.text());
+   const next=validate(data);
+   if(mode()==="npc"){recipe=next;locked=data.locked===true;}
+   else for(const [group,entries] of fields) if(editable(group))for(const [key] of entries)recipe[key]=next[key];
+   importOriginal(data.originalParts);
+   importLimbusLook(data.limbusParts);
+   sync();message("已载入当前模式允许修改的字段。");
+ }catch(error){message(error.message);}
+ finally{e.target.value="";}
+};
+$("exportPng").onclick=()=>c.toBlob(blob=>{if(blob)download(blob,"外境角色预览.png");},"image/png");
+let samples=new Map(), sampleRequest=0, importRequest=0;
+function readCloth(xml,files){
+ const doc=new DOMParser().parseFromString(xml,"application/xml");
+ if(doc.querySelector("parsererror"))throw Error("ModInfo XML 格式无效");
+ const cloth=doc.querySelector("ClothInfo");
+ if(!cloth)throw Error("找不到 ClothInfo");
+ const pngs=new Map(files.filter(file=>/\/clothcustom\/[^/]+\.png$/i.test(file.webkitRelativePath||"")).map(file=>[file.name.toLowerCase(),file]));
+ const result=new Map();
+ for(const node of cloth.children){
+   const file=pngs.get(node.tagName.toLowerCase()+".png");
+   if(!file)continue;
+   const pivot=node.querySelector("Pivot"), head=node.querySelector("Head");
+   result.set(node.tagName,{file,direction:node.querySelector("Direction")?.textContent||"—",pivot:[pivot?.getAttribute("pivot_x"),pivot?.getAttribute("pivot_y")],head:[head?.getAttribute("head_x"),head?.getAttribute("head_y")],rotation:head?.getAttribute("rotation"),enabled:head?.getAttribute("head_enable")});
+ }
+ return result;
+}
+async function renderSample(){
+ const request=++sampleRequest;
+ const item=samples.get($("samplePose").value);
+ const canvas=$("sampleCanvas");
+ const pen=canvas.getContext("2d");
+ pen.clearRect(0,0,canvas.width,canvas.height);
+ canvas.hidden=!item;
+ if(!item)return;
+ $("sampleInfo").textContent=item.file.name+" · "+item.direction+" · 原点 "+item.pivot.join(", ")+" · 头部 "+item.head.join(", ")+" · 旋转 "+(item.rotation??"—")+" · 显示 "+(item.enabled??"—");
+ try {
+   const bitmap=await createImageBitmap(item.file);
+   try{
+      if(request!==sampleRequest)return;
+      const scale=Math.min((canvas.width-24)/bitmap.width,(canvas.height-24)/bitmap.height);
+      pen.drawImage(bitmap,(canvas.width-bitmap.width*scale)/2,(canvas.height-bitmap.height*scale)/2,bitmap.width*scale,bitmap.height*scale);
+   }finally{bitmap.close();}
+ }catch(error){if(request===sampleRequest)$("sampleInfo").textContent=error.message;}
+}
+$("sample").onchange=async event=>{
+ const request=++importRequest;
+ const files=Array.from(event.target.files);
+ const select=$("samplePose");
+ ++sampleRequest;select.replaceChildren();select.disabled=true;$("sampleCanvas").hidden=true;
+ try {
+   const xml=files.find(file=>file.name.toLowerCase()==="modinfo.xml");
+   if(!xml)throw Error("请选择含 ModInfo.Xml 的角色皮肤文件夹。");
+   const result=readCloth(await xml.text(),files);
+   if(request!==importRequest)return;
+   samples=result;
+   if(!samples.size)throw Error("没有找到与 XML 对应的 ClothCustom PNG。");
+   for(const pose of samples.keys())select.add(new Option(pose));
+   select.disabled=false;renderSample();
+ }catch(error){if(request===importRequest){samples=new Map();$("sampleInfo").textContent=error.message;}}
+};
+$("samplePose").onchange=renderSample;
+initOriginal();
+createLimbusControls();
+sync();
+const workshop = "file:///C:/Program%20Files%20(x86)/Steam/steamapps/workshop/content/1256670/2884559316/";
+function showGame(){
+ const source=$("previewSource").value;
+ const game=source==="game", original=source==="original";
+ const limbus=source==="limbus", limbusEditor=source==="limbusEditor";
+ $("limbusEditorPanel").hidden=!limbusEditor;
+ $("limbusControls").hidden=!limbusEditor;
+ if(limbusEditor)renderLimbusEditor();
+ $("limbusPanel").hidden=!limbus;
+ $("mode").disabled=limbus;
+ $("finish").hidden=limbus;
+ $("save").hidden=limbus;
+ $("load").parentElement.hidden=limbus;
+ if(limbus)drawLimbus();
+ $("originalTools").hidden=!original;
+ $("originalStage").hidden=!original;
+ $("originalNote").hidden=!original;
+ $("originalControls").hidden=!original;
+ $("controls").hidden=source!=="editor";
+ if(original)drawOriginal();
+ const face=$("gameView").value==="face";
+ const stage=$("gameStage");
+ stage.hidden=!game;
+ $("gameTools").hidden=!game;
+ $("gameNote").hidden=!game;
+ $("editorTools").hidden=source!=="editor";
+ c.hidden=source!=="editor";
+ $("controls").closest("section").style.opacity=game?".7":"1";
+ $("gamePose").disabled=face;
+ $("gameFace").disabled=!face;
+ $("gameHair").disabled=!face;
+ if(!game)return;
+ stage.replaceChildren();
+ const paths=face
+   ? ["Head","Face"+$("gameFace").value,...($("gameHair").checked?["FrontHair"]:[])].map(name=>"Assemblies/ArtWork/AyinHead/Ayin_"+name+".png")
+   : ["Resource/CharacterSkin/AyinPlayer/ClothCustom/"+$("gamePose").value+".png"];
+ for(const path of paths){
+   const img=document.createElement("img");
+   img.alt=face?"头部贴图层":"小人姿势贴图";
+   if(face)img.className="portrait-layer";
+   img.onerror=()=>{
+      if(img.parentElement!==stage)return;
+      stage.replaceChildren();
+      const hint=document.createElement("p");
+      hint.className="missing";
+      hint.textContent="无法读取本机工坊贴图。请用 Edge 从本地打开此页面，并检查工坊样本是否仍在 Steam 目录。";
+      stage.append(hint);
+   };
+   img.src=workshop+path;
+   stage.append(img);
+ }
+ $("gameNote").textContent=face?"Ayin 工坊样本，按头部、表情、前发三层叠放。":"Ayin 工坊样本，来自本机 Steam 目录。";
+}
+for(const id of ["previewSource","gameView","gamePose","gameFace","gameHair"]) $(id).onchange=showGame;
+$("controls").addEventListener("input",()=>{
+ if($("previewSource").value==="game"){$("previewSource").value="editor";showGame();}
+});
+showGame();
+</script></body></html>
+
+
+
+
+
+
+
+
