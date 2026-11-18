@@ -1,0 +1,72 @@
+{
+  "code": 0,
+  "message": "OK",
+  "ttl": 1,
+  "data": {
+    "from": "local",
+    "result": "suee",
+    "message": "",
+    "quality": 64,
+    "format": "mp4720",
+    "timelength": 139499,
+    "accept_format": "mp4720,mp4",
+    "accept_description": [
+      "高清 720P",
+      "流畅 360P"
+    ],
+    "accept_quality": [
+      64,
+      16
+    ],
+    "video_codecid": 7,
+    "seek_param": "start",
+    "seek_type": "offset",
+    "durl": [
+      {
+        "order": 1,
+        "length": 139499,
+        "size": 8009368,
+        "ahead": "",
+        "vhead": "",
+        "url": "https://upos-hz-mirrorakam.akamaized.net/upgcxcode/73/24/43567812473/43567812473-1-192.mp4?e=ig8euxZM2rNcNbRVhwdVhwdlhWdVhwdVhoNvNC8BqJIzNbfq9rVEuxTEnE8L5F6VnEsSTx0vkX8fqJeYTj_lta53NCM=&nbs=1&oi=1737993300&mid=0&uipk=5&trid=a704393e12bf4a44a2f24d01c36135dh&gen=playurlv3&os=akam&og=hw&platform=html5&deadline=1794946275&upsig=cd88cbbd9f0e83b7d153d1bb99a00b11&uparams=e,nbs,oi,mid,uipk,trid,gen,os,og,platform,deadline&hdnts=exp=1794946275~hmac=b1f199acb1ca1e14cb9cf7f29812d6555fe446f0b50d0b4ec8f2516aeac63a64&bvc=vod&nettype=0&bw=460970&lrs=0&V=v3.1.2&build=0&dl=0&f=h_0_0&agrr=1&buvid=&orderid=0,1",
+        "backup_url": null
+      }
+    ],
+    "support_formats": [
+      {
+        "quality": 64,
+        "format": "mp4720",
+        "new_description": "720P 准高清",
+        "display_desc": "720P",
+        "superscript": "",
+        "codecs": null,
+        "can_watch_qn_reason": 0,
+        "limit_watch_reason": 0,
+        "report": {}
+      },
+      {
+        "quality": 16,
+        "format": "mp4",
+        "new_description": "360P 流畅",
+        "display_desc": "360P",
+        "superscript": "",
+        "codecs": null,
+        "can_watch_qn_reason": 0,
+        "limit_watch_reason": 0,
+        "report": {}
+      }
+    ],
+    "high_format": null,
+    "last_play_time": 0,
+    "last_play_cid": 0,
+    "view_info": null,
+    "play_conf": {
+      "is_new_description": false
+    },
+    "cur_language": "",
+    "cur_production_type": 0,
+    "auto_qn_resp": {
+      "dyeid": ""
+    }
+  }
+}

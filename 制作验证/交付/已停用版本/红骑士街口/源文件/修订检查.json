@@ -1,0 +1,7 @@
+{
+  "method": "0.1s center-path samples against pillars (49 clearance) and moving cart rectangle (19 clearance), includes downed actors",
+  "issues": [],
+  "courier_exited_by": 85,
+  "max_voice_tempo": 1.3705882352941166,
+  "scope": "authored animation, not rule simulation"
+}

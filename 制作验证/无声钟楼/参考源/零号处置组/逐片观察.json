@@ -1,0 +1,153 @@
+{
+  "status": "视觉研究稿；完整视听阅片未完成",
+  "method": "全部9条公开投稿完整视频文件，720×1280可访问版本；全时长每秒抽帧联系表人工核查，少量原尺寸帧补查。不是逐原生帧观看，也未可靠听辨音轨。联系表标签为约秒，抽样约在对应秒+0.5s。",
+  "audio": "9条均有音轨；直接音频感知不可用，自动转写均无可靠片段，不能据此判定无旁白或无音效。声音与亚秒动作节奏待核查。",
+  "policy": "用户要求看完所有视频后才能开始复刻优化。当前仅记录观察与拟定视觉制作原则，未启动新一轮成片修改。",
+  "sources": [
+    {
+      "ep": 1,
+      "bvid": "BV1Y9446NEzQ",
+      "checked": "0–95.4s, continuous 1fps contact sheets",
+      "beats": [
+        "0–11s hook and vampire four-rule dossier",
+        "12–31s ideal exercise, seal windows/light/crossfire/silver fatal blow",
+        "32–39s hospital risk dossier",
+        "40–58s first team follows ordinary CQB, stops for civilian, rescues bitten teammate, vampire heals/converts/escapes vent; three losses",
+        "59–83s second team seals compartments/vents, confirms identity, sustains fire with alternating reloads, shield protects priest finishing shot",
+        "84–95s cast casualty ledger and next-episode hook"
+      ],
+      "notes": "Visible outcome differs by control of space, information, continuity of suppression. White wall glow, gold/gray team phase panels; early episode has no large device shell.",
+      "url": "https://www.bilibili.com/video/BV1Y9446NEzQ",
+      "confidence": "画面中直接可见的剧情/界面为中至高；因抽帧方法，动作精确时序为低，声音不评价"
+    },
+    {
+      "ep": 2,
+      "bvid": "BV1jS4B6BEFW",
+      "checked": "0–111.27s, continuous 1fps",
+      "beats": [
+        "0–18 hook cold-weapons rescue, radio briefing, loadout including cardboard box, goblin dossier",
+        "19–38 silent simultaneous kills, sleeping enemies, cardboard-box stealth gag",
+        "39–59 narrow cave advance, wait for patrol turn, shield/hold armored goblin instead of piercing",
+        "60–70 saint as bait and shaman ambush",
+        "71–87 set fire for light; adversary waits for fire to extinguish; veteran independently flanks and kills shaman",
+        "88–111 rescue teleport, only first floor reveal, cast ledger"
+      ],
+      "notes": "Hardware console frame introduced; viewport upper part, four indicator channels below, persistent dim brand. Continuous world team names, causal tactical humor.",
+      "url": "https://www.bilibili.com/video/BV1jS4B6BEFW",
+      "confidence": "画面中直接可见的剧情/界面为中至高；因抽帧方法，动作精确时序为低，声音不评价"
+    },
+    {
+      "ep": 3,
+      "bvid": "BV1dU4B6MEDs",
+      "checked": "0–107.27s, continuous 1fps",
+      "beats": [
+        "0–39 parking-garage first-team failure: bullets ineffective, zombie leaps to breathing targets, only one survivor",
+        "40–56 postmortem cards convert observed failure into matching equipment: closed-circuit respirator, red mist grenade, antimateriel rifle",
+        "57–74 second team seals exit, approaches without exhaling, breath bait; enemy changes direction off a pillar, counter-adjustment",
+        "75–93 relocate to pillar-free zone, bait to trap, mist immobilizes and weakens armor, sniper finishing shot",
+        "94–107 cast ledger includes accumulated first-team casualties"
+      ],
+      "notes": "Equipment schematics have moving callouts, yellow emphasis, mini comparison timelines. Needs enemy counterplay, not passive target.",
+      "url": "https://www.bilibili.com/video/BV1dU4B6MEDs",
+      "confidence": "画面中直接可见的剧情/界面为中至高；因抽帧方法，动作精确时序为低，声音不评价"
+    },
+    {
+      "ep": 4,
+      "bvid": "BV1p6WH6ZELZ",
+      "checked": "0–107.77s, continuous 1fps",
+      "beats": [
+        "0–30 church first-team assault, explosive use charges ritual, escalating damage and retreat with losses",
+        "31–46 failure analysis; ritual worsens over time, three linked altars; blood-linked implant on previously converted teammate, hammer; grenade request rejected as joke",
+        "47–79 blood puppet leads while ordinary members maintain distance, sequential hammer demolition, ritual charging pressure",
+        "80–95 only linked puppet can enter mother chamber, final altar broken, priest contains entity",
+        "96–108 cast ledger and cumulative casualties"
+      ],
+      "notes": "Story connects prior converted medic to specialist role. Readable multi-objective progress bar. Mission success is containment, not ordinary kill.",
+      "url": "https://www.bilibili.com/video/BV1p6WH6ZELZ",
+      "confidence": "画面中直接可见的剧情/界面为中至高；因抽帧方法，动作精确时序为低，声音不评价"
+    },
+    {
+      "ep": 5,
+      "bvid": "BV1J1WH6sEo2",
+      "checked": "0–154.82s, 1fps contact sheets",
+      "beats": [
+        "0–34 first team on foot approaches vehicle; stray shot draws horde, one casualty, withdrawal",
+        "35–58 second team vehicle briefing, previously refused machine gun approved, line-art equipment card",
+        "59–71 short high-output fire sequence, visible ammo/kill indicators",
+        "72–111 advancing escort, converted teammate can exit vehicle without drawing zombies, priest rear support; interior/exterior cuts",
+        "112–127 giant blocks road, machine gun ineffective, puppet and priest resolve threat",
+        "128–155 portal evacuation against mission clock, cast ledger"
+      ],
+      "notes": "Escort objective, complementary specialists, running equipment-request joke. Displayed battle clock has jumps; not the video's clock.",
+      "url": "https://www.bilibili.com/video/BV1J1WH6sEo2",
+      "confidence": "画面中直接可见的剧情/界面为中至高；因抽帧方法，动作精确时序为低，声音不评价"
+    },
+    {
+      "ep": 6,
+      "bvid": "BV1GDW464E6B",
+      "checked": "0–154.87s, 1fps contact sheets",
+      "beats": [
+        "0–24 CCTV elevator hook, missing security guards, first team cuts power and climbs stairs",
+        "25–58 enemy follows car floor, closes door to recover; first team withdraws alive",
+        "59–71 rule review and hidden floor reconnaissance",
+        "72–115 split deployment, rescue trapped victims while controlling elevator travel; elevation and floor maps",
+        "116–134 shield specialist holds door, denies recovery, combined team fire",
+        "135–155 recovered guards and casualty ledger unchanged"
+      ],
+      "notes": "Competent withdrawal is a valid result. Rescue and containment run in parallel; spatial section explains floor relationships.",
+      "url": "https://www.bilibili.com/video/BV1GDW464E6B",
+      "confidence": "画面中直接可见的剧情/界面为中至高；因抽帧方法，动作精确时序为低，声音不评价"
+    },
+    {
+      "ep": 7,
+      "bvid": "BV1sGWu6bECh",
+      "checked": "0–140.33s, 1fps contact sheets",
+      "beats": [
+        "0–27 drone/courtyard reconnaissance, radio suspicion of extra figure",
+        "28–51 physical attacks fail; pursuit/contact kills two; retreat",
+        "52–66 review: intangible, electronics fail nearby, avoid looking at her, red thread on left hand",
+        "67–76 line-art loadout: reflector, linked crackers, talisman, blackout mask, passive spare arm",
+        "77–113 multi-part execution with positioning, visual labels for reflected attacks, speed and talisman on left arm",
+        "114–128 specialist locks figure, red veil/head object contained",
+        "129–140 cast casualty ledger and aftermath"
+      ],
+      "notes": "Equipment carries constraints, low-tech fallback matters; close-up spotlight identifies a specialist's contribution. Precise subsecond choreography not verified.",
+      "url": "https://www.bilibili.com/video/BV1sGWu6bECh",
+      "confidence": "画面中直接可见的剧情/界面为中至高；因抽帧方法，动作精确时序为低，声音不评价"
+    },
+    {
+      "ep": 8,
+      "bvid": "BV1GbWq6HEhG",
+      "checked": "0–139.50s, 1fps contact sheets",
+      "beats": [
+        "0–11 theater evacuation and hidden impersonator hook",
+        "12–25 equipment review: memory-affecting lullaby conditionally approved, hand cannon; radio banter",
+        "26–46 look-right instruction, delayed response identifies suspect; attack drives it backstage",
+        "47–61 chase through dressing rooms, a victim is distinguished from impersonator",
+        "62–94 another person appears in headcount, observer cannot see from stair base; lure using look-forward/left orders during evacuation",
+        "95–118 net containment of one figure while another is pursued/pinned backstage",
+        "119–139 containment card, continued public evacuation, ledger and memory-related aftermath"
+      ],
+      "notes": "Identification through observable behavior, branching roles, civilian throughput and crowd motion; no first-team sacrificial failure formula.",
+      "url": "https://www.bilibili.com/video/BV1GbWq6HEhG",
+      "confidence": "画面中直接可见的剧情/界面为中至高；因抽帧方法，动作精确时序为低，声音不评价"
+    },
+    {
+      "ep": 9,
+      "bvid": "BV1fdsn6QEPZ",
+      "checked": "0–106.57s, 1fps contact sheets plus native-resolution end frame",
+      "beats": [
+        "0–20 thermal image contradiction and single footprint trail; enemy follows team tracks",
+        "21–37 search cabin, tracks and imitation distress calls, route evidence contradicts apparent voice location (visible dialogue)",
+        "38–46 rule review: absent on thermal, uses footsteps, snow erases its own trail, mimics voices",
+        "47–56 loadout cards for overhead illumination, side-light scout vehicle, thermite spike",
+        "57–69 bait/ambush and cabin keeper's call; team returns",
+        "70–88 shield fixes target, crossfire and close thermite finishing action",
+        "89–106 ice-core containment, cast ledger with minor injuries, snowfall aftermath"
+      ],
+      "notes": "Environment is an information system: snow, tracks, angle of light. Strong silhouette monster rather than a red dot alone; not photorealistic.",
+      "url": "https://www.bilibili.com/video/BV1fdsn6QEPZ",
+      "confidence": "画面中直接可见的剧情/界面为中至高；因抽帧方法，动作精确时序为低，声音不评价"
+    }
+  ]
+}

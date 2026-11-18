@@ -1,0 +1,7 @@
+{
+  "source": "https://www.bilibili.com/video/BV1GbWq6HEhG/",
+  "audio_duration": 139.3066875,
+  "language": "zh",
+  "method": "faster-whisper base int8; machine transcript, verify against image subtitles; not a verbatim authoritative transcript",
+  "segments": []
+}
